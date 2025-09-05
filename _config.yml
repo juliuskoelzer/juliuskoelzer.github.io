@@ -30,7 +30,6 @@ author:
   employer         : "Hertie School & HU Berlin"
   uri              : # URL
   email            : "J.Kolzer@phd.hertie-school.org" 
-
   # Academic websites
 academia         : # URL
 arxiv            : # URL
@@ -42,12 +41,11 @@ semantic         : # URL
 pubmed           : #
 researchgate     : # URL
 scopus           : # URL
-
 # Repositories and software development
 bitbucket        : # Username
 codepen          : # Username
 dribbble         : # Username
-github           : "JuliusK22"
+github           : #
 kaggle           : # Username
 stackoverflow    : # User number
 
