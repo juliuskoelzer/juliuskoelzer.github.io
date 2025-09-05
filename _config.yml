@@ -22,8 +22,8 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Julius Kölzer"
+avatar           : "moin_neu.png"
+name             : "Julius Kölzer"
 pronouns         : # example: "she/her"
 bio              : "Doctoral Researcher & Data Journalist"
 location         : "Berlin"
@@ -77,6 +77,7 @@ wikipedia        : # Username
 xing             : # Username
 youtube          : # Username
 zhihu            : # Username
+
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
