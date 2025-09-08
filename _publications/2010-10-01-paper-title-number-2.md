@@ -2,13 +2,12 @@
 title: "Paper Title Number 2"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: https://link.springer.com/article/10.1007/s11615-025-00606-w
+excerpt: 'The regional decline of manufacturing employment is frequently linked to the rise of right-wing populism in many Western countries. Surprisingly, contributions that directly examine the relationship between industrial decline and electoral support for these parties, as well as its underlying mechanisms, remain scarce. Moreover, it is often overlooked that regional industrial decline might also increase support for left-wing populism due to a greater demand for welfare compensation. Using novel historical data on regional manufacturing employment and geocoded survey data from Germany, we find that long-term actual industrial decline is associated with increased support for left-wing populism but not with support for right-wing populist parties. Rather, we find increased support for right-wing populism in places where manufacturing levels are historically high and industrial decline is looming. Empirical results on the underlying individual-level mechanisms are rather inconclusive. Although a greater automation risk is associated with a higher probability to vote for the AfD at the individual level, the regional effect of historic industrial employment on AfD support does not appear to be stronger among those exposed to automation. Further, the effect of regional industrial decline on support for Die Linke (The Left) is not driven by unemployed individuals, but rather by contextual effects, potentially reflecting sociotropic concerns. Our findings highlight the importance of developing a more nuanced understanding of how historical industrial employment and its decline have shaped support for right-wing and left-wing populist parties in distinct ways.'
+date: 2025-05-07
+venue: 'German Political Science Quarterly'
+paperurl: 'https://link.springer.com/article/10.1007/s11615-025-00606-w'
+citation: 'Bayerlein, Michael, Julius Kölzer, and Anne Metten. "Industrial Employment and Populism in Germany—Exploring the Effect of Actual and Looming Decline." Politische Vierteljahresschrift (2025): 1-32.'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
