@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 2"
+title: "Industrial Employment and Populism in Germany—Exploring the Effect of Actual and Looming Decline"
 collection: publications
 category: manuscripts
 permalink: https://link.springer.com/article/10.1007/s11615-025-00606-w
