@@ -1,5 +1,5 @@
 ---
-title: "Test Test"
+title: "Mind the Gap: Local Decline in Train Service Provision and Far-Right Support"
 collection: publications
 category: Working Paper
 permalink: /publication/2024-02-17-paper-title-number-4
