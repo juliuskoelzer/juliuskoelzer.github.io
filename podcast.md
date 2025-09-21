@@ -12,7 +12,6 @@ author_profile: true
     Together with my friend Viktor Burgi, I co-host the podcast <i>Political Science – No Problem et al.</i>, 
     where we discuss political science research in the context of current political events. 
     Each episode features a researcher who has published on the topic at hand. 
-    Available on 
   </p>
   <p style="text-align:center;">
     <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">Apple Podcasts</a> 
