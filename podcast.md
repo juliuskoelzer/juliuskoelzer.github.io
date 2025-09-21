@@ -7,29 +7,90 @@ author_profile: true
 
 <h2 class="blog-section-title">🎙️ Political Science – No Problem et al.</h2>
 
+<div class="podcast-header">
+  <img src="/images/podcastlogo.png" alt="Podcast Logo" class="podcast-logo">
+  <p>
+    Together with my friend Viktor Burgi, I co-host the podcast <i>Political Science – No Problem et al.</i>, 
+    where we talk about research in political science concerning current topics in an accessible way. 
+    Available on <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">Apple Podcasts</a> 
+    and <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">Spotify</a>.
+  </p>
+</div>
+
+<h2 class="blog-section-title">Episodes</h2>
+
 <div class="blog-container">
+
   <div class="blog-card">
-    <img src="/images/podcastlogo.png" alt="Podcast Logo" class="blog-card-img">
-    <h3>About the Podcast</h3>
+    <h3>Episode 8: Björn Bremer on Austerity Politics and the Debt Brake</h3>
+    <p>How does public opinion look on spending cuts and what drives these attitudes in Germany's upcoming election?</p>
     <p>
-      Together with my friend, I co-host the podcast <i>Political Science – No Problem et al.</i>, 
-      where we discuss politics, society, and research in an accessible way.
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
     </p>
   </div>
 
   <div class="blog-card">
-    <h3>Listen on Apple Podcasts</h3>
-    <p>Stream the episodes on Apple Podcasts.</p>
-    <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">
-      👉 Open on Apple Podcasts
-    </a>
+    <h3>Episode 7: Vicente Valentim on the Normalization of the Radical Right</h3>
+    <p>How do social norms influence the expression of radical-right political preferences?</p>
+    <p>
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
+    </p>
   </div>
 
   <div class="blog-card">
-    <h3>Listen on Spotify</h3>
-    <p>Available on Spotify as well.</p>
-    <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">
-      🎧 Open on Spotify
-    </a>
+    <h3>Episode 6: Silja Häusermann on the Crisis of Social Democratic Parties</h3>
+    <p>What explains the challenges of social democratic parties and their long-term electoral shifts?</p>
+    <p>
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
+    </p>
   </div>
+
+  <div class="blog-card">
+    <h3>Episode 5: Noam Gidron on Public Support for Democratic Backsliding in Israel</h3>
+    <p>How is democratic backsliding perceived and supported among different groups in Israel?</p>
+    <p>
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
+    </p>
+  </div>
+
+  <div class="blog-card">
+    <h3>Episode 4: Sabrina Mayer on Immigrant-Origin Voters</h3>
+    <p>How can we understand the voting behavior of immigrant-origin voters in Germany?</p>
+    <p>
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
+    </p>
+  </div>
+
+  <div class="blog-card">
+    <h3>Episode 3: Magdalena Breyer on Women's Representation and its Effects</h3>
+    <p>How does the representation of women in politics affect political behavior and voter reactions?</p>
+    <p>
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
+    </p>
+  </div>
+
+  <div class="blog-card">
+    <h3>Episode 2: Nils Steiner on BSW and Left-Authoritarian Voters</h3>
+    <p>What makes the new German party BSW unique, and how do its voters compare to traditional left-authoritarians?</p>
+    <p>
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
+    </p>
+  </div>
+
+  <div class="blog-card">
+    <h3>Episode 1: Kai Arzheimer on the Success of Germany's Radical Right</h3>
+    <p>Why has the AfD been so successful, and what explains its voter base in Germany?</p>
+    <p>
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">🍎 Apple Podcasts</a> | 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">🎧 Spotify</a>
+    </p>
+  </div>
+
 </div>
