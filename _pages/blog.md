@@ -5,7 +5,7 @@ permalink: /blog/
 author_profile: true
 ---
 
-# Blog & Articles
+<h1 class="blog-page-title">Blog & Articles</h1>
 
 <div class="blog-container">
   <div class="blog-card">
