@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 title: "Blog & Articles"
 permalink: /blog/
 author_profile: true
