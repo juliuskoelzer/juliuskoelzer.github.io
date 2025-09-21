@@ -2,7 +2,7 @@
 title: "Geography of Shrinkage: Local Population Decline and Electoral Support for the Anti-establishment Parties AfD and BSW in East German State Elections"
 collection: publications
 category: manuscripts
-permalink: '/publications/population-decline/'
+permalink: 'https://link.springer.com/article/10.1007/s11615-025-00606-w'
 excerpt: 
 date: 2025-04-17
 venue: 'German Politics'
