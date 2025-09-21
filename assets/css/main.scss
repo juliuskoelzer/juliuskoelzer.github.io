@@ -118,9 +118,9 @@
 }
 
 .podcast-description {
-  max-width: 600px;   /* <-- limit text width */
-  margin: 0 auto;     /* <-- center the block */
-  text-align: center; /* <-- center the text inside */
+  max-width: 600px;   /* begrenzte Breite */
+  margin: 0 auto;     /* zentriert das Blockelement */
+  text-align: justify; /* Blocksatz */
   line-height: 1.6;
   font-size: 1.05em;
 }
