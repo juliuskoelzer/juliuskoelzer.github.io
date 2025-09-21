@@ -7,7 +7,7 @@ author_profile: true
 
 <h1 class="blog-page-title">Blogposts & Articles</h1>
 
-## Newspaper Articles
+<h2 class="blog-section-title">Newspaper Articles</h2>
 
 <div class="blog-container">
   <div class="blog-card">
@@ -28,7 +28,7 @@ author_profile: true
 
 ---
 
-## Articles and Blogposts
+<h2 class="blog-section-title">Articles and Blogposts</h2>
 
 <div class="blog-container">
   <div class="blog-card">
