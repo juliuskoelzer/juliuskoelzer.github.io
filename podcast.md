@@ -9,13 +9,17 @@ author_profile: true
 
 <div class="podcast-header">
   <img src="/images/podcastlogo.png" alt="Podcast Logo" class="podcast-logo">
-  <p>
-    Together with my friend Viktor Burgi, I co-host the podcast <i>Political Science – No Problem et al.</i>, where we discuss political science research in the context of current political events. Each episode features a researcher who has published on the topic at hand.
-    Available on 
-    <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">Apple Podcasts</a> 
-    and 
-    <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">Spotify</a>.
-  </p>
+  <div class="podcast-description">
+    <p>
+      Together with my friend Viktor Burgi, I co-host the podcast <i>Political Science – No Problem et al.</i>, 
+      where we discuss political science research in the context of current political events. 
+      Each episode features a researcher who has published on the topic at hand. 
+      Available on 
+      <a href="https://podcasts.apple.com/de/podcast/political-science-no-problem-et-al/id1446578631" target="_blank">Apple Podcasts</a> 
+      and 
+      <a href="https://open.spotify.com/show/2gzMJ0JDVFMPbOLCTShgXc" target="_blank">Spotify</a>.
+    </p>
+  </div>
 </div>
 
 <h2 class="blog-section-title">Episodes</h2>
