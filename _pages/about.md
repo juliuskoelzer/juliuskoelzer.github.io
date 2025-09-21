@@ -11,7 +11,7 @@ redirect_from:
 
 <p style="margin-top:25px;"></p>
 
-I am a Doctoral Researcher in the PhD program [DYNAMICS](https://www.sowi.hu-berlin.de/en/dynamics/phd-programme), jointly organized by the [Hertie School](https://www.hertie-school.org/) and [Humboldt University of Berlin](https://www.hu-berlin.de/en). I am also affiliated with the Hertie School as a [Research Associate](https://www.hertie-school.org/en/research/faculty-and-researchers/profile/person/koelzer).
+I am a Doctoral Researcher in the PhD program [DYNAMICS](https://www.sowi.hu-berlin.de/en/dynamics/people/doctoral-researchers2/sixth-cohort-2025-2028/julius-kolzer), jointly organized by [Humboldt University of Berlin](https://www.sowi.hu-berlin.de/en/dynamics/phd-programme) and the [Hertie School](https://www.hertie-school.org/). I am also directly affiliated with the Hertie School as a [Research Associate](https://www.hertie-school.org/en/research/faculty-and-researchers/profile/person/koelzer).
 
 <p style="margin-top:15px;"></p>
 
