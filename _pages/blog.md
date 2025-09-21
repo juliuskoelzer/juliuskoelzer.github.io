@@ -33,19 +33,19 @@ author_profile: true
 
 <div class="blog-container">
   <div class="blog-card">
-    <img src="/images/blauewelle2.png" alt="Blaue Welle 2" class="blog-card-img">
+    <img src="/images/BlaueWelle2.png" alt="Blaue Welle 2" class="blog-card-img">
     <h3><a href="https://defacto.uni-due.de/xyz">Von der blauen Welle getragen? Räumliche Muster der AfD-Unterstützung bei der Bundestagswahl 2025</a></h3>
     <p>Julius Kölzer and Ansgar Hudde. Blog <i>DeFacto</i> (in German).</p>
   </div>
 
   <div class="blog-card">
-    <img src="/images/blauewelle1.jpg" alt="Blaue Welle 1" class="blog-card-img">
+    <img src="/images/BlaueWelle1.jpg" alt="Blaue Welle 1" class="blog-card-img">
     <h3><a href="https://politik.uni-due.de/ueber-politik-aus-der-wissenschaft">Von der blauen Welle getragen? Räumliche Muster der AfD-Unterstützung bei der Bundestagswahl 2025</a></h3>
     <p>Julius Kölzer and Ansgar Hudde. Blog <i>Über Politik aus der Wissenschaft</i>, University of Duisburg-Essen (in German).</p>
   </div>
 
   <div class="blog-card">
-    <img src="/images/industrie.png" alt="Industrie" class="blog-card-img">
+    <img src="/images/industrie1.png" alt="Industrie" class="blog-card-img">
     <h3><a href="https://gpsa-blog.de/abc">From deindustrialization to populism? How economic change shapes voting behavior</a></h3>
     <p>Michael Bayerlein, Julius Kölzer, Anne Metten. Blog of the German Political Science Association (in German).</p>
   </div>
