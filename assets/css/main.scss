@@ -102,3 +102,16 @@
   border-radius: 12px 12px 0 0; /* gleiche Rundung wie Card oben */
   margin-bottom: 15px;
 }
+
+.podcast-logo {
+  width: 100%;
+  max-width: 400px;   /* nicht breiter als 400px */
+  height: auto;       /* volle Proportionen */
+  display: block;
+  margin: 0 auto 20px auto; /* zentriert + Abstand unten */
+}
+
+.podcast-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
