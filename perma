@@ -219,13 +219,13 @@ kramdown:
 collections:
   teaching:
     output: false
-    permalink:
+    permalink:""
   publications:
     output: true
-    permalink: 
+    permalink: ""
   talks:
     output: false
-    permalink: 
+    permalink: ""
 
 
 # These settings control how pages and collections are included in the site
