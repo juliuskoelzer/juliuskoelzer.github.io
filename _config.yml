@@ -222,7 +222,7 @@ collections:
     permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: 
   talks:
     output: false
     permalink: /:collection/:path/
