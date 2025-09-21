@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Blog & Articles"
 permalink: /blog/
 author_profile: true
