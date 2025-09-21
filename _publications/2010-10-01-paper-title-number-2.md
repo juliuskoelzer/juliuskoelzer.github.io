@@ -2,7 +2,7 @@
 title: "Industrial Employment and Populism in Germany—Exploring the Effect of Actual and Looming Decline"
 collection: publications
 category: manuscripts
-permalink: 'https://www.tandfonline.com/doi/full/10.1080/09644008.2025.2489409'
+permalink: '/publications/industrial-employment-populism-germany/'
 date: 2025-05-07
 venue: 'German Political Science Quarterly'
 paperurl: 'https://link.springer.com/article/10.1007/s11615-025-00606-w'
