@@ -23,6 +23,6 @@ Before starting my PhD, I earned a BA and MA in Political Science at Kiel Univer
 
 <p style="margin-top:15px;"></p>
 
-I am passionate about analyzing and visualizing political phenomena and presenting them in an accessible way. Beyond academia, I thus also work as a [Data Journalist](https://www.zeit.de/autoren/K/Julius_Koelzer/index), focusing on reporting and explaining electoral trends. 
+I am passionate about analyzing and visualizing political phenomena and presenting them in an accessible way. Beyond academia, I thus also work as a [Data Journalist](https://www.zeit.de/autoren/K/Julius_Koelzer/index), focused on explaining political and electoral trends. In this role, I have primarily worked for the data department at Zeit Online.
 
 On this website, you can learn more about my work. Feel free to get in touch.
