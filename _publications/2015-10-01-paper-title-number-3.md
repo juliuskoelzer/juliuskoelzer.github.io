@@ -2,7 +2,7 @@
 title: "Alte Wurzeln, neue Wurzeln? Zum Einfluss früherer rechtsradikaler Unterstützung auf den AfD-Wahlerfolg bei der Europawahl 2024"
 collection: publications
 category: manuscripts
-permalink: 'https://link.springer.com/article/10.1007/s11615-025-00590-1'
+permalink: ''
 excerpt: 
 date: 2025-02-13
 venue: 'German Political Science Quarterly'
