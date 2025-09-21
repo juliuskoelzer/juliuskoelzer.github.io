@@ -5,7 +5,6 @@ permalink: /blog/
 author_profile: true
 ---
 
-<h1 class="blog-page-title">Blogposts & Articles</h1>
 
 <h2 class="blog-section-title">Newspaper Articles</h2>
 
