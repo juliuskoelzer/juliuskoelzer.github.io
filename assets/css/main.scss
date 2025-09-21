@@ -94,3 +94,11 @@
   font-size: 1.8em;
   font-weight: 600;
 }
+
+.blog-card-img {
+  width: 100%;
+  height: 180px;         /* feste Höhe für einheitliches Layout */
+  object-fit: cover;     /* Bild wird zugeschnitten, bleibt aber proportional */
+  border-radius: 12px 12px 0 0; /* gleiche Rundung wie Card oben */
+  margin-bottom: 15px;
+}
