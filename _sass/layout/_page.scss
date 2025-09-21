@@ -399,3 +399,38 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/* ==========================================================================
+   Blog & Articles Custom Styling
+   ========================================================================== */
+
+.page__content ul {
+  list-style: none;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.page__content ul li {
+  background: #f9f9f9;
+  margin-bottom: 1em;
+  padding: 1em 1.5em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page__content ul li:hover {
+  background: #f1f1f1;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.page__content ul li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.page__content ul li a:hover {
+  text-decoration: underline;
+}
