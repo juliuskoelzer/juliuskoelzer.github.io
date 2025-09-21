@@ -3,7 +3,7 @@ title: "Geography of Shrinkage: Local Population Decline and Electoral Support f
 collection: publications
 category: manuscripts
 permalink: https://www.tandfonline.com/doi/full/10.1080/09644008.2025.2489409
-excerpt: 'This article examines population decline as a crucial but often overlooked explanatory factor for the electoral success of anti-establishment parties. This is surprising, as population decline is often associated with developments linked to anti-establishment voting behavior, such as the deterioration of local public services. While many post-industrial societies contend with some form of demographic decline, East Germany stands out as a particularly relevant case, largely due to severe population loss caused by internal emigration following German reunification. Our comparative study draws on a novel dataset of local population development since 1995 in 1421 municipalities to investigate the impact of population shrinkage on support for the AfD and BSW in the 2024 state elections in Brandenburg, Saxony, and Thuringia. Our findings reveal a strong link between long-term population decline and increased support for the AfD, while no such effect is found for the BSW.'
+excerpt: 
 date: 2025-04-17
 venue: 'German Politics'
 paperurl: 'https://www.tandfonline.com/doi/epdf/10.1080/09644008.2025.2489409?needAccess=true'
