@@ -7,6 +7,19 @@ author_profile: true
 
 # Blog & Articles
 
-- [Mein erster Artikel: Warum Daten spannend sind](/files/article1.pdf)
-- [Analyse zur Wahl 2024](https://doi.org/xyz)
-- [Ein Blogeintrag über Data Journalism](/files/data-journalism.pdf)
+<div class="blog-container">
+  <div class="blog-card">
+    <h3><a href="/files/article1.pdf">Mein erster Artikel: Warum Daten spannend sind</a></h3>
+    <p>Ein kurzer Einstieg, warum Datenanalyse faszinierend ist.</p>
+  </div>
+
+  <div class="blog-card">
+    <h3><a href="https://doi.org/xyz">Analyse zur Wahl 2024</a></h3>
+    <p>Eine analytische Betrachtung der Bundestagswahl.</p>
+  </div>
+
+  <div class="blog-card">
+    <h3><a href="/files/data-journalism.pdf">Ein Blogeintrag über Data Journalism</a></h3>
+    <p>Warum Datenjournalismus immer wichtiger wird.</p>
+  </div>
+</div>
