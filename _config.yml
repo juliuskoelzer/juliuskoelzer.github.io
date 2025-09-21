@@ -219,7 +219,7 @@ kramdown:
 collections:
   teaching:
     output: false
-    permalink:""
+    permalink: ""
   publications:
     output: true
     permalink: ""
