@@ -1,19 +1,12 @@
 ---
-layout: archive
+layout: page
+title: "Blog & Articles"
 permalink: /year-archive/
-title: "Blog posts"
 author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+# Blog & Articles
+
+- [Mein erster Artikel: Warum Daten spannend sind](/files/article1.pdf)
+- [Analyse zur Wahl 2024](https://doi.org/xyz)
+- [Ein Blogeintrag über Data Journalism](/files/data-journalism.pdf)
