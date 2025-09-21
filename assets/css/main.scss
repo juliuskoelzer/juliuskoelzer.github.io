@@ -131,3 +131,24 @@
   line-height: 1.6;
   font-size: 1.05em;
 }
+
+
+/* Navigation fix für kleine Bildschirme */
+@media (max-width: 480px) {
+  .greedy-nav {
+    min-width: auto;   /* keine starre Mindestbreite */
+    width: 100%;       /* nutzt volle Breite vom Screen */
+    overflow-x: auto;  /* falls trotzdem zu lang, scrollbar */
+  }
+
+  .greedy-nav .visible-links {
+    display: flex;
+    flex-wrap: wrap;   /* Links umbrechen statt abschneiden */
+    justify-content: center;
+  }
+
+  .greedy-nav .visible-links li {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
