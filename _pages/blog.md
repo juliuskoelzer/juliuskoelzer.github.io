@@ -5,21 +5,54 @@ permalink: /blog/
 author_profile: true
 ---
 
-<h1 class="blog-page-title">Blog & Articles</h1>
+<h1 class="blog-page-title">Blogposts & Articles</h1>
+
+## Newspaper Articles
 
 <div class="blog-container">
   <div class="blog-card">
-    <h3><a href="/files/article1.pdf">Mein erster Artikel: Warum Daten spannend sind</a></h3>
-    <p>Ein kurzer Einstieg, warum Datenanalyse faszinierend ist.</p>
+    <h3><a href="https://www.zeit.de/politik/2025-09">“In their eyes, those who have little have only themselves to blame.”</a></h3>
+    <p>Julius Kölzer and Mark Schieritz. <i>ZEIT ONLINE</i>, September 17, 2025.</p>
   </div>
 
   <div class="blog-card">
-    <h3><a href="https://doi.org/xyz">Analyse zur Wahl 2024</a></h3>
-    <p>Eine analytische Betrachtung der Bundestagswahl.</p>
+    <h3><a href="https://www.zeit.de/politik/2025-02">Election Results by Constituency: Where the Election Was Won</a></h3>
+    <p>Paul Blickle, Christian Endt, Julius Kölzer, and Selina Rudolph. <i>ZEIT ONLINE</i>, February 24, 2025.</p>
   </div>
 
   <div class="blog-card">
-    <h3><a href="/files/data-journalism.pdf">Ein Blogeintrag über Data Journalism</a></h3>
-    <p>Warum Datenjournalismus immer wichtiger wird.</p>
+    <h3><a href="https://www.zeit.de/politik/2025-02-12">Historical Bundestag Election Results: How Your Constituency Has Voted Since 1949</a></h3>
+    <p>Julius Kölzer, Michael Schlieben, Julius Tröger, and Benja Zehr. <i>ZEIT ONLINE</i>, February 12, 2025.</p>
+  </div>
+</div>
+
+---
+
+## Articles and Blogposts
+
+<div class="blog-container">
+  <div class="blog-card">
+    <h3><a href="https://defacto.uni-due.de/xyz">Von der blauen Welle getragen? Räumliche Muster der AfD-Unterstützung bei der Bundestagswahl 2025</a></h3>
+    <p>Julius Kölzer and Ansgar Hudde. Blog <i>DeFacto</i> (in German).</p>
+  </div>
+
+  <div class="blog-card">
+    <h3><a href="https://politik.uni-due.de/ueber-politik-aus-der-wissenschaft">Von der blauen Welle getragen? Räumliche Muster der AfD-Unterstützung bei der Bundestagswahl 2025</a></h3>
+    <p>Julius Kölzer and Ansgar Hudde. Blog <i>Über Politik aus der Wissenschaft</i>, University of Duisburg-Essen (in German).</p>
+  </div>
+
+  <div class="blog-card">
+    <h3><a href="https://gpsa-blog.de/abc">From deindustrialization to populism? How economic change shapes voting behavior</a></h3>
+    <p>Michael Bayerlein, Julius Kölzer, Anne Metten. Blog of the German Political Science Association (in German).</p>
+  </div>
+
+  <div class="blog-card">
+    <h3><a href="https://gpsa-blog.de/blue-maps">The power of blue maps. Why electoral maps of constituency and municipal winners can distort perceptions</a></h3>
+    <p>Julius Kölzer, Christian Stecker, Daniel Kuhlen, Leon Siefken. Blog of the German Political Science Association (in German).</p>
+  </div>
+
+  <div class="blog-card">
+    <h3><a href="https://gpsa-blog.de/records">Records in Western Germany – what factors explain the AfD’s gains in Hesse and Bavaria?</a></h3>
+    <p>Marc Debus, Julius Kölzer, Christian Stecker. Blog of the German Political Science Association (in German).</p>
   </div>
 </div>
