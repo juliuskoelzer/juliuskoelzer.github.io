@@ -160,60 +160,52 @@
   border: none;
 }
 
-/* Mobile: unter 768px */
+/* Mobile: unter 768px → horizontal layout */
 @media (max-width: 768px) {
   .greedy-nav {
     position: relative;
   }
 
-  /* Links ausgeblendet */
-  .greedy-nav .visible-links {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    border: 1px solid #ddd;
-    position: absolute;
-    top: 60px;   /* Höhe der Kopfzeile */
-    right: 20px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 9999;
-  }
-
-  /* Wenn aktiv → Menü sichtbar */
-  .greedy-nav.active .visible-links {
-    display: flex;
-  }
-
-  /* Hamburger-Icon sichtbar */
-  .greedy-nav .hidden-links-toggle {
-    display: block;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  .greedy-nav .visible-links li {
-    margin: 5px 0;
-    text-align: right;
-  }
-
-  .greedy-nav .visible-links a:hover {
-    background: #f5f5f5;
-  }
-}
-
-@media (max-width: 768px) {
   .greedy-nav .visible-links {
     display: flex !important;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
     position: static;
     border: none;
     box-shadow: none;
     background: transparent;
-    padding: 0;
+    padding: 10px 0;
+  }
+
+  .greedy-nav .visible-links li {
+    margin: 0;
   }
 
   .greedy-nav .hidden-links-toggle {
     display: none !important;
   }
 }
+
+
+/* ============================
+   Dark Mode Fix
+   ============================ */
+@media (prefers-color-scheme: dark) {
+  .greedy-nav {
+    background: #222; /* dark gray background */
+    border-bottom: 1px solid #444;
+  }
+
+  .greedy-nav .visible-links a {
+    color: #f0f0f0;
+  }
+
+  .greedy-nav .visible-links a:hover {
+    color: #ffffff;
+    background: #333;
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+}
+
