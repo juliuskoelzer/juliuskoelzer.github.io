@@ -195,15 +195,20 @@
    Mobile Masthead Optimization
    ============================ */
 
+/* ============================
+   Mobile Masthead Optimization
+   ============================ */
+
 @media screen and (max-width: 768px) {
   .masthead {
     padding: 0.25rem 0;   /* reduce top/bottom spacing */
   }
 
   .masthead__menu .visible-links li a {
-    font-size: 0.9rem;    /* slightly smaller menu text */
+    font-size: 0.8rem;    /* slightly smaller menu text */
     padding: 0.25rem 0.5rem;  /* tighter link padding */
   }
+}
 }
 
 
