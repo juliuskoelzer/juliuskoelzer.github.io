@@ -117,3 +117,38 @@
   }
 }
 
+/* Force hamburger always visible */
+.greedy-nav .hidden-links-toggle {
+  display: block !important;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Style the bars */
+.greedy-nav .hidden-links-toggle .navicon {
+  width: 24px;
+  height: 2px;
+  background: var(--global-masthead-link-color);
+  position: relative;
+}
+
+.greedy-nav .hidden-links-toggle .navicon::before,
+.greedy-nav .hidden-links-toggle .navicon::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--global-masthead-link-color);
+  position: absolute;
+  left: 0;
+}
+
+.greedy-nav .hidden-links-toggle .navicon::before {
+  top: -7px;
+}
+
+.greedy-nav .hidden-links-toggle .navicon::after {
+  top: 7px;
+}
+
