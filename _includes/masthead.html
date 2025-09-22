@@ -26,4 +26,17 @@
     </div>
   </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".greedy-nav .nav-toggle");
+  const menu = document.querySelector(".greedy-nav .nav-links");
 
+  if (toggle && menu) {
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("show");
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", !expanded);
+    });
+  }
+});
+</script>
