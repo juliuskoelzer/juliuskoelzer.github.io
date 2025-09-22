@@ -129,3 +129,30 @@
   }
 }
 
+/* Hamburger icon styling */
+.greedy-nav .navicon,
+.greedy-nav .navicon::before,
+.greedy-nav .navicon::after {
+  width: 24px;
+  height: 2px;
+  background: var(--global-masthead-link-color, #333);
+  border-radius: 2px;
+  display: block;
+  content: "";
+  position: relative;
+}
+
+.greedy-nav .navicon::before,
+.greedy-nav .navicon::after {
+  position: absolute;
+  left: 0;
+}
+
+.greedy-nav .navicon::before {
+  top: -7px;
+}
+
+.greedy-nav .navicon::after {
+  top: 7px;
+}
+
