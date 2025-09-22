@@ -67,12 +67,12 @@
 }
 
 /* ===============================
-   Mobile Navigation Fix
+   Mobile Navigation Fix (force override greedy-nav)
    =============================== */
 @media (max-width: 768px) {
-  /* Show hamburger button */
+  /* Always show hamburger */
   .greedy-nav .nav-toggle {
-    display: block; /* was hidden */
+    display: block !important; /* force override greedy-nav */
     position: absolute;
     right: 1rem;
     top: 0.75rem;
@@ -82,9 +82,9 @@
     z-index: 200;
   }
 
-  /* Hide links by default on mobile */
+  /* Always hide inline links unless toggled */
   .greedy-nav .nav-links {
-    display: none;
+    display: none !important; /* force override greedy-nav */
     flex-direction: column;
     background: var(--global-bg-color);
     position: absolute;
@@ -95,9 +95,9 @@
     z-index: 150;
   }
 
-  /* Reveal when toggled */
+  /* Show links when toggled */
   .greedy-nav .nav-links.show {
-    display: flex;
+    display: flex !important;
   }
 
   /* Style dropdown links */
@@ -108,17 +108,5 @@
   .greedy-nav .nav-links li a {
     padding: 1rem;
     display: block;
-  }
-}
-
-/* Desktop keeps normal inline layout */
-@media (min-width: 769px) {
-  .greedy-nav .nav-toggle {
-    display: none; /* hide hamburger on desktop */
-  }
-
-  .greedy-nav .nav-links {
-    display: flex;
-    gap: 1rem;
   }
 }
