@@ -126,27 +126,6 @@
   font-style: italic;
 }
 
-
-/* Navigation fix für kleine Bildschirme */
-@media (max-width: 480px) {
-  .greedy-nav {
-    min-width: auto;
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .greedy-nav .visible-links {
-    display: flex !important;   /* erzwingt Anzeige */
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .greedy-nav .visible-links li {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-}
-
 /* ============================
    Responsive Navigation Fix
    ============================ */
