@@ -180,18 +180,18 @@
    Mobile styles
    =============================== */
 @media (max-width: 768px) {
-  /* Show hamburger */
+  /* Burger sichtbar */
   .greedy-nav .nav-toggle {
-    display: block;
+    display: block !important;
     position: absolute;
     right: 1rem;
     top: 0.75rem;
     z-index: 200;
   }
 
-  /* Hide links by default */
+  /* Links versteckt, bis Burger geklickt */
   .greedy-nav .nav-links {
-    display: none;
+    display: none;   /* 👈 wichtig, damit sie nicht doppelt erscheinen */
     flex-direction: column;
     background: #fff;
     position: absolute;
@@ -200,19 +200,16 @@
     right: 0;
     border-top: 1px solid #ddd;
     z-index: 1000;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
 
-  /* Show links when toggled */
+  /* Sichtbar, wenn Burger gedrückt */
   .greedy-nav .nav-links.show {
-    display: flex;
-  }
-
-  .greedy-nav .nav-links li {
-    border-bottom: 1px solid #ddd;
-  }
-
-  .greedy-nav .nav-links li a {
-    padding: 1rem;
-    display: block;
+    display: flex !important;
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
   }
 }
