@@ -443,7 +443,7 @@
   }
 }
 
-/* Always show the hamburger button */
+/* Always show the hamburger toggle */
 .greedy-nav .hidden-links-toggle {
   display: block !important;
   background: none;
@@ -452,7 +452,7 @@
   padding: 0.5rem;
 }
 
-/* Style the hamburger bars */
+/* Turn the toggle into a hamburger */
 .greedy-nav .hidden-links-toggle .navicon,
 .greedy-nav .hidden-links-toggle .navicon::before,
 .greedy-nav .hidden-links-toggle .navicon::after {
@@ -465,14 +465,16 @@
   border-radius: 2px;
 }
 
-.greedy-nav .hidden-links-toggle .navicon::before {
+.greedy-nav .hidden-links-toggle .navicon::before,
+.greedy-nav .hidden-links-toggle .navicon::after {
   position: absolute;
-  top: -7px;
   left: 0;
 }
 
+.greedy-nav .hidden-links-toggle .navicon::before {
+  top: -7px;
+}
+
 .greedy-nav .hidden-links-toggle .navicon::after {
-  position: absolute;
   top: 7px;
-  left: 0;
 }
