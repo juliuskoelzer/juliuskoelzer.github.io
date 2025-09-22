@@ -43,12 +43,6 @@
 ;
 
 
-@import
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
-
 // ===============================
 // Eigene Styles für Blog & Articles
 // ===============================
@@ -118,18 +112,18 @@
 }
 
 .podcast-description {
-  max-width: 600px;   /* begrenzte Breite */
-  margin: 0 auto;     /* zentriert das Blockelement */
-  text-align: justify; /* Blocksatz */
-
-   .scholar-link {
-  text-align: center;
-  margin: 10px auto 30px auto; /* oben klein, unten größerer Abstand */
-  font-size: 0.95em;           /* leicht kleiner, optional */
-  font-style: italic;          /* optional: kursiv für dezenteren Look */
-}
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: justify;
   line-height: 1.6;
   font-size: 1.05em;
+}
+
+.podcast-description .scholar-link {
+  text-align: center;
+  margin: 10px auto 30px auto;
+  font-size: 0.95em;
+  font-style: italic;
 }
 
 
