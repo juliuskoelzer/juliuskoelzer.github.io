@@ -60,62 +60,6 @@
 /* ==========================================================================
    MOBILE NAVIGATION
    ========================================================================== */
-@media (max-width: 768px) {
-  /* Burger auf Handy dauerhaft anzeigen */
-  .custom-nav .nav-toggle {
-    display: block !important;
-    position: absolute;
-    right: 1rem;
-    top: 0.75rem;
-    z-index: 200;
-  }
-
-  /* Links standardmäßig verstecken */
-  .custom-nav .nav-links {
-    display: none;
-    flex-direction: column;
-    background: var(--global-bg-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    border-top: 1px solid var(--global-border-color);
-    z-index: 1000;
-
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-
-  /* Sichtbar wenn JS .show setzt */
-  .custom-nav .nav-links.show {
-    display: flex;
-    max-height: 500px; /* genug für alle Links */
-    transition: max-height 0.3s ease-in;
-  }
-
-  /* Dropdown-Links stylen */
-  .custom-nav .nav-links li {
-    border-bottom: 1px solid var(--global-border-color);
-  }
-
-  .custom-nav .nav-links li a {
-    padding: 1rem;
-    display: block;
-  }
-}
-
-/* Desktop bleibt wie gewohnt */
-@media (min-width: 769px) {
-  .custom-nav .nav-toggle {
-    display: none !important;
-  }
-
-  .custom-nav .nav-links {
-    display: flex !important;
-    gap: 1rem;
-  }
-}
 
 /* Force hamburger always visible */
 .greedy-nav .hidden-links-toggle {
