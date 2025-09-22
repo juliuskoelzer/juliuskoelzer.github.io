@@ -65,77 +65,15 @@
   }
 }
 
-/* ===============================
-   Mobile Navigation Fix (force override greedy-nav)
-   =============================== */
-@media (max-width: 768px) {
-  /* Always show hamburger */
-  .greedy-nav .nav-toggle {
-    display: block !important;
-    position: absolute;
-    right: 1rem;
-    top: 0.75rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 200;
-  }
-
-  /* Hide inline links by default */
-  .greedy-nav .nav-links {
-    display: none !important;
-    flex-direction: column;
-    background: var(--global-bg-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    border-top: 1px solid var(--global-border-color);
-    z-index: 150;
-
-    /* animation */
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-
-  /* Show links when toggled */
-  .greedy-nav .nav-links.show {
-    display: flex !important;
-    max-height: 500px; /* enough to show all links */
-    transition: max-height 0.3s ease-in;
-  }
-
-  /* Style dropdown links */
-  .greedy-nav .nav-links li {
-    border-bottom: 1px solid var(--global-border-color);
-  }
-
-  .greedy-nav .nav-links li a {
-    padding: 1rem;
-    display: block;
-  }
-}
-
-/* Desktop keeps normal inline layout */
-@media (min-width: 769px) {
-  .greedy-nav .nav-toggle {
-    display: none !important; /* hide hamburger on desktop */
-  }
-
-  .greedy-nav .nav-links {
-    display: flex !important;
-    gap: 1rem;
-  }
-}
-
-/* Hamburger icon styling */
+/* ==========================================================================
+   HAMBURGER ICON
+   ========================================================================== */
 .greedy-nav .navicon,
 .greedy-nav .navicon::before,
 .greedy-nav .navicon::after {
   width: 24px;
   height: 2px;
-  background: var(--global-masthead-link-color, #333);
+  background: #000; /* Farbe anpassen, wenn unsichtbar */
   border-radius: 2px;
   display: block;
   content: "";
@@ -148,11 +86,69 @@
   left: 0;
 }
 
-.greedy-nav .navicon::before {
-  top: -7px;
+.greedy-nav .navicon::before { top: -7px; }
+.greedy-nav .navicon::after  { top: 7px; }
+
+/* ==========================================================================
+   MOBILE NAVIGATION FIX (force override greedy-nav)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Burger immer sichtbar */
+  .greedy-nav .nav-toggle {
+    display: block !important;
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  /* Links standardmäßig verstecken */
+  .greedy-nav .nav-links {
+    display: none !important;
+    flex-direction: column;
+    background: var(--global-bg-color, #fff);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--global-border-color, #ddd);
+    z-index: 150;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  /* Links sichtbar, wenn per JS .show gesetzt */
+  .greedy-nav .nav-links.show {
+    display: flex !important;
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
+  }
+
+  .greedy-nav .nav-links li {
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .greedy-nav .nav-links li a {
+    padding: 1rem;
+    display: block;
+  }
 }
 
-.greedy-nav .navicon::after {
-  top: 7px;
-}
+/* ==========================================================================
+   DESKTOP NAVIGATION
+   ========================================================================== */
+@media (min-width: 769px) {
+  .greedy-nav .nav-toggle {
+    display: none !important;
+  }
 
+  .greedy-nav .nav-links {
+    display: flex !important;
+    gap: 1rem;
+  }
+}
