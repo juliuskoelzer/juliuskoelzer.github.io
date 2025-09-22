@@ -65,3 +65,60 @@
     font-weight: 700;
   }
 }
+
+/* ===============================
+   Mobile Navigation Fix
+   =============================== */
+@media (max-width: 768px) {
+  /* Show hamburger button */
+  .greedy-nav .nav-toggle {
+    display: block; /* was hidden */
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  /* Hide links by default on mobile */
+  .greedy-nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--global-bg-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--global-border-color);
+    z-index: 150;
+  }
+
+  /* Reveal when toggled */
+  .greedy-nav .nav-links.show {
+    display: flex;
+  }
+
+  /* Style dropdown links */
+  .greedy-nav .nav-links li {
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .greedy-nav .nav-links li a {
+    padding: 1rem;
+    display: block;
+  }
+}
+
+/* Desktop keeps normal inline layout */
+@media (min-width: 769px) {
+  .greedy-nav .nav-toggle {
+    display: none; /* hide hamburger on desktop */
+  }
+
+  .greedy-nav .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+}
