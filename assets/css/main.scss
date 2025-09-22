@@ -146,3 +146,73 @@
     text-align: center;
   }
 }
+
+/* ============================
+   Responsive Navigation Fix
+   ============================ */
+
+/* Standard: Desktop bleibt wie es ist */
+.greedy-nav .visible-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.greedy-nav .hidden-links-toggle {
+  display: none; /* auf Desktop ausgeblendet */
+}
+
+/* Mobile: unter 768px ein Hamburger-Icon rechts oben */
+@media (max-width: 768px) {
+  .greedy-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Links ausgeblendet */
+  .greedy-nav .visible-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;       /* Hintergrund für Dropdown */
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 60px;              /* unterhalb der Header-Leiste */
+    right: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 9999;
+  }
+
+  /* Icon sichtbar */
+  .greedy-nav .hidden-links-toggle {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* Wenn aktiv → Menü sichtbar */
+  .greedy-nav.active .visible-links {
+    display: flex;
+  }
+
+  .greedy-nav .visible-links li {
+    margin: 5px 0;
+    text-align: right;
+  }
+
+  .greedy-nav .visible-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+  }
+
+  .greedy-nav .visible-links a:hover {
+    background: #f5f5f5;
+  }
+}
+
