@@ -7,10 +7,16 @@
         <button class="hidden-links-toggle" type="button" aria-label="Toggle menu">
           <div class="navicon"></div>
         </button>
+
+        <!-- Only keep the site title visible -->
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/">{{ site.title }}</a>
           </li>
+        </ul>
+
+        <!-- Put ALL nav links in the hidden menu -->
+        <ul class="hidden-links hidden">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -22,7 +28,6 @@
             </li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
