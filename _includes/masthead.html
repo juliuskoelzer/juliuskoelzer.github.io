@@ -29,3 +29,16 @@
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".custom-nav .nav-toggle");
+  const menu = document.querySelector(".custom-nav .nav-links");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", !expanded);
+  });
+});
+</script>
