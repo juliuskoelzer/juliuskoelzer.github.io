@@ -130,14 +130,14 @@
 /* Navigation fix für kleine Bildschirme */
 @media (max-width: 480px) {
   .greedy-nav {
-    min-width: auto;   /* keine starre Mindestbreite */
-    width: 100%;       /* nutzt volle Breite vom Screen */
-    overflow-x: auto;  /* falls trotzdem zu lang, scrollbar */
+    min-width: auto;
+    width: 100%;
+    overflow-x: auto;
   }
 
   .greedy-nav .visible-links {
-    display: flex;
-    flex-wrap: wrap;   /* Links umbrechen statt abschneiden */
+    display: flex !important;   /* erzwingt Anzeige */
+    flex-wrap: wrap;
     justify-content: center;
   }
 
