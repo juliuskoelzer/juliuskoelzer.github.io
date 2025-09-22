@@ -75,12 +75,11 @@
 
 .blog-card-img {
   width: 100%;
-  height: 180px;         /* feste Höhe für einheitliches Layout */
-  object-fit: cover;     /* Bild wird zugeschnitten, bleibt aber proportional */
-  border-radius: 12px 12px 0 0; /* gleiche Rundung wie Card oben */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
   margin-bottom: 15px;
 }
-
 
 /* ===============================
    Podcast Section
@@ -113,40 +112,40 @@
   font-style: italic;
 }
 
-
 /* ===============================
-   Responsive Navigation Fix
+   Responsive Navigation (Desktop + Mobile)
    =============================== */
 
-/* Standard: Desktop */
 .greedy-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background: #fff;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 
-.greedy-nav .visible-links {
+/* Desktop nav: inline links */
+.greedy-nav .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.greedy-nav .visible-links a {
+.greedy-nav .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: var(--global-masthead-link-color, #333);
+  padding: 0.5rem 0.75rem;
 }
 
-/* Hide dark mode toggle (optional) */
-.greedy-nav .mode-toggle {
-  display: none !important;
+.greedy-nav .nav-links li a:hover {
+  color: var(--global-masthead-link-color-hover, #000);
 }
 
-/* Hamburger button */
+/* Hamburger button (hidden on desktop) */
 .greedy-nav .nav-toggle {
   display: none;
   background: none;
@@ -160,7 +159,7 @@
 .greedy-nav .navicon::after {
   width: 24px;
   height: 2px;
-  background: #333;
+  background: var(--global-masthead-link-color, #333);
   border-radius: 2px;
   display: block;
   content: "";
@@ -176,8 +175,11 @@
 .greedy-nav .navicon::before { top: -7px; }
 .greedy-nav .navicon::after  { top: 7px; }
 
-/* Mobile styles */
+/* ===============================
+   Mobile styles
+   =============================== */
 @media (max-width: 768px) {
+  /* Show hamburger */
   .greedy-nav .nav-toggle {
     display: block;
     position: absolute;
@@ -185,7 +187,8 @@
     top: 0.75rem;
   }
 
-  .greedy-nav .visible-links {
+  /* Hide links by default */
+  .greedy-nav .nav-links {
     display: none;
     flex-direction: column;
     background: #fff;
@@ -197,15 +200,16 @@
     z-index: 1000;
   }
 
-  .greedy-nav .visible-links.show {
+  /* Show links when toggled */
+  .greedy-nav .nav-links.show {
     display: flex;
   }
 
-  .greedy-nav .visible-links li {
+  .greedy-nav .nav-links li {
     border-bottom: 1px solid #ddd;
   }
 
-  .greedy-nav .visible-links li a {
+  .greedy-nav .nav-links li a {
     padding: 1rem;
     display: block;
   }
