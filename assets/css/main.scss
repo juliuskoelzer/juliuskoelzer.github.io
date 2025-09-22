@@ -1,6 +1,3 @@
----
----
-
 /*
  * This file controls what is imported from /_sass
  *
@@ -154,8 +151,7 @@
   color: #333;
 }
 
-/* Hide hamburger & dark mode toggle always */
-.greedy-nav .hidden-links-toggle,
+/* Keep mode toggle hidden always (optional) */
 .greedy-nav .mode-toggle {
   display: none !important;
 }
@@ -180,12 +176,46 @@
     font-weight: 600;
   }
 
-  /* Verhindern, dass greedy-nav Links versteckt */
-  .greedy-nav .hidden-links {
-    display: none !important;
+  /* Show hamburger toggle */
+  .greedy-nav .hidden-links-toggle {
+    display: block !important;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
-  /* Menü als einfache Liste untereinander */
+  /* Hidden links dropdown */
+  .greedy-nav .hidden-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+  }
+
+  /* When toggle is active (greedy-nav JS adds .active) */
+  .greedy-nav .hidden-links.active {
+    display: block !important;
+  }
+
+  .greedy-nav .hidden-links li {
+    display: block;
+    margin: 0;
+  }
+
+  .greedy-nav .hidden-links a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* Make visible links stack if not collapsed */
   .greedy-nav .visible-links {
     display: block !important;
     width: 100% !important;
@@ -202,4 +232,3 @@
     padding: 0.25rem 0.5rem;
   }
 }
-
