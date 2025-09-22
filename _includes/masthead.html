@@ -3,13 +3,13 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="custom-nav">
+      <nav id="site-nav" class="greedy-nav">
         <!-- Hamburger toggle -->
         <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
           <span class="navicon"></span>
         </button>
 
-        <!-- Normal nav links -->
+        <!-- Navigation links -->
         <ul class="nav-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/">{{ site.title }}</a>
@@ -32,8 +32,8 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.querySelector(".custom-nav .nav-toggle");
-  const menu = document.querySelector(".custom-nav .nav-links");
+  const toggle = document.querySelector(".greedy-nav .nav-toggle");
+  const menu = document.querySelector(".greedy-nav .nav-links");
 
   toggle.addEventListener("click", () => {
     menu.classList.toggle("show");
