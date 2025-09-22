@@ -1,23 +1,20 @@
+---
+---
+
 /*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * main.scss – imports + custom styles
+ * Note: @import block must be closed with a semicolon before writing CSS
  */
 
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -26,23 +23,18 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+    "vendor/font-awesome/brands";
 
-
-// ===============================
-// Eigene Styles für Blog & Articles
-// ===============================
+/* ===============================
+   Custom Styles for Blog & Articles
+   =============================== */
 
 .blog-container {
   display: grid;
@@ -66,12 +58,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.blog-page-title {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
+.blog-page-title,
 .page__title {
   text-align: center;
   margin-top: 40px;
@@ -95,6 +82,9 @@
 }
 
 
+/* ===============================
+   Podcast Section
+   =============================== */
 .podcast-header {
   text-align: center;
   margin-bottom: 40px;
@@ -124,9 +114,9 @@
 }
 
 
-/* ============================
+/* ===============================
    Responsive Navigation Fix
-   ============================ */
+   =============================== */
 
 /* Standard: Desktop */
 .greedy-nav {
@@ -151,15 +141,15 @@
   color: #333;
 }
 
-/* Keep mode toggle hidden always (optional) */
+/* Hide dark mode toggle (optional) */
 .greedy-nav .mode-toggle {
   display: none !important;
 }
 
 
-/* ============================
-   Mobile Masthead Optimization
-   ============================ */
+/* ===============================
+   Mobile Navigation Optimization
+   =============================== */
 @media (max-width: 768px) {
   /* Masthead kompakter */
   .masthead {
@@ -232,3 +222,4 @@
     padding: 0.25rem 0.5rem;
   }
 }
+
