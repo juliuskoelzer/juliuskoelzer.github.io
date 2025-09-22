@@ -162,7 +162,7 @@
 
 
 /* ============================
-   Mobile Masthead Optimization + 2-column nav
+   Mobile Masthead Optimization
    ============================ */
 @media (max-width: 768px) {
   /* Masthead kompakter */
@@ -170,7 +170,7 @@
     padding: 0.15rem 0;
   }
 
-  /* Titel (Julius Kölzer) kleiner und mit Abstand nach unten */
+  /* Titel kleiner + Abstand nach unten */
   .masthead__menu-item--lg {
     margin-bottom: 0.5rem;
   }
@@ -180,26 +180,26 @@
     font-weight: 600;
   }
 
-  /* Verhindern, dass greedy-nav Menüpunkte versteckt */
+  /* Verhindern, dass greedy-nav Links versteckt */
   .greedy-nav .hidden-links {
     display: none !important;
   }
 
-  /* Menü in 2 Spalten aufteilen (außer Titel) */
+  /* Menü als einfache Liste untereinander */
   .greedy-nav .visible-links {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem 1rem;
+    display: block !important;
     width: 100% !important;
+    text-align: left;
   }
 
   .greedy-nav .visible-links .masthead__menu-item {
-    text-align: center;
+    margin: 0.25rem 0;
   }
 
   .greedy-nav .visible-links .masthead__menu-item a {
     display: block;
-    font-size: 0.85rem;
-    padding: 0.25rem 0;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
   }
 }
+
