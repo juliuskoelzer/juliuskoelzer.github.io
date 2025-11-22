@@ -1,7 +1,7 @@
 ---
 title: "Alte Wurzeln, neue Wurzeln? Zum Einfluss früherer rechtsradikaler Unterstützung auf den AfD-Wahlerfolg bei der Europawahl 2024"
 collection: publications
-category: manuscripts
+category: conferences
 excerpt: 
 date: 2025-02-13
 venue: 'German Political Science Quarterly'
