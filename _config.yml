@@ -85,7 +85,7 @@ publication_category:
   manuscripts:
     title: 'Publications'
   working_paper:
-    title: 'Working Paper'
+    title: 'Working Paper / Work in Progress'
     
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
