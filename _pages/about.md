@@ -13,7 +13,7 @@ redirect_from:
 
 I am a Doctoral Researcher in the PhD program [DYNAMICS](https://www.sowi.hu-berlin.de/en/dynamics/people/doctoral-researchers2/sixth-cohort-2025-2028/julius-kolzer), jointly organized by the [Humboldt University of Berlin](https://www.sowi.hu-berlin.de/en/dynamics/phd-programme) and the [Hertie School](https://www.hertie-school.org/). I am also directly affiliated with the Hertie School as a [Research Associate](https://www.hertie-school.org/en/research/faculty-and-researchers/profile/person/koelzer).
 
-On this website, you’ll find my [CV](https://juliuskoelzer.de/cv/), [publications and working papers](https://juliuskoelzer.de/publications/), [articles & blog posts](https://juliuskoelzer.de/blog/), and the [podcast](https://juliuskoelzer.de/podcast/) I produce.
+On this website, you’ll find my [CV](https://juliuskoelzer.de/cv/), [publications and working papers](https://juliuskoelzer.de/research/), [articles & blog posts](https://juliuskoelzer.de/blog/), and the [podcast](https://juliuskoelzer.de/podcast/) I produce.
 <p style="margin-top:15px;"></p>
 
 My research lies at the intersection of comparative politics, political economy, electoral politics, and political geography. In my dissertation, I examine how the interplay between subjective and objective forms of spatial inequality shapes political behavior and attitudes. Moreover, I am interested in how democracies can defend themselves against extremism. Methodologically, I specialize in quasi-experimental designs, observational data, and the use of geospatial data.  
