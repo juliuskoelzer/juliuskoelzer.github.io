@@ -23,4 +23,4 @@ Before starting my PhD, I earned a BA and MA in Political Science at Kiel Univer
 
 <p style="margin-top:15px;"></p>
 
-In addition to my academic research, I work as a data journalist, driven by a strong interest in analyzing and visualizing political phenomena and communicating them to broader audiences. My work primarily focuses on explaining political and electoral trends using spatial and survey data. In this role, I have collaborated with the data department at [Zeit Online](https://www.zeit.de/autoren/K/Julius_Koelzer/index).
+In addition to my academic research, I work as a data journalist, driven by a strong interest in analyzing and visualizing political phenomena and communicating them to broader audiences. My work primarily focuses on explaining political and electoral trends using spatial and survey data. In this role, I have so far collaborated primarly with the data department at [Zeit Online](https://www.zeit.de/autoren/K/Julius_Koelzer/index).
