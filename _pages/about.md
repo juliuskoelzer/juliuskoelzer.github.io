@@ -16,12 +16,11 @@ I am a Doctoral Researcher in the PhD program [DYNAMICS](https://www.sowi.hu-ber
 On this website, you’ll find my [CV](https://juliuskoelzer.de/cv/), [publications and working papers](https://juliuskoelzer.de/research/), [articles & blog posts](https://juliuskoelzer.de/blog/), and the [podcast](https://juliuskoelzer.de/podcast/) I produce.
 <p style="margin-top:15px;"></p>
 
-My research lies at the intersection of comparative politics, political economy, electoral politics, and political geography. My dissertation investigates how spatial inequalities and their adverse effects shape political behavior, and how place-based policies may mitigate them. Moreover, I am interested in how democracies can defend themselves against extremism. Methodologically, I specialize in quasi-experimental designs, observational data, and the use of geospatial data.  
-
+In my dissertation, I study how spatial inequalities shape political behavior and whether place-based policies can counter the localized discontent they generate. Methodologically, I draw on quasi-experimental designs, observational data, and geospatial data. Beyond my dissertation research, I am broadly interested in comparative and historical political economy, electoral politics, and the institutional capacity of democracies to defend themselves against extremist challenges.
 <p style="margin-top:15px;"></p>
 
 Before starting my PhD, I earned a BA and MA in Political Science at Kiel University and the University of Zurich. I previously worked as a research assistant at the Kiel Institute for the World Economy, the Chair of Comparative Politics at Kiel University, the Chair of German Politics at Darmstadt University, and the Varieties of Egalitarianism project at the Cluster of Excellence "Politics of Inequality" in Konstanz.  
 
 <p style="margin-top:15px;"></p>
 
-Besides academia, I work as a data journalist, driven by a strong passion for analyzing and visualizing political phenomena and presenting them in an accessible way. I primarily focus on explaining political and electoral trends using geospatial and survey data. In this role, I have so far worked with the data department at [Zeit Online](https://www.zeit.de/autoren/K/Julius_Koelzer/index).
+In addition to my academic research, I work as a data journalist, driven by a strong interest in analyzing and visualizing political phenomena and communicating them to broader audiences. My work primarily focuses on explaining political and electoral trends using spatial and survey data. In this role, I have collaborated with the data department at [Zeit Online](https://www.zeit.de/autoren/K/Julius_Koelzer/index).
