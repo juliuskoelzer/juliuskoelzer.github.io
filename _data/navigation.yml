@@ -9,6 +9,9 @@
 
  main:
 
+  - title: "LTW 2026"
+    url: /ltw2026/
+
   - title: "CV"
     url: /cv/
     
