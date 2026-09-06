@@ -32,11 +32,13 @@ author_profile: true
 <h2 class="blog-section-title">Articles and Blogposts</h2>
 
 <div class="blog-container">
+  <!-- Vor der Veroeffentlichung wieder einkommentieren:
   <div class="blog-card">
     <img src="/images/ltw26_karte_afd.png" alt="LTW Sachsen-Anhalt 2026" class="blog-card-img">
     <h3><a href="/ltw2026/">Landtagswahl Sachsen-Anhalt 2026: Wo die AfD stark ist – und warum</a></h3>
     <p>Julius Kölzer. Datenanalyse der Wahlergebnisse in den 218 Gemeinden Sachsen-Anhalts (in German).</p>
   </div>
+  -->
 
   <div class="blog-card">
     <img src="/images/BlaueWelle2.png" alt="Blaue Welle 2" class="blog-card-img">

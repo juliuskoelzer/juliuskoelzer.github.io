@@ -3,6 +3,7 @@ layout: page
 title: "Saxony-Anhalt State Election 2026"
 permalink: /ltw2026-en/
 author_profile: true
+published: false
 ---
 
 <div class="ltw-article" markdown="1">
