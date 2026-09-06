@@ -15,7 +15,7 @@ I am a Doctoral Researcher in the PhD program [DYNAMICS](https://www.sowi.hu-ber
 
 On this website, you’ll find my [CV](https://juliuskoelzer.de/cv/), [publications and working papers](https://juliuskoelzer.de/research/), [articles & blog posts](https://juliuskoelzer.de/blog/), and the [podcast](https://juliuskoelzer.de/podcast/) I produce.
 
-**A recent analysis of the 2026 state election in Saxony-Anhalt can be found [here](https://juliuskoelzer.de/ltw2026/) (German).**
+**A recent analysis of the 2026 state election in Saxony-Anhalt can be found [here](https://juliuskoelzer.de/ltw2026/) (German) and [here](https://juliuskoelzer.de/ltw2026-en/) (English).**
 <p style="margin-top:15px;"></p>
 
 In my dissertation, I study how spatial inequalities shape political behavior and whether place-based policies can counter the localized discontent they generate. Methodologically, I draw on quasi-experimental designs, observational data, and geospatial data. Beyond my dissertation research, I am broadly interested in comparative and historical political economy, electoral politics, and the institutional capacity of democracies to defend themselves against extremist challenges.
