@@ -7,12 +7,12 @@ author_profile: true
 
 <div class="ltw-article" markdown="1">
 
-<figure class="ltw-header">
+<figure class="ltw-header ltw-hero">
   <img src="/images/ltw26_header.jpg" alt="Photo montage: AfD flag at a party convention (left), market square of Naumburg an der Saale (right)">
+  <div class="ltw-hero-shade"></div>
+  <h1 class="ltw-hero-title">Saxony-Anhalt's 2026 State Election:<br>Where the AfD Is Strong – and Why</h1>
   <figcaption>Photos: <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">Marco Verch/ccnull.de</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, cropped) · <a href="https://pxhere.com/en/photo/1182501">pxhere.com</a> (CC0)</figcaption>
 </figure>
-
-<h1 class="blog-page-title">Saxony-Anhalt's 2026 State Election:<br>Where the AfD Is Strong – and Why</h1>
 
 <div class="ltw-disclaimer">
 Draft / test version — text and figures are partly based on the 2021 state election and a poll-based simulation; they will be replaced with the official results after the election on September 6, 2026. This is the text version of a <a href="https://bsky.app/profile/juliusk.bsky.social">thread on Bluesky</a>. A German version is available <a href="/ltw2026/">here</a>.

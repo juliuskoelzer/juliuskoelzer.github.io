@@ -171,6 +171,58 @@
   margin-bottom: 20px;
 }
 
+/* Hero: Titel und Quellenzeile liegen auf dem Header-Bild */
+.ltw-article figure.ltw-hero {
+  position: relative;
+}
+
+.ltw-article figure.ltw-hero .ltw-hero-shade {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: linear-gradient(to top,
+    rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.25) 40%, rgba(0, 0, 0, 0) 62%);
+  pointer-events: none;
+}
+
+.ltw-article figure.ltw-hero h1.ltw-hero-title {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  margin: 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+  pointer-events: none;
+}
+
+.ltw-article figure.ltw-hero figcaption {
+  position: absolute;
+  right: 16px;
+  bottom: 8px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.68em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.ltw-article figure.ltw-hero figcaption a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 700px) {
+  .ltw-article figure.ltw-hero h1.ltw-hero-title {
+    font-size: 19px;
+    left: 16px;
+    right: 16px;
+    bottom: 24px;
+  }
+}
+
 /* Header-Banner: bricht aus der Textspalte aus, ohne Karten-Rahmen */
 .ltw-article figure.ltw-header {
   width: min(1200px, 94vw);
