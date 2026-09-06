@@ -7,9 +7,9 @@ author_profile: true
 
 <div class="ltw-article" markdown="1">
 
-<figure>
+<figure class="ltw-header">
   <img src="/images/ltw26_header.jpg" alt="Photo montage: AfD flag at a party convention (left), market square of Naumburg an der Saale (right)">
-  <figcaption>Photo montage of two cropped and rescaled photographs. Left: "AfD Flagge auf Parteitag geschwenkt, Alternative für Deutschland Symbolbild" — photo: Marco Verch, source: <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">ccnull.de</a>, license: <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, modified from the original (cropped, rescaled). Right: market square of Naumburg (Saale) — source: <a href="https://pxhere.com/en/photo/1182501">pxhere.com, photo 1182501</a>, license: <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> (public domain), cropped and rescaled.</figcaption>
+  <figcaption>Montage (cropped): l. "AfD-Flagge auf Parteitag" — photo: Marco Verch, <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">ccnull.de</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>; r. Naumburg market square — <a href="https://pxhere.com/en/photo/1182501">pxhere.com</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</figcaption>
 </figure>
 
 <h1 class="blog-page-title">Saxony-Anhalt's 2026 State Election:<br>Where the AfD Is Strong – and Why</h1>
