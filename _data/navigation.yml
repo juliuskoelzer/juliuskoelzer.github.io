@@ -9,8 +9,11 @@
 
  main:
 
-  - title: "Sachsen-Anhalt 2026"
+  - title: "Sachsen-Anhalt 2026 (DE)"
     url: /ltw2026/
+
+  - title: "Saxony-Anhalt 2026 (ENG)"
+    url: /ltw2026-en/
 
   - title: "CV"
     url: /cv/
