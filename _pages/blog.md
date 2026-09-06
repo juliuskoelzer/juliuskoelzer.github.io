@@ -33,6 +33,12 @@ author_profile: true
 
 <div class="blog-container">
   <div class="blog-card">
+    <img src="/images/ltw26_karte_afd.png" alt="LTW Sachsen-Anhalt 2026" class="blog-card-img">
+    <h3><a href="/ltw2026/">Landtagswahl Sachsen-Anhalt 2026: Wo die AfD stark ist – und warum</a></h3>
+    <p>Julius Kölzer. Datenanalyse der Wahlergebnisse in den 218 Gemeinden Sachsen-Anhalts (in German).</p>
+  </div>
+
+  <div class="blog-card">
     <img src="/images/BlaueWelle2.png" alt="Blaue Welle 2" class="blog-card-img">
     <h3><a href="https://www.defacto.expert/2025/03/24/von-der-blauen-welle-getragen-raeumliche-muster-der-afd-unterstuetzung-bei-der-bundestagswahl-2025/">Von der blauen Welle getragen? Räumliche Muster der AfD-Unterstützung bei der Bundestagswahl 2025</a></h3>
     <p>Julius Kölzer and Ansgar Hudde. Blog <i>DeFacto</i> (in German).</p>
