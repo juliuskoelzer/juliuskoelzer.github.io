@@ -11,13 +11,11 @@ published: true
 <figure class="ltw-header ltw-hero">
   <img src="/images/ltw26_header.jpg" alt="Photo montage: AfD flags at a party conference (left), market square of Naumburg an der Saale (right)">
   <div class="ltw-hero-shade"></div>
-  <h1 class="ltw-hero-title">Saxony-Anhalt 2026:<br>Where the AfD Is Strong – and Why</h1>
-  <figcaption>Photos: <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">Marco Verch/ccnull.de</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, cropped) · <a href="https://pxhere.com/de/photo/1182501">pxhere.com</a> (CC0)</figcaption>
+  <h1 class="ltw-hero-title">Saxony-Anhalt State Election 2026:<br>An Analysis of Its 218 Municipalities</h1>
 </figure>
 
-<div class="ltw-disclaimer">
-DRAFT — The figures are based on the preliminary official result of 6 September 2026 (2,661 of 2,661 electoral districts). The text is still placeholder. This will be the written version of a <a href="https://bsky.app/profile/juliusk.bsky.social">thread on Bluesky</a>. Die deutsche Fassung finden Sie <a href="/ltw2026/">hier</a>.
-</div>
+<p class="ltw-byline">by <strong>Julius Kölzer</strong> · 7 September 2026 · <a href="/ltw2026/">Deutsche Fassung</a></p>
+<p class="ltw-photo-credit">Photos: <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">Marco Verch/ccnull.de</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, cropped) · <a href="https://pxhere.com/de/photo/1182501">pxhere.com</a> (CC0)</p>
 
 <p class="ltw-lead">PLACEHOLDER LEAD — Two or three sentences stating the core finding: the AfD became the strongest party in all 218 municipalities, turnout rose by roughly 18 percentage points, and the two are connected. What the municipal data reveal about where those votes came from.</p>
 
@@ -39,22 +37,22 @@ PLACEHOLDER — The increase is largest where turnout was lowest in 2021: shrink
   <figcaption>The six municipal characteristics most strongly associated with the rise in turnout, plus the 2021 results.</figcaption>
 </figure>
 
-### Who Benefits from the Extra Votes
-
-PLACEHOLDER — The decisive relationship: where turnout rose more, the AfD gained (r = +0.47) and the political centre lost (r = −0.48).
-
-<figure>
-  <img src="/images/en/ltw26_turnout_parteien.png" alt="Scatterplots: rise in turnout and change in vote shares by party">
-  <figcaption>Rise in turnout and change in vote shares, each point one municipality.</figcaption>
-</figure>
-
 ### Mobilising Former Non-Voters
 
-PLACEHOLDER — The vote-flow estimates confirm the picture from the municipal data.
+PLACEHOLDER — The vote-flow estimates show who won the new voters.
 
 <figure class="ltw-fig-narrow">
   <img src="/images/en/ltw26_nichtwaehler.png" alt="Bar chart: net mobilisation of former non-voters by party">
   <figcaption>Net vote flows between previous non-voters and the parties.</figcaption>
+</figure>
+
+### Who Benefits from the Extra Votes
+
+PLACEHOLDER — The municipal data confirm it: where turnout rose more, the AfD gained (r = +0.47) and the political centre lost (r = −0.48).
+
+<figure>
+  <img src="/images/en/ltw26_turnout_parteien.png" alt="Scatterplots: rise in turnout and change in vote shares by party">
+  <figcaption>Rise in turnout and change in vote shares, each point one municipality.</figcaption>
 </figure>
 
 ## 2. Rural Saxony-Anhalt Flips
@@ -102,18 +100,9 @@ PLACEHOLDER — Descriptive comparison: what characterises the municipalities wh
   <figcaption>Mean percentile rank of each party's strongholds (top 20 %) per characteristic, deviation from the state median.</figcaption>
 </figure>
 
-### Who Gains Where Others Lose
-
-PLACEHOLDER — Some parties move almost as mirror images: AfD and Greens at r = −0.90, AfD and SPD at r = −0.80.
-
-<figure class="ltw-fig-narrow">
-  <img src="/images/en/ltw26_korrelation_parteien.png" alt="Heatmap: correlation of changes between the parties">
-  <figcaption>Correlation of changes since 2021 across the 218 municipalities, weighted by the electorate.</figcaption>
-</figure>
-
 ## 4. The Parties One by One
 
-PLACEHOLDER — Introduction to the regression models: two models per party, the 2026 vote share and the change since 2021, each with the same eleven municipal characteristics.
+PLACEHOLDER — Introduction to the regression models: two models per party, the 2026 vote share and the change since 2021, each with the same eleven municipal characteristics. The full models are in the [appendix](#appendix-regression-models).
 
 ### AfD: Old Roots, New Heights
 
@@ -203,8 +192,29 @@ PLACEHOLDER
 
 PLACEHOLDER — Conclusion: which patterns hold, and which do not.
 
+## Appendix: Regression Models {#appendix-regression-models}
+
+{% include ltw26_anhang_en.html %}
+
+## Notes
+
+<div class="ltw-notes" markdown="1">
+1. PLACEHOLDER — e.g. on weighting by the electorate and the treatment of Halle and Magdeburg.
+2. PLACEHOLDER — e.g. on the definition of strongholds (top 20 %) and of the pre-2016 far-right share (DVU, NPD, REP, state elections 1990–2011).
+3. PLACEHOLDER — e.g. on district-level variables and clustered standard errors.
+</div>
+
+## References
+
+<div class="ltw-notes" markdown="1">
+- PLACEHOLDER — GERDA dataset: Heddesheimer, V., Prediger, L. & Hilbig, H. (2025). GERDA: The German Election Database. *Scientific Data* (please verify).
+- PLACEHOLDER — State Returning Officer of Saxony-Anhalt (2026): Preliminary result of the state election of 6 September 2026.
+- PLACEHOLDER — BBSR (2026): INKAR – Indicators and Maps on Spatial and Urban Development.
+- PLACEHOLDER — Statistical Offices of the Federation and the Länder (2024): 2022 Census.
+</div>
+
 <div class="ltw-sources">
-Data: <a href="https://www.german-elections.com/">GERDA</a> (election results, harmonised municipal boundaries); State Returning Officer of Saxony-Anhalt (preliminary 2026 result); INKAR/BBSR (structural characteristics); 2022 Census; VG250 © BKG. All analyses at municipality level (n = 218), weighted by the electorate. Plots: Julius Kölzer. The underlying dataset is available on request.
+Data: <a href="https://www.german-elections.com/">GERDA</a> (election results, harmonised municipal boundaries); State Returning Officer of Saxony-Anhalt (preliminary 2026 result); INKAR/BBSR (structural characteristics); 2022 Census; VG250 © BKG. All analyses at municipality level (n = 218), weighted by the electorate. Figures: Julius Kölzer. The underlying dataset is available on request.
 </div>
 
 <script>
