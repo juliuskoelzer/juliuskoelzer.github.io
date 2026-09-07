@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – An Analysis of the Provisional Results"
+title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – A Municipality-Level Analysis"
 description: "The AfD fell just short of an absolute majority in Saxony-Anhalt amid sharply higher turnout. An analysis of the electoral geography behind the result across the state's 218 municipalities."
 header:
   image: ltw26_social.jpg
   image_width: 1200
   image_height: 600
-  image_alt: "2026 state election in Saxony-Anhalt – analysis of the provisional results"
+  image_alt: "2026 state election in Saxony-Anhalt – a municipality-level analysis"
 permalink: /saxony-anhalt-2026-en/
 redirect_from:
   - /ltw2026-en/
@@ -23,7 +23,7 @@ published: true
 
 <h1 class="ltw-hero-title">
 
-Turning Blue? The 2026 State Election in Saxony-Anhalt<br>An Analysis of the Provisional Results
+Turning Blue? The 2026 State Election in Saxony-Anhalt<br>A Municipality-Level Analysis
 
 </h1>
 
