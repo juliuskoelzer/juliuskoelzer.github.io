@@ -75,7 +75,7 @@ PLACEHOLDER — The AfD's gains are largest in the south and east. The CDU loses
 
 <figure>
   <img src="/images/en/ltw26_karte_veraenderung.png" alt="Facetted maps: change in vote share by party">
-  <figcaption>Change in vote share since 2021, by party. Lighter colours: losses, darker: gains.</figcaption>
+  <figcaption>Change in vote share since 2021, by party. Darker colours: gains or smaller losses, lighter: larger losses.</figcaption>
 </figure>
 
 ### Town and Country
