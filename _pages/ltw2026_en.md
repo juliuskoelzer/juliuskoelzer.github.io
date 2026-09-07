@@ -103,7 +103,7 @@ PLACEHOLDER — Descriptive comparison: what characterises the municipalities wh
 
 ## 4. The Parties One by One
 
-PLACEHOLDER — Introduction to the regression models: two models per party, the 2026 vote share and the change since 2021, each with the same eleven municipal characteristics.[^models] The full models are in the [appendix](#appendix-regression-models).
+PLACEHOLDER — Introduction to the regression models: two models per party, the 2026 vote share and the change since 2021, each with the same eleven municipal characteristics.[^models]
 
 ### AfD: Old Roots, New Heights
 
@@ -125,6 +125,8 @@ PLACEHOLDER — And the 2026 surge tracks the 2025 federal surge almost one to o
   <img src="/images/en/ltw26_koef_afd.png" alt="Coefficient plot: determinants of the AfD result">
   <figcaption>AfD – 2026 vote share and change since 2021, standardised OLS coefficients.</figcaption>
 </figure>
+
+The full regression models for all parties are in the [appendix](#appendix-regression-models).
 
 ### CDU: Collapse Across the Countryside
 
