@@ -3,9 +3,9 @@ layout: page
 title: "Blue Country? The 2026 State Election in Saxony-Anhalt – An Analysis of the Preliminary Final Result"
 description: "The AfD is approaching an absolute majority in Saxony-Anhalt – on sharply higher turnout. An analysis of the geographic patterns across the state's 218 municipalities."
 header:
-  image: ltw26_header.jpg
-  image_width: 1840
-  image_height: 620
+  image: ltw26_social.jpg
+  image_width: 1200
+  image_height: 600
   image_alt: "2026 state election in Saxony-Anhalt – analysis of the preliminary final result"
 permalink: /saxony-anhalt-2026-en/
 redirect_from:
