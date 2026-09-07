@@ -578,3 +578,6 @@
 @media (max-width: 900px) {
   .ltw-article + .footnotes { padding-left: 16px; padding-right: 16px; box-sizing: border-box; }
 }
+
+/* LTW 2026: eingeklappte Abbildung */
+.ltw-article .ltw-appendix details > figure { margin: 12px 0 6px; }
