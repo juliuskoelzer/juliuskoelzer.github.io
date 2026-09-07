@@ -6,7 +6,7 @@ author_profile: true
 published: true
 ---
 
-<div class="ltw-article" markdown="1">
+<div class="ltw-article ltw-en" markdown="1">
 
 <figure class="ltw-header ltw-hero">
   <img src="/images/ltw26_header.jpg" alt="Photo montage: AfD flags at a party conference (left), market square of Naumburg an der Saale (right)">
@@ -15,13 +15,14 @@ published: true
 </figure>
 
 <p class="ltw-photo-credit">Photos: <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">Marco Verch/ccnull.de</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, cropped) · <a href="https://pxhere.com/de/photo/1182501">pxhere.com</a> (CC0)</p>
+<p class="ltw-standfirst">The AfD has become the strongest party in every one of Saxony-Anhalt's 218 municipalities, on a turnout up 17.5 points. What the municipal data reveal about where those votes came from.</p>
 <p class="ltw-byline">by <strong>Julius Kölzer</strong> · 7 September 2026 · <a href="/ltw2026/">Deutsche Fassung</a></p>
 
 <p class="ltw-lead">PLACEHOLDER LEAD — Two or three sentences stating the core finding: the AfD became the strongest party in all 218 municipalities, turnout rose by roughly 18 percentage points, and the two are connected. What the municipal data reveal about where those votes came from.</p>
 
 ## 1. Turnout Jumps
 
-PLACEHOLDER — Opening: statewide turnout rose from 60.3 to 77.8 per cent. Where exactly?
+PLACEHOLDER — Opening: statewide turnout rose from 60.3 to 77.8 per cent.[^data] Where exactly?
 
 <figure class="ltw-fig-narrow">
   <img src="/images/en/ltw26_turnout_karte.png" alt="Map: increase in turnout in percentage points by municipality">
@@ -48,7 +49,7 @@ PLACEHOLDER — The vote-flow estimates show who won the new voters.
 
 ### Who Benefits from the Extra Votes
 
-PLACEHOLDER — The municipal data confirm it: where turnout rose more, the AfD gained (r = +0.47) and the political centre lost (r = −0.48).
+PLACEHOLDER — The municipal data confirm it: where turnout rose more, the AfD gained (r = +0.47) and the political centre lost (r = −0.48).[^weighting]
 
 <figure>
   <img src="/images/en/ltw26_turnout_parteien.png" alt="Scatterplots: rise in turnout and change in vote shares by party">
@@ -93,7 +94,7 @@ PLACEHOLDER — Broken down by municipality size class.
 
 ## 3. What the Parties' Strongholds Look Like
 
-PLACEHOLDER — Descriptive comparison: what characterises the municipalities where each party is particularly strong?
+PLACEHOLDER — Descriptive comparison: what characterises the municipalities where each party is particularly strong?[^stronghold]
 
 <figure>
   <img src="/images/en/ltw26_spider.png" alt="Spider plots: structural profiles of party strongholds">
@@ -102,11 +103,11 @@ PLACEHOLDER — Descriptive comparison: what characterises the municipalities wh
 
 ## 4. The Parties One by One
 
-PLACEHOLDER — Introduction to the regression models: two models per party, the 2026 vote share and the change since 2021, each with the same eleven municipal characteristics. The full models are in the [appendix](#appendix-regression-models).
+PLACEHOLDER — Introduction to the regression models: two models per party, the 2026 vote share and the change since 2021, each with the same eleven municipal characteristics.[^models] The full models are in the [appendix](#appendix-regression-models).
 
 ### AfD: Old Roots, New Heights
 
-PLACEHOLDER — The strongest predictor is not a structural characteristic but political history.
+PLACEHOLDER — The strongest predictor is not a structural characteristic but political history.[^farright]
 
 <figure>
   <img src="/images/en/ltw26_afd_persistenz.png" alt="Scatterplots: far-right votes before 2016 and AfD results in 2016, 2021, 2026">
@@ -196,14 +197,6 @@ PLACEHOLDER — Conclusion: which patterns hold, and which do not.
 
 {% include ltw26_anhang_en.html %}
 
-## Notes
-
-<div class="ltw-notes" markdown="1">
-1. PLACEHOLDER — e.g. on weighting by the electorate and the treatment of Halle and Magdeburg.
-2. PLACEHOLDER — e.g. on the definition of strongholds (top 20 %) and of the pre-2016 far-right share (DVU, NPD, REP, state elections 1990–2011).
-3. PLACEHOLDER — e.g. on district-level variables and clustered standard errors.
-</div>
-
 ## References
 
 <div class="ltw-notes" markdown="1">
@@ -216,6 +209,12 @@ PLACEHOLDER — Conclusion: which patterns hold, and which do not.
 <div class="ltw-sources">
 Data: <a href="https://www.german-elections.com/">GERDA</a> (election results, harmonised municipal boundaries); State Returning Officer of Saxony-Anhalt (preliminary 2026 result); INKAR/BBSR (structural characteristics); 2022 Census; VG250 © BKG. All analyses at municipality level (n = 218), weighted by the electorate. Figures: Julius Kölzer. The underlying dataset is available on request.
 </div>
+
+[^data]: PLACEHOLDER — 2026 results from the preliminary official count of the State Returning Officer; all earlier elections from GERDA in harmonised municipal boundaries (see References).
+[^weighting]: PLACEHOLDER — All correlations and models are weighted by the number of eligible voters. Halle and Magdeburg together account for roughly 14 per cent of the electorate and shape the weighted associations accordingly.
+[^stronghold]: PLACEHOLDER — Stronghold = the 20 per cent of municipalities with the highest vote share for the party in question, i.e. 44 of 218.
+[^models]: PLACEHOLDER — OLS at municipality level, standard errors clustered at district level (14 clusters). Manufacturing and graduate shares are only available at district level and are assigned to municipalities.
+[^farright]: PLACEHOLDER — Mean vote share of DVU, NPD and the Republikaner in the 1990 to 2011 state elections.
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {

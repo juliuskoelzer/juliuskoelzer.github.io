@@ -413,14 +413,21 @@
 }
 
 /* LTW 2026: Byline und Bildnachweis unter dem Header */
+.ltw-article .ltw-standfirst {
+  margin: 0.9em 0 0.5em;
+  font-size: 1.18em;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #222;
+}
 .ltw-article .ltw-byline {
-  margin: 0.9em 0 0.2em;
-  font-size: 0.95em;
+  margin: 0 0 1.6em;
+  font-size: 1.05em;
   color: #333;
 }
 .ltw-article .ltw-byline strong { font-weight: 600; }
 .ltw-article .ltw-photo-credit {
-  margin: 0 0 1.6em;
+  margin: 0.4em 0 0;
   font-size: 0.72em;
   color: #888;
 }
@@ -475,3 +482,39 @@
 .ltw-article .ltw-notes { font-size: 0.88em; color: #444; }
 .ltw-article .ltw-notes ol { padding-left: 1.4em; }
 .ltw-article .ltw-notes li { margin-bottom: 0.4em; }
+
+/* LTW 2026: Kramdown-Fussnoten als Anmerkungsblock (landet ausserhalb des Artikel-Divs) */
+.page:has(.ltw-article) .footnotes {
+  max-width: 920px;
+  margin: 2.2em auto 0;
+  padding-top: 18px;
+  border-top: 1px solid #ddd;
+  font-size: 0.88em;
+  line-height: 1.55;
+  color: #444;
+}
+.page:has(.ltw-article) .footnotes::before {
+  content: "Anmerkungen";
+  display: block;
+  font-size: 1.45em;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.6em;
+}
+.page:has(.ltw-en) .footnotes::before { content: "Notes"; }
+.page:has(.ltw-article) .footnotes ol { padding-left: 1.4em; margin: 0; }
+.page:has(.ltw-article) .footnotes li { margin-bottom: 0.45em; }
+.page:has(.ltw-article) .footnotes li p { margin: 0; display: inline; }
+.page:has(.ltw-article) .footnotes .reversefootnote {
+  text-decoration: none;
+  margin-left: 0.3em;
+  color: #999;
+}
+.ltw-article sup { line-height: 0; }
+.ltw-article a.footnote {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 0.12em;
+}
+.ltw-article a.footnote::before { content: "["; }
+.ltw-article a.footnote::after { content: "]"; }
