@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – An Analysis of the Preliminary Final Result"
+title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – An Analysis of the Provisional Results"
 description: "The AfD fell just short of an absolute majority in Saxony-Anhalt amid sharply higher turnout. An analysis of the electoral geography behind the result across the state's 218 municipalities."
 header:
   image: ltw26_social.jpg
   image_width: 1200
   image_height: 600
-  image_alt: "2026 state election in Saxony-Anhalt – analysis of the preliminary final result"
+  image_alt: "2026 state election in Saxony-Anhalt – analysis of the provisional results"
 permalink: /saxony-anhalt-2026-en/
 redirect_from:
   - /ltw2026-en/
@@ -23,7 +23,7 @@ published: true
 
 <h1 class="ltw-hero-title">
 
-Turning Blue? The 2026 State Election in Saxony-Anhalt<br>An Analysis of the Preliminary Final Result
+Turning Blue? The 2026 State Election in Saxony-Anhalt<br>An Analysis of the Provisional Results
 
 </h1>
 
@@ -323,7 +323,7 @@ Finally, the regression model for the BSW reveals only a weak structural pattern
 </div>
 
 <div class="ltw-sources">
-Data: <a href="https://www.german-elections.com/">GERDA</a> (election results, harmonised municipal boundaries); State Returning Officer of Saxony-Anhalt (preliminary 2026 result); INKAR/BBSR (structural characteristics); 2022 Census; VG250 © BKG. All analyses at municipality level (n = 218), weighted by the electorate. Figures: Julius Kölzer.
+Data: <a href="https://www.german-elections.com/">GERDA</a> (election results, harmonised municipal boundaries); State Returning Officer of Saxony-Anhalt (provisional 2026 results); INKAR/BBSR (structural characteristics); 2022 Census; VG250 © BKG. All analyses at municipality level (n = 218), weighted by the electorate. Figures: Julius Kölzer.
 </div>
 
 <script>
