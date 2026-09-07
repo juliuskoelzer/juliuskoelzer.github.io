@@ -518,3 +518,34 @@
 }
 .ltw-article a.footnote::before { content: "["; }
 .ltw-article a.footnote::after { content: "]"; }
+
+/* LTW 2026: Mobil – Seitenraender, kleinere Bildquelle, zoombare Lightbox */
+@media (max-width: 900px) {
+  .ltw-article,
+  .page:has(.ltw-article) .footnotes {
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .ltw-article figure.ltw-header,
+  .ltw-article figure.ltw-hero { margin-left: -16px; margin-right: -16px; }
+  .ltw-article .ltw-photo-credit { font-size: 0.62em; line-height: 1.35; }
+  .ltw-article .ltw-standfirst { font-size: 1.08em; }
+  .ltw-article figure img { cursor: zoom-in; }
+}
+@media (max-width: 700px) {
+  .ltw-lightbox {
+    display: block;
+    overflow: auto;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y pinch-zoom;
+  }
+  .ltw-lightbox img {
+    max-width: none;
+    max-height: none;
+    width: 190vw;
+    margin: 12px;
+    border-radius: 0;
+  }
+}
