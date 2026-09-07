@@ -527,8 +527,13 @@
     padding-right: 16px;
     box-sizing: border-box;
   }
-  .ltw-article figure.ltw-header,
-  .ltw-article figure.ltw-hero { margin-left: -16px; margin-right: -16px; }
+  .ltw-article figure.ltw-header {
+    width: calc(100% + 32px);
+    margin: 10px -16px 26px;
+    transform: none;
+  }
+  .ltw-article figure.ltw-header img,
+  .ltw-article figure.ltw-hero .ltw-hero-shade { border-radius: 0; }
   .ltw-article .ltw-photo-credit { font-size: 0.62em; line-height: 1.35; }
   .ltw-article .ltw-standfirst { font-size: 1.08em; }
   .ltw-article figure img { cursor: zoom-in; }
@@ -548,4 +553,18 @@
     margin: 12px;
     border-radius: 0;
   }
+}
+@media (max-width: 700px) {
+  .ltw-article figure.ltw-header img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .ltw-article figure.ltw-hero h1.ltw-hero-title {
+    font-size: 26px;
+    line-height: 1.2;
+    left: 16px;
+    right: 16px;
+    bottom: 18px;
+  }
+  .ltw-article .ltw-appendix table { display: block; overflow-x: auto; }
 }
