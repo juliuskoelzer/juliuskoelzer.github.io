@@ -484,7 +484,7 @@
 .ltw-article .ltw-notes li { margin-bottom: 0.4em; }
 
 /* LTW 2026: Kramdown-Fussnoten als Anmerkungsblock (landet ausserhalb des Artikel-Divs) */
-.page:has(.ltw-article) .footnotes {
+.ltw-article + .footnotes {
   overflow-wrap: anywhere;
   max-width: 920px;
   margin: 2.2em auto 0;
@@ -494,7 +494,7 @@
   line-height: 1.55;
   color: #444;
 }
-.page:has(.ltw-article) .footnotes::before {
+.ltw-article + .footnotes::before {
   content: "Anmerkungen";
   display: block;
   font-size: 1.45em;
@@ -502,11 +502,11 @@
   color: #222;
   margin-bottom: 0.6em;
 }
-.page:has(.ltw-en) .footnotes::before { content: "Notes"; }
-.page:has(.ltw-article) .footnotes ol { padding-left: 1.4em; margin: 0; }
-.page:has(.ltw-article) .footnotes li { margin-bottom: 0.45em; }
-.page:has(.ltw-article) .footnotes li p { margin: 0; display: inline; }
-.page:has(.ltw-article) .footnotes .reversefootnote {
+.ltw-en + .footnotes::before { content: "Notes"; }
+.ltw-article + .footnotes ol { padding-left: 1.4em; margin: 0; }
+.ltw-article + .footnotes li { margin-bottom: 0.45em; }
+.ltw-article + .footnotes li p { margin: 0; display: inline; }
+.ltw-article + .footnotes .reversefootnote {
   text-decoration: none;
   margin-left: 0.3em;
   color: #999;
@@ -523,7 +523,7 @@
 /* LTW 2026: Mobil – Seitenraender, kleinere Bildquelle, zoombare Lightbox */
 @media (max-width: 900px) {
   .ltw-article,
-  .page:has(.ltw-article) .footnotes {
+  .ltw-article + .footnotes {
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: border-box;
@@ -568,4 +568,13 @@
     bottom: 18px;
   }
   .ltw-article .ltw-appendix table { display: block; overflow-x: auto; }
+}
+
+/* LTW 2026: Theme-Fussnotengroesse (0.75em) uebersteuern */
+.ltw-article + .footnotes ol,
+.ltw-article + .footnotes li,
+.ltw-article + .footnotes p { font-size: 1em; }
+.ltw-article + .footnotes { padding-left: 0; padding-right: 0; }
+@media (max-width: 900px) {
+  .ltw-article + .footnotes { padding-left: 16px; padding-right: 16px; box-sizing: border-box; }
 }
