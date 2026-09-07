@@ -10,19 +10,19 @@ author_profile: true
 
 <div class="blog-container">
   <div class="blog-card">
-    <img src="https://interaktiv.tagesspiegel.de/lab/assets/images/wahlen2026/berlin-wahl-2026-historisches-scrolly-teaser.jpg" alt="Tagesspiegel Berlin Datenanalyse" class="blog-card-img">
+    <img src="/images/tagesspiegel1.jpg" alt="Tagesspiegel Berlin Datenanalyse" class="blog-card-img">
     <h3><a href="https://interaktiv.tagesspiegel.de/lab/der-ring-ist-die-neue-mauer-was-30-jahre-wahlergebnisse-ueber-das-neu-geteilte-berlin-verraten-datenanalyse/">The Ring Is the New Wall: What 30 Years of Election Results Reveal About a Newly Divided Berlin</a></h3>
     <p>Nina Breher and Julius Kölzer. <i>Tagesspiegel</i>, August, 2026 (German).</p>
   </div>
 
   <div class="blog-card">
-    <img src="https://img.zeit.de/politik/deutschland/2026-08/parteimiglieder-wachstum-schrumpfen-krise-linke-afd-spd-bild/wide__1300x731" alt="Zeit Parteimitglieder" class="blog-card-img">
+    <img src="/images/zeit5.jpg" alt="Zeit Parteimitglieder" class="blog-card-img">
     <h3><a href="https://www.zeit.de/politik/deutschland/2026-08/parteimiglieder-wachstum-schrumpfen-krise-linke-afd-spd">Are the Parties Losing Their Members? The Numbers Say Otherwise</a></h3>
     <p>Christian Endt, Julius Kölzer, and Michael Schlieben. <i>ZEIT ONLINE</i>, August, 2026 (German).</p>
   </div>
 
   <div class="blog-card">
-    <img src="https://img.zeit.de/politik/deutschland/2026-08/taktisches-waehlen-landtagswahl-sachsen-anhalt-afd-5-prozent-huerde-bild/wide__1300x731" alt="Zeit Taktisches Wählen" class="blog-card-img">
+    <img src="/images/zeit4.jpg" alt="Zeit Taktisches Wählen" class="blog-card-img">
     <h3><a href="https://www.zeit.de/politik/deutschland/2026-08/taktisches-waehlen-landtagswahl-sachsen-anhalt-afd-fuenf-prozent-huerde">State Elections: The Price of Tactical Voting</a></h3>
     <p>Julius Kölzer. <i>ZEIT ONLINE</i>, August, 2026 (German).</p>
   </div>
