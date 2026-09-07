@@ -15,7 +15,7 @@ I am a Doctoral Researcher in the PhD program [DYNAMICS](https://www.sowi.hu-ber
 
 On this website, you’ll find my [CV](https://juliuskoelzer.de/cv/), [publications and working papers](https://juliuskoelzer.de/research/), [articles & blog posts](https://juliuskoelzer.de/blog/), and the [podcast](https://juliuskoelzer.de/podcast/) I produce.
 
-**A recent analysis of the 2026 state election in Saxony-Anhalt can be found [here](https://juliuskoelzer.de/sachsen-anhalt-de/) (German).**
+**I recently wrote an analysis of the 2026 state election in Saxony-Anhalt – you can read it [here](https://juliuskoelzer.de/sachsen-anhalt-de/) (German).**
 
 <p style="margin-top:15px;"></p>
 
