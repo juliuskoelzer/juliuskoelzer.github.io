@@ -71,7 +71,7 @@ PLACEHOLDER — In 2021 the CDU was the strongest party in 214 of 218 municipali
 
 ### Who Gained Where, and Who Lost
 
-PLACEHOLDER — The AfD's gains are largest in the south and east; the CDU collapses most deeply in the Altmark.
+PLACEHOLDER — The AfD's gains are largest in the south and east. The CDU loses double digits everywhere, most deeply in Wittenberg, Dessau-Roßlau and Jerichower Land (each over 21 points); it holds up best in the Altmark (Stendal −17, Osterburg only −9.5).
 
 <figure>
   <img src="/images/en/ltw26_karte_veraenderung.png" alt="Facetted maps: change in vote share by party">
