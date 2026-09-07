@@ -53,7 +53,7 @@ author_profile: true
   <!-- Vor der Veroeffentlichung wieder einkommentieren:
   <div class="blog-card">
     <img src="/images/ltw26_karte_afd.png" alt="LTW Sachsen-Anhalt 2026" class="blog-card-img">
-    <h3><a href="/sachsen-anhalt-de/">Landtagswahl Sachsen-Anhalt 2026: Wo die AfD stark ist – und warum</a></h3>
+    <h3><a href="/sachsen-anhalt-2026-de/">Landtagswahl Sachsen-Anhalt 2026: Wo die AfD stark ist – und warum</a></h3>
     <p>Julius Kölzer. Datenanalyse der Wahlergebnisse in den 218 Gemeinden Sachsen-Anhalts (in German).</p>
   </div>
   -->

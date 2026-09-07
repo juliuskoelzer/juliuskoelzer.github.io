@@ -16,7 +16,7 @@ published: true
 
 <p class="ltw-photo-credit">Photos: <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">Marco Verch/ccnull.de</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, cropped) · <a href="https://pxhere.com/de/photo/1182501">pxhere.com</a> (CC0)</p>
 <p class="ltw-standfirst">The AfD has become the strongest party in every one of Saxony-Anhalt's 218 municipalities, on a turnout up 17.5 points. What the municipal data reveal about where those votes came from.</p>
-<p class="ltw-byline">by <strong>Julius Kölzer</strong> · 7 September 2026 · <a href="/sachsen-anhalt-de/">Deutsche Fassung</a></p>
+<p class="ltw-byline">by <strong>Julius Kölzer</strong> · 7 September 2026 · <a href="/sachsen-anhalt-2026-de/">Deutsche Fassung</a></p>
 
 <p class="ltw-lead">PLACEHOLDER LEAD — Two or three sentences stating the core finding: the AfD became the strongest party in all 218 municipalities, turnout rose by roughly 18 percentage points, and the two are connected. What the municipal data reveal about where those votes came from.</p>
 
