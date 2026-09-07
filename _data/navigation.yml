@@ -9,10 +9,10 @@
 
  main:
 
-  # Vor der Veroeffentlichung wieder einkommentieren:
-  # - title: "Sachsen-Anhalt 2026 (DE)"
-  #   url: /sachsen-anhalt-de/
-  #
+  - title: "Sachsen-Anhalt 2026"
+    url: /sachsen-anhalt-de/
+
+  # Englische Version folgt:
   # - title: "Saxony-Anhalt 2026 (ENG)"
   #   url: /ltw2026-en/
 
