@@ -24,7 +24,7 @@ published: true
 
 <p class="ltw-photo-credit">Photos: <a href="https://www.ccnull.de/foto/afd-flagge-auf-parteitag-geschwenkt-alternative-fur-deutschland-symbolbild/1129246">Marco Verch/ccnull.de</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, cropped) · <a href="https://pxhere.com/de/photo/1182501">pxhere.com</a> (CC0)</p>
 <p class="ltw-standfirst">The AfD is approaching an absolute majority in Saxony-Anhalt – on sharply higher turnout. Drawing on the results from the state's 218 municipalities and fine-grained structural data, this piece analyses the geographic patterns behind that result.</p>
-<p class="ltw-byline">by <strong>Julius Kölzer</strong> · 7 September 2026</p>
+<p class="ltw-byline">by <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · 7 September 2026</p>
 
 ## 1. Turnout Rises Across the Countryside
 
