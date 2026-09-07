@@ -137,7 +137,8 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter "julius_ktxt"facebook:
+  username               : &twitter "julius_ktxt"
+facebook:
   username               :
   app_id                 :
   publisher              :
