@@ -56,6 +56,7 @@
   {% if page.header.image %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+    {% if page.header.image_alt %}<meta name="twitter:image:alt" content="{{ page.header.image_alt | escape_once }}">{% endif %}
   {% else %}
     <meta name="twitter:card" content="summary">
     {% if site.og_image %}
@@ -115,10 +116,12 @@
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}"> 
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
-{% if page.date %}
+{% if page.date or page.description %}
   <meta property="og:type" content="article">
+{% else %}
+  <meta property="og:type" content="website">
 {% endif %}
-{% if page.excerpt %}
+{% if page.excerpt or page.description %}
   <meta property="og:description" name="description" content="{{ seo_description }}">
 {% elsif site.og_description %}
   <meta property="og:description" name="description" content="{{ site.og_description }}">
@@ -140,6 +143,13 @@
 
 {% if page.header.image %}
   <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% if page.header.image_width %}
+  <meta property="og:image:width" content="{{ page.header.image_width }}">
+  <meta property="og:image:height" content="{{ page.header.image_height }}">
+{% endif %}
+{% if page.header.image_alt %}
+  <meta property="og:image:alt" content="{{ page.header.image_alt | escape_once }}">
+{% endif %}
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% endif %}
