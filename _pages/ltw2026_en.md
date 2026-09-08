@@ -81,7 +81,7 @@ The strong rise in turnout in rural areas is also visible in the scatterplots di
 
 ### Mobilising Former Non-Voters
 
-The largely partisan nature of the turnout increase was already evident on election night. The AfD, in particular, proved highly effective at mobilising former non-voters. With a net gain of around 157,000 votes from previous non-voters, its mobilisation effect was more than twice as large as that of all other parties combined.
+The largely partisan nature of the turnout increase was already evident on election night. The AfD, in particular, proved highly effective at mobilising former non-voters. With a net gain of around 170,000 votes from previous non-voters, its mobilisation effect was almost twice as large as that of all other parties combined.
 
 This pattern is not new, however (cf. Schäfer 2024; Vehrkamp/Wegschaider 2017). The AfD’s particular capacity to mobilise groups that had previously abstained from voting has been well documented in the literature since the 2017 federal election at the latest (cf. Hansen/Olsen 2019; Immerzeel/Pickup 2015). The electoral mobilisation of these groups is often associated with political alienation, lower levels of trust in political institutions, and socio-economic and spatial inequalities (cf. Deppisch et al. 2019; Förtner et al. 2021; Schulte-Cloos/Leininger 2022). In structurally weaker regions in particular, such perceptions of political and social marginalisation can become spatially concentrated (cf. Deppisch/Klärner 2025; Schäfer 2024). In many rural parts of Saxony-Anhalt, where turnout has now risen particularly strongly, participation had fallen to barely 40 per cent during the 2000s.
 
