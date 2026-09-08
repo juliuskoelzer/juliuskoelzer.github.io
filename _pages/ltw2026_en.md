@@ -59,7 +59,7 @@ The big game changer in this state election is the enormous rise in turnout. Wit
 
 </figure>
 
-Owing to their population size, the two cities do account for just under 43,000 of the roughly 250,000 newly mobilised votes of former non-voters. The much larger mobilisation effect, however, shows up in the rest of the state: in the municipalities outside the two large cities, around 205,000 votes were added by people who had not voted before.
+Owing to their population size, the two cities do account for just under 43,000 of the roughly 250,000 newly mobilised votes of former non-voters. The much larger mobilisation effect, however, shows up in the rest of the state: in the municipalities outside the two large cities, around 205,000 votes were added by people who had not voted before. On average, voter turnout increased the most in medium-sized and very small municipalities, rising by 19% and 18%, respectively. As the bar chart illustrates, the mobilization of previous non-voters was noticeably lower in urban centers, by a few percentage points.
 
 <figure class="ltw-fig-narrow">
 
