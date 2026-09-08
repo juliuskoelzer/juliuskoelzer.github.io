@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – A Municipality-Level Analysis"
+title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – A Municipality-Level Analysis and the Revenge of the Village"
 description: "The AfD fell just short of an absolute majority in Saxony-Anhalt amid sharply higher turnout. An analysis of the electoral geography behind the result across the state's 218 municipalities."
 header:
   image: ltw26_social.jpg
@@ -23,7 +23,7 @@ published: true
 
 <h1 class="ltw-hero-title">
 
-Turning Blue? The 2026 State Election in Saxony-Anhalt<br>A Municipality-Level Analysis
+Turning Blue? The 2026 State Election in Saxony-Anhalt<br>A Municipality-Level Analysis and the Revenge of the Village
 
 </h1>
 
@@ -59,7 +59,17 @@ The big game changer in this state election is the enormous rise in turnout. Wit
 
 </figure>
 
-Owing to their population size, the two cities do account for just under 43,000 of the roughly 250,000 newly mobilised votes of former non-voters. The much larger mobilisation effect, however, shows up in the rest of the state: in the municipalities outside the two large cities, around 205,000 votes were added by people who had not voted before. The strong rise in turnout in rural areas is also visible in the scatterplots displayed below. Larger increases in turnout are associated with greater rurality, reflected in lower population density and smaller population size. Turnout also tends to rise more strongly in municipalities with greater population loss and a more peripheral location. Moreover, turnout rose most where the AfD had already performed above average in 2021. Conversely, the increase tends to be smaller in regions where the parties of the political centre were more firmly anchored.
+Owing to their population size, the two cities do account for just under 43,000 of the roughly 250,000 newly mobilised votes of former non-voters. The much larger mobilisation effect, however, shows up in the rest of the state: in the municipalities outside the two large cities, around 205,000 votes were added by people who had not voted before.
+
+<figure class="ltw-fig-narrow">
+
+<img src="/images/en/ltw26_turnout_groessenklassen.png" alt="Bar chart: rise in turnout by municipality size class"/>
+
+<figcaption>Rise in turnout compared with 2021 in percentage points, by municipality size class.</figcaption>
+
+</figure>
+
+The strong rise in turnout in rural areas is also visible in the scatterplots displayed below. Larger increases in turnout are associated with greater rurality, reflected in lower population density and smaller population size. Turnout also tends to rise more strongly in municipalities with greater population loss and a more peripheral location. Moreover, turnout rose most where the AfD had already performed above average in 2021. Conversely, the increase tends to be smaller in regions where the parties of the political centre were more firmly anchored.
 
 <figure>
 
