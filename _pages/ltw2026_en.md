@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – A Municipality-Level Analysis & the Revenge of the Village"
+title: "Turning Blue? The 2026 State Election in Saxony-Anhalt – A Municipality-Level Analysis and the Revenge of the Village"
 description: "The AfD fell just short of an absolute majority in Saxony-Anhalt amid sharply higher turnout. An analysis of the electoral geography behind the result across the state's 218 municipalities."
 header:
   image: ltw26_social.jpg
@@ -23,7 +23,7 @@ published: true
 
 <h1 class="ltw-hero-title">
 
-Turning Blue? The 2026 State Election in Saxony-Anhalt<br>A Municipality-Level Analysis & the Revenge of the Village
+Turning Blue? The 2026 State Election in Saxony-Anhalt<br><em>A Municipality-Level Analysis and the Revenge of the Village</em>
 
 </h1>
 
