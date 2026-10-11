@@ -330,6 +330,11 @@
   color: var(--global-masthead-link-color-hover, #000);
 }
 
+/* Name in der Leiste (nur mobil sichtbar) */
+.greedy-nav .nav-title {
+  display: none;
+}
+
 /* Hamburger button (hidden on desktop) */
 .greedy-nav .nav-toggle {
   display: none;
@@ -365,13 +370,40 @@
    Mobile styles
    =============================== */
 @media (max-width: 768px) {
+  /* Platz für den Burger in der Leiste */
+  .greedy-nav {
+    min-height: 44px;
+  }
+
+  /* Name links in der Leiste, dafür nicht nochmal im Menü */
+  .greedy-nav .nav-title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+  }
+
+  .greedy-nav .nav-links .masthead__menu-item--lg {
+    display: none;
+  }
+
   /* Burger sichtbar */
   .greedy-nav .nav-toggle {
     display: block !important;
     position: absolute;
-    right: 1rem;
-    top: 0.75rem;
+    right: 0;
+    top: 2px;
     z-index: 200;
+  }
+
+  /* Geöffnet: sauberes X statt Pfeil */
+  .greedy-nav .nav-toggle.close .navicon {
+    background: transparent;
+  }
+
+  .greedy-nav .nav-toggle.close .navicon::before,
+  .greedy-nav .nav-toggle.close .navicon::after {
+    top: 0;
   }
 
   /* Links versteckt, bis Burger geklickt */

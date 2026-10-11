@@ -96,6 +96,7 @@
   /* Burger immer sichtbar */
   .greedy-nav .nav-toggle {
     display: block !important;
+    visibility: visible !important; /* main.min.js setzt .hidden auf den Button */
     position: absolute;
     right: 1rem;
     top: 0.75rem;
