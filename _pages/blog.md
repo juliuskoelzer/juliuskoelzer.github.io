@@ -10,6 +10,24 @@ author_profile: true
 
 <div class="blog-container">
   <div class="blog-card">
+    <img src="/images/tagesspiegel4.jpg" alt="Tagesspiegel Mamdani-Effekt Berlin" class="blog-card-img">
+    <h3><a href="https://interaktiv.tagesspiegel.de/lab/der-berliner-mamdani-effekt-jung-migrantisch-zentrumsnah-wo-die-linke-stark-geworden-ist/">Eleven Maps and Charts Show Berlin’s New Political Geography: Young, Left, Migrant – Is It the Mamdani Effect?</a></h3>
+    <p>Julius Kölzer and Helena Wittlich. <i>Tagesspiegel</i>, September, 2026 (German).</p>
+  </div>
+
+  <div class="blog-card">
+    <img src="/images/tagesspiegel3.jpg" alt="Tagesspiegel Swing States nach der Wahl" class="blog-card-img">
+    <h3><a href="https://interaktiv.tagesspiegel.de/lab/berlins-swing-states-nach-der-wahl-fast-jeder-zweite-wahlkreis-gehoert-jetzt-einer-anderen-partei/">Berlin’s “Swing States” After the Election: Almost Every Second Constituency Now Belongs to a Different Party</a></h3>
+    <p>Julius Kölzer. <i>Tagesspiegel</i>, September, 2026 (German).</p>
+  </div>
+
+  <div class="blog-card">
+    <img src="/images/tagesspiegel2.jpg" alt="Tagesspiegel Swing States Simulation" class="blog-card-img">
+    <h3><a href="https://interaktiv.tagesspiegel.de/lab/simulationen-kurz-vor-der-abgeordnetenhauswahl-2026-das-sind-die-berliner-swing-states/">Simulations Shortly Before the Berlin State Election: These Are Berlin’s “Swing States”</a></h3>
+    <p>Nina Breher and Julius Kölzer. <i>Tagesspiegel</i>, September, 2026 (German).</p>
+  </div>
+
+  <div class="blog-card">
     <img src="/images/tagesspiegel1.jpg" alt="Tagesspiegel Berlin Datenanalyse" class="blog-card-img">
     <h3><a href="https://interaktiv.tagesspiegel.de/lab/der-ring-ist-die-neue-mauer-was-30-jahre-wahlergebnisse-ueber-das-neu-geteilte-berlin-verraten-datenanalyse/">The Ring Is the New Wall: What 30 Years of Election Results Reveal About a Newly Divided Berlin</a></h3>
     <p>Nina Breher and Julius Kölzer. <i>Tagesspiegel</i>, August, 2026 (German).</p>
@@ -50,13 +68,17 @@ author_profile: true
 <h2 class="blog-section-title">Articles and Blogposts</h2>
 
 <div class="blog-container">
-  <!-- Vor der Veroeffentlichung wieder einkommentieren:
   <div class="blog-card">
-    <img src="/images/ltw26_karte_afd.png" alt="LTW Sachsen-Anhalt 2026" class="blog-card-img">
-    <h3><a href="/sachsen-anhalt-2026-de/">Landtagswahl Sachsen-Anhalt 2026: Wo die AfD stark ist – und warum</a></h3>
-    <p>Julius Kölzer. Datenanalyse der Wahlergebnisse in den 218 Gemeinden Sachsen-Anhalts (in German).</p>
+    <img src="/images/ltw26_karte_veraenderung.png" alt="Saxony-Anhalt state election 2026" class="blog-card-img">
+    <h3><a href="/saxony-anhalt-2026-en/">Turning Blue? The 2026 State Election in Saxony-Anhalt. A Municipality-Level Analysis and the Revenge of the Village</a></h3>
+    <p>Julius Kölzer. Blog post, September 2026 (in English).</p>
   </div>
-  -->
+
+  <div class="blog-card">
+    <img src="/images/ltw26_karte_afd.png" alt="Landtagswahl Sachsen-Anhalt 2026" class="blog-card-img">
+    <h3><a href="/sachsen-anhalt-2026-de/">Blaues Land? Landtagswahl 2026 in Sachsen-Anhalt. Eine Analyse des vorläufigen Endergebnisses</a></h3>
+    <p>Julius Kölzer. Blog post, September 2026 (in German).</p>
+  </div>
 
   <div class="blog-card">
     <img src="/images/BlaueWelle2.png" alt="Blaue Welle 2" class="blog-card-img">
