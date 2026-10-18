@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
           hovertemplate: "<b>%{y}</b><br>" + m.merkmal + ": %{customdata}<br>%{x:.0f} %<extra></extra>" });
       });
       annos.push(strip(ax, m.merkmal, schmal ? wrap(m.stufen.join(" · "), 34) : m.stufen.join(" · ")));
-      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 9.5, color: ink2 } };
       lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % sp === 0, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-demografie", traces, Object.assign({}, basis, lay, {
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     Plotly.newPlot(id, traces, lay, cfg);
   }
-  var pct = { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"] };
+  var pct = { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"], tickfont: { size: 10, color: ink2 } };
   /* Plotly ignores the "+" flag in hover templates, so signed values are preformatted here */
   function prozent(v) { return Math.round(v) + " %"; }
   function signiert(v) { return (v > 0 ? "+" : v < 0 ? "−" : "") + de(Math.abs(v)); }
@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function () {
           hovertemplate: "<b>%{y}</b><br>" + v.label + ": vertraue " + st + "<br>%{x:.0f} %<extra></extra>" });
       });
       annos.push(strip(ax, v.label));
-      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 9.5, color: ink2 } };
       lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % sp === 0, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-vertrauen", traces, Object.assign({}, basis, lay, {
@@ -384,7 +384,7 @@ document.addEventListener("DOMContentLoaded", function () {
         text: gruppen.slice().reverse().map(function (g) { return Math.round(e.werte[g]) + " %"; }), textposition: "outside", cliponaxis: false, textfont: { size: 11 },
         hovertemplate: "<b>%{y}</b><br>" + e.label + "<br>%{x:.0f} % stimmen zu<extra></extra>" });
       annos.push(strip(ax, wrap(e.label, 26)));
-      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10 } };
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 9.5, color: ink2 } };
       lay[ax.yaxis] = { fixedrange: true, showticklabels: k % sp === 0, tickfont: { size: 11 }, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-einzel", traces, Object.assign({}, basis, lay, {
@@ -481,7 +481,7 @@ document.addEventListener("DOMContentLoaded", function () {
       textfont: { color: ink, size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union negativ: %{x} %<br><span style='font-size:11px'>n = %{customdata}</span><extra></extra>" }
   ], Object.assign({}, basis, {
     barmode: "stack", bargap: 0.32,
-    xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
+    xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10, color: ink2 } },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0, y: 1.02, xanchor: "left", yanchor: "bottom", traceorder: "normal" },
     margin: { l: 160, r: 20, t: schmal ? 105 : 95, b: 40 },
@@ -502,7 +502,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hovertemplate: "<b>%{y}</b><br>Anteil am Potenzial: %{customdata[0]:.1f} %<br><span style='font-size:11px'>n = %{customdata[1]}</span><extra></extra>" }
   ], Object.assign({}, basis, {
     barmode: "stack", bargap: 0.32,
-    xaxis: { range: [0, 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
+    xaxis: { range: [0, 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10, color: ink2 } },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0.98, y: 0.06, xanchor: "right", yanchor: "bottom", bgcolor: "rgba(255,255,255,0.9)" },
     margin: { l: 125, r: 20, t: 50, b: 40 },
