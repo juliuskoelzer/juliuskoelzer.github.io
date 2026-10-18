@@ -38,7 +38,7 @@ Wohin die Union ihre Wähler verliert –<br>und wen sie zurückholen kann
 
 <p class="ltw-photo-credit">
 
-Fotos: links <a href="https://commons.wikimedia.org/wiki/File:2024-08-21_Event,_CDU,_Wahlkampf_mit_Friedrich_Merz_in_Erfurt_2024_STP_3111_by_Stepro.jpg">Steffen Prößdorf</a> (Friedrich Merz beim Wahlkampfauftritt in Erfurt, 21. August 2024), rechts <a href="https://commons.wikimedia.org/wiki/File:Reichstag_building_Berlin_view_from_west_before_sunset.jpg">Jürgen Matern</a> (Reichstagsgebäude, Westfassade), beide Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a> bzw. <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0</a>; Montage, zugeschnitten, schwarz-weiß
+Fotos: <a href="https://commons.wikimedia.org/wiki/File:2024-08-21_Event,_CDU,_Wahlkampf_mit_Friedrich_Merz_in_Erfurt_2024_STP_3111_by_Stepro.jpg">Steffen Prößdorf</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>), <a href="https://commons.wikimedia.org/wiki/File:Reichstag_building_Berlin_view_from_west_before_sunset.jpg">Jürgen Matern</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0</a>), bearbeitet
 
 </p>
 
