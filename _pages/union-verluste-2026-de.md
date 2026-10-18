@@ -24,7 +24,7 @@ Entwurf: Dieser Beitrag ist noch nicht veröffentlicht. Alle Texte sind Platzhal
 
 <figure class="ltw-header ltw-hero">
 
-<img src="/images/union26_header.jpg" style="object-position: left center" alt="Schwarz-weiß-Montage: links Friedrich Merz mit Mikrofon bei einem Wahlkampfauftritt in Erfurt im August 2024, rechts der Kopf eines Stimmzettels zur Bundestagswahl 2025 mit Erst- und Zweitstimme"/>
+<img src="/images/union26_header.jpg" style="object-position: left center" alt="Schwarz-weiß-Montage: links Friedrich Merz mit Mikrofon bei einem Wahlkampfauftritt in Erfurt im August 2024, rechts die Westfassade des Reichstagsgebäudes in Berlin mit der Inschrift „Dem Deutschen Volke“"/>
 
 <div class="ltw-hero-shade"></div>
 
@@ -38,7 +38,7 @@ Wohin die Union ihre Wähler verliert –<br>und wen sie zurückholen kann
 
 <p class="ltw-photo-credit">
 
-Fotos: links <a href="https://commons.wikimedia.org/wiki/File:2024-08-21_Event,_CDU,_Wahlkampf_mit_Friedrich_Merz_in_Erfurt_2024_STP_3111_by_Stepro.jpg">Steffen Prößdorf</a> (Friedrich Merz beim Wahlkampfauftritt in Erfurt, 21. August 2024), rechts <a href="https://commons.wikimedia.org/wiki/File:BTW_2025_Stimmzettel_WK_298.jpg">Simon Mannweiler</a> (Stimmzettel zur Bundestagswahl 2025, Wahlkreis 298), beide Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>; Montage, zugeschnitten, schwarz-weiß
+Fotos: links <a href="https://commons.wikimedia.org/wiki/File:2024-08-21_Event,_CDU,_Wahlkampf_mit_Friedrich_Merz_in_Erfurt_2024_STP_3111_by_Stepro.jpg">Steffen Prößdorf</a> (Friedrich Merz beim Wahlkampfauftritt in Erfurt, 21. August 2024), rechts <a href="https://commons.wikimedia.org/wiki/File:Reichstag_building_Berlin_view_from_west_before_sunset.jpg">Jürgen Matern</a> (Reichstagsgebäude, Westfassade), beide Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a> bzw. <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0</a>; Montage, zugeschnitten, schwarz-weiß
 
 </p>
 
