@@ -24,7 +24,7 @@ Entwurf: Dieser Beitrag ist noch nicht veröffentlicht. Alle Texte sind Platzhal
 
 <figure class="ltw-header ltw-hero">
 
-<img src="/images/union26_header.jpg" alt="Schwarz-weiß-Montage vom CDU-Wahlabend im Konrad-Adenauer-Haus am 23. Februar 2025: links Friedrich Merz im Porträt, rechts Markus Söder, Merz und weitere CDU-Politiker auf der Bühne"/>
+<img src="/images/union26_header.jpg" style="object-position: left center" alt="Schwarz-weiß-Montage vom CDU-Wahlabend im Konrad-Adenauer-Haus am 23. Februar 2025: links Friedrich Merz im Porträt, rechts Markus Söder, Merz und weitere CDU-Politiker auf der Bühne"/>
 
 <div class="ltw-hero-shade"></div>
 
