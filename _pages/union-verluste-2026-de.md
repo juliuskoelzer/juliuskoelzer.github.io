@@ -63,6 +63,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-sankey" class="union26-chart" style="height: 520px;"></div>
 <figcaption>Unionswähler der Bundestagswahl 2025 nach ihrer Wahlabsicht im April 2026 (n = 2.326). Gezeigt sind nur Abgänge; hinzugewonnene Wähler sind wegen zu kleiner Fallzahlen nicht betrachtet. Unentschieden = „weiß nicht“. Prozent gewichtet, n ungewichtet.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> 7,7 Prozent der Menschen, die 2025 CDU/CSU gewählt haben, wollen im April 2026 AfD wählen. Das sind 195 Befragte.</p>
 </figure>
 
 ## 2. Wer bleibt, wer geht? Die Soziodemografie
@@ -74,6 +75,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-demografie" class="union26-chart" style="height: 980px;"></div>
 <figcaption>Zusammensetzung der vier Gruppen nach acht soziodemografischen Merkmalen aus den Profilwellen. Je Balken 100 Prozent; Kategorien im Kopf jedes Feldes von hell nach dunkel.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> Unter den Unentschiedenen sind 62 Prozent Frauen und 38 Prozent Männer. Unter denen, die bei der Union bleiben, sind es 43 Prozent Frauen.</p>
 </figure>
 
 ## 3. Wer bleibt, wer geht? Die Einstellungen
@@ -83,6 +85,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-bewertung" class="union26-chart" style="height: 760px;"></div>
 <figcaption>Durchschnittliche Bewertung auf der Skala von −5 bis +5. CDU/CSU: Mittel aus den getrennt erfragten Bewertungen von CDU und CSU.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> Wer zur AfD gewechselt ist, bewertet Friedrich Merz im Schnitt mit −2,1 auf der Skala von −5 bis +5. Wer bei der Union bleibt, bewertet ihn mit +2,0.</p>
 </figure>
 
 [Platzhalter] Bei den Aussagen zu Politik und Demokratie zeigt sich das Muster noch einmal: Die AfD-Wechsler stimmen populistischen Aussagen weit häufiger zu, fühlen sich häufiger abgehängt und wollen Gesetze auch mit AfD-Stimmen beschließen. Die Unentschiedenen liegen in vielen Fragen zwischen den Bleibenden und den AfD-Wechslern.
@@ -90,6 +93,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-zust-politik" class="union26-chart" style="height: 680px;"></div>
 <figcaption>Anteil, der der Aussage (eher) zustimmt. Skala von 1 (stimme überhaupt nicht zu) bis 5 (stimme voll und ganz zu); gezeigt: 4 und 5.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> 87 Prozent der AfD-Wechsler finden, dass Gesetze in wichtigen Sachfragen auch mit Stimmen der AfD beschlossen werden sollten. Unter den Bleibenden sind es 44 Prozent.</p>
 </figure>
 
 [Platzhalter] In den Sachfragen sind die Unterschiede kleiner. Beim Bürgergeld, bei der Ukraine-Hilfe und bei den Schulden gehen die Gruppen auseinander, bei Mietpreisen, Preisobergrenzen und Verteidigungsausgaben liegen sie nah beieinander.
@@ -97,6 +101,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-zust-sach" class="union26-chart" style="height: 760px;"></div>
 <figcaption>Anteil, der der Aussage (eher) zustimmt. Skala von 1 bis 5; gezeigt: 4 und 5.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> 72 Prozent der AfD-Wechsler wollen das Bürgergeld deutlich absenken, aber nur 33 Prozent derjenigen, die zu SPD oder Grünen gewechselt sind.</p>
 </figure>
 
 [Platzhalter] Auf den Positionsskalen zwischen zwei Polen steht die AfD-Gruppe fast überall am Rand: beim Zuzug, bei den Sanktionen gegen Russland und bei den Waffenlieferungen an die Ukraine. Die Wechsler zu SPD und Grünen stehen bei Sozialstaat und Klimaschutz etwas links der Bleibenden.
@@ -104,6 +109,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-positionen" class="union26-chart" style="height: 380px;"></div>
 <figcaption>Durchschnittliche Position auf der Skala von 1 bis 7 zwischen zwei gegensätzlichen Aussagen.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> Beim Thema Zuwanderung stehen die AfD-Wechsler im Schnitt bei 6,5 auf der Skala von 1 („Zuwanderung erleichtern“) bis 7 („Zuwanderung einschränken“), also fast ganz am rechten Pol.</p>
 </figure>
 
 [Platzhalter] Das Vertrauen in die Institutionen ist bei den AfD-Wechslern eingebrochen: Rund die Hälfte vertraut Bundestag und Bundesregierung „überhaupt nicht“. Polizei und Bundesverfassungsgericht genießen dagegen in allen Gruppen mehrheitlich Vertrauen.
@@ -111,6 +117,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-vertrauen" class="union26-chart" style="height: 620px;"></div>
 <figcaption>Vertrauen in Institutionen auf der Skala von 1 (vertraue ich überhaupt nicht) bis 5 (vertraue ich voll und ganz).</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> 49 Prozent der AfD-Wechsler vertrauen der Bundesregierung „überhaupt nicht“ (dunkelroter Balkenteil). Unter den Bleibenden sind es 5 Prozent.</p>
 </figure>
 
 [Platzhalter] Auch bei Demokratiezufriedenheit, Gerechtigkeitsempfinden und der Einschätzung der wirtschaftlichen Lage heben sich die AfD-Wechsler ab. Gut die Hälfte von ihnen ist unzufrieden mit der Demokratie, drei Viertel halten die allgemeine Wirtschaftslage für schlecht.
@@ -118,6 +125,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-einzel" class="union26-chart" style="height: 720px;"></div>
 <figcaption>Anteil, der zustimmt: jeweils die beiden Stufen der Fünferskala in Richtung der genannten Aussage.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> 54 Prozent der AfD-Wechsler sind unzufrieden oder sehr unzufrieden mit der Demokratie in Deutschland. Unter den Bleibenden sind es 9 Prozent.</p>
 </figure>
 
 [Platzhalter] Auf der Links-Rechts-Skala liegen alle vier Gruppen mit dem Gipfel knapp rechts der Mitte. Die AfD-Wechsler streuen aber deutlich weiter nach rechts, die Wechsler zu SPD und Grünen etwas nach links.
@@ -125,6 +133,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-lr" class="union26-chart" style="height: 620px;"></div>
 <figcaption>Links-Rechts-Selbsteinstufung von 1 (links) bis 11 (rechts), geglättet mit einer Kerndichteschätzung; gestrichelte Linie: Mittelwert.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> Die AfD-Wechsler stufen sich im Schnitt bei 7,0 ein, die Wechsler zu SPD und Grünen bei 5,9. Je höher der Wert, desto weiter rechts.</p>
 </figure>
 
 ## 4. Merz und die Bundesregierung im Zeitverlauf
@@ -136,6 +145,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-zeit" class="union26-chart" style="height: 640px;"></div>
 <figcaption>Dieselben Befragten in vier Panelwellen, gruppiert nach ihrer Wahlabsicht im April 2026. Mittelwert auf der Skala von −5 bis +5. Grau: Befragung vor Amtsantritt der neuen Bundesregierung. Regierungsarbeit der CDU/CSU erst ab Mai 2025 erfragt.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> Die späteren AfD-Wechsler bewerteten Friedrich Merz kurz nach der Wahl im Februar/März 2025 noch mit +2,3. Im April 2026 liegt ihr Urteil bei −2,1.</p>
 </figure>
 
 ## 5. Wen kann die Union zurückholen?
@@ -147,6 +157,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-rueckhol" class="union26-chart" style="height: 460px;"></div>
 <figcaption>Unionswähler von 2025, die im April 2026 nicht mehr Union wählen wollen, nach ihrer heutigen Wahlabsicht. Bewertung der Union auf der Skala von −5 bis +5: positiv = +1 bis +5, negativ = 0 bis −5.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> Von den früheren Unionswählern, die heute SPD wählen wollen, sehen 73 Prozent die Union weiterhin positiv (n = 92). Von denen, die zur AfD gewechselt sind, sind es 48 Prozent.</p>
 </figure>
 
 ## 6. Wo das Potenzial der Union heute steckt
@@ -158,6 +169,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figure class="ltw-plotly">
 <div id="union26-potenzial" class="union26-chart" style="height: 460px;"></div>
 <figcaption>Aktuelle Nicht-Unionswähler, die die Union positiv bewerten (+1 bis +5), nach Wahlabsicht im April 2026. Balken summieren sich zu 100 Prozent. Schraffiert: Anteil, der 2025 Union gewählt hat.</figcaption>
+<p class="ltw-lesebeispiel"><b>Lesebeispiel:</b> 25 Prozent aller Menschen, die derzeit nicht Union wählen, sie aber positiv sehen, wollen SPD wählen. Davon haben 4 Prozentpunkte 2025 noch Union gewählt (schraffiert), 21 Prozentpunkte nicht.</p>
 </figure>
 
 ## Fazit
@@ -176,6 +188,8 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 .ltw-article figure.ltw-plotly { padding: 14px 6px 10px 6px; }
 .ltw-article .union26-chart { width: 100%; }
 .ltw-article .union26-chart .js-plotly-plot { cursor: default; }
+.ltw-article .ltw-lesebeispiel { margin: 10px 6px 2px 6px; padding: 8px 12px; font-size: 0.86em; line-height: 1.5; color: #444;
+  background: #f1f5f9; border-left: 3px solid #2b5d8a; border-radius: 0 6px 6px 0; text-align: left; }
 </style>
 
 {% include union26_data.html %}
