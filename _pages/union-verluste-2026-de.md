@@ -198,11 +198,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var basis = { font: { family: schrift, color: "#1f1f1f", size: 13 }, paper_bgcolor: "white", plot_bgcolor: "white",
                 hoverlabel: { font: { family: schrift, size: 13 }, bgcolor: "white", bordercolor: "#bbb" } };
 
-  // ---------- 1) Sankey: Union voters 2025 -> intention April 2026 ----------
+  /* 1) Sankey: Union voters 2025 -> intention April 2026 */
   var ziele = ["CDU/CSU", "AfD", "SPD", "Grüne", "FDP", "unentschieden", "Linke", "BSW", "Andere", "Nichtwahl"];
   var anteil = [70.2, 7.7, 3.9, 2.3, 2.1, 8.1, 1.0, 0.8, 2.5, 1.3];
   var nz = [1590, 195, 93, 55, 52, 199, 24, 20, 66, 32];
-  var klein = ["Linke", "BSW", "Andere", "Nichtwahl"];   // too thin for a label; values in hover and caption
+  var klein = ["Linke", "BSW", "Andere", "Nichtwahl"];  /* too thin for a label; values in hover and caption */
   var labels = ["CDU/CSU 2025"].concat(ziele.map(function (z, i) { return klein.indexOf(z) >= 0 ? "" : z + "  " + de(anteil[i]) + " %"; }));
   var nodeFarben = ["#2b2b2b"].concat(ziele.map(function (z) { return farben[z]; }));
   var ys = [], cum = 0, gesamt = 100 + 6 + 8 * 1.2;
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   { x: 0.0, y: 1.06, xref: "paper", yref: "paper", text: "<b>Wohin hat die Union seit der Bundestagswahl Wähler verloren?</b>", showarrow: false, font: { size: 15 }, xanchor: "left" }]
   }), cfg);
 
-  // ---------- 4) time course: Merz and the federal government ----------
+  /* 4) time course: Merz and the federal government */
   var wellen = ["Feb./März 2025", "Mai 2025", "Nov. 2025", "April 2026"];
   var gruppen = ["Bleibt bei CDU/CSU", "Zu SPD/Grünen", "Zur AfD", "Unentschieden"];
   var gfarbe = { "Bleibt bei CDU/CSU": "#2b2b2b", "Zu SPD/Grünen": "#d71f1d", "Zur AfD": "#009ee0", "Unentschieden": "#a8a8a8" };
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function () {
     margin: { l: 40, r: 20, t: 70, b: 40 }
   }), cfg);
 
-  // ---------- 5) who can be won back: former Union voters by current intention ----------
+  /* 5) who can be won back: former Union voters by current intention */
   var rh = [["Zur SPD", 73.2, 92], ["Zur FDP", 72.5, 51], ["Zu den Grünen", 71.8, 54], ["Zur Linken", 55.8, 24], ["Zur Nichtwahl", 55.6, 29],
             ["Zur AfD", 47.9, 192], ["Zu anderen Parteien", 45.5, 66], ["Zum BSW", 42.7, 20], ["Unentschieden", 36.9, 197]];
   var rhY = rh.map(function (r) { return r[0]; });
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
     annotations: [{ x: 0, y: 1.2, xref: "paper", yref: "paper", text: "<b>Wen kann die Union zurückholen?</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
   }), cfg);
 
-  // ---------- 6) where the potential sits ----------
+  /* 6) where the potential sits */
   var pot = [["SPD", 25.3, 4.1, 439, 64], ["AfD", 19.0, 5.2, 332, 89], ["Grüne", 15.0, 2.3, 273, 37], ["unentschieden", 9.5, 4.3, 157, 70],
              ["FDP", 9.4, 2.2, 165, 37], ["Nichtwahl", 7.8, 0.9, 51, 15], ["Andere", 5.5, 1.7, 106, 28], ["Linke", 5.2, 0.8, 84, 12], ["BSW", 3.3, 0.5, 67, 7]];
   var potY = pot.map(function (p) { return p[0]; });
@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function () {
     annotations: [{ x: 0, y: 1.1, xref: "paper", yref: "paper", text: "<b>Wo das Potenzial der Union heute steckt</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
   }), cfg);
 
-  // ---------- lightbox for the static figures ----------
+  /* lightbox for the static figures */
   document.querySelectorAll(".ltw-article figure img").forEach(function (img) {
     img.addEventListener("click", function () {
       var overlay = document.createElement("div");
