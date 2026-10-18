@@ -24,7 +24,7 @@ Entwurf: Dieser Beitrag ist noch nicht veröffentlicht. Alle Texte sind Platzhal
 
 <figure class="ltw-header ltw-hero">
 
-<img src="/images/union26_header.jpg" style="object-position: left center" alt="Schwarz-weiß-Montage: links Carsten Linnemann, Markus Söder, Friedrich Merz und Hendrik Wüst auf der Bühne am CDU-Wahlabend im Februar 2025, rechts der Kopf eines Stimmzettels zur Bundestagswahl 2025 mit Erst- und Zweitstimme"/>
+<img src="/images/union26_header.jpg" style="object-position: left center" alt="Schwarz-weiß-Montage: links Friedrich Merz mit Mikrofon bei einem Wahlkampfauftritt in Erfurt im August 2024, rechts der Kopf eines Stimmzettels zur Bundestagswahl 2025 mit Erst- und Zweitstimme"/>
 
 <div class="ltw-hero-shade"></div>
 
@@ -38,7 +38,7 @@ Wohin die Union ihre Wähler verliert –<br>und wen sie zurückholen kann
 
 <p class="ltw-photo-credit">
 
-Fotos: links <a href="https://commons.wikimedia.org/wiki/File:2025-02-23_Bundestagswahl_%E2%80%93_Wahlabend_CDU_by_Sandro_Halank%E2%80%93013.jpg">Sandro Halank</a> (CDU-Wahlabend im Konrad-Adenauer-Haus, 23. Februar 2025), rechts <a href="https://commons.wikimedia.org/wiki/File:BTW_2025_Stimmzettel_WK_298.jpg">Simon Mannweiler</a> (Stimmzettel zur Bundestagswahl 2025, Wahlkreis 298), beide Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>; Montage, zugeschnitten, schwarz-weiß
+Fotos: links <a href="https://commons.wikimedia.org/wiki/File:2024-08-21_Event,_CDU,_Wahlkampf_mit_Friedrich_Merz_in_Erfurt_2024_STP_3111_by_Stepro.jpg">Steffen Prößdorf</a> (Friedrich Merz beim Wahlkampfauftritt in Erfurt, 21. August 2024), rechts <a href="https://commons.wikimedia.org/wiki/File:BTW_2025_Stimmzettel_WK_298.jpg">Simon Mannweiler</a> (Stimmzettel zur Bundestagswahl 2025, Wahlkreis 298), beide Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>; Montage, zugeschnitten, schwarz-weiß
 
 </p>
 
