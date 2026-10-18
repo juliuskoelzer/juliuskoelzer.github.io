@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
             value: anteil, customdata: ziele.map(function (z, i) { return [z, de(anteil[i]), nz[i]]; }),
             color: ziele.map(function (z) { return z === "CDU/CSU" ? "rgba(43,43,43,0.22)" : hexAlpha(farben[z], 0.75); }),
             hoverlabel: { bgcolor: "#1f1f1f", bordercolor: "#1f1f1f", font: { family: schrift, size: 15, color: "#ffffff" } },
-            hovertemplate: "<b>%{customdata[0]}</b><br>%{customdata[1]} % der Unionswähler 2025<br><span style="font-size:11px">n = %{customdata[2]}</span><extra></extra>" }
+            hovertemplate: "<b>%{customdata[0]}</b><br>%{customdata[1]} % der Unionswähler 2025<br><span style='font-size:11px'>n = %{customdata[2]}</span><extra></extra>" }
   }], Object.assign({}, basis, {
     margin: { l: 10, r: 10, t: 40, b: 60 },
     annotations: [{ x: 0.0, y: -0.1, xref: "paper", yref: "paper", text: "Bundestagswahl 2025", showarrow: false, font: { size: 13, color: ink2 }, xanchor: "left" },
@@ -467,10 +467,10 @@ document.addEventListener("DOMContentLoaded", function () {
   Plotly.newPlot("union26-rueckhol", [
     { type: "bar", orientation: "h", name: "Sieht Union positiv", y: rhY, x: rhJa, customdata: rh.map(function (r) { return r[2]; }),
       marker: { color: "#2b2b2b" }, text: rhJa.map(function (j) { return j + " %"; }), textposition: "inside", insidetextanchor: "middle",
-      textfont: { color: "white", size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union positiv: %{x} %<br><span style="font-size:11px">n = %{customdata}</span><extra></extra>" },
+      textfont: { color: "white", size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union positiv: %{x} %<br><span style='font-size:11px'>n = %{customdata}</span><extra></extra>" },
     { type: "bar", orientation: "h", name: "Sieht Union negativ", y: rhY, x: rhNein, customdata: rh.map(function (r) { return r[2]; }),
       marker: { color: "#dcdcdc" }, text: rhNein.map(function (j) { return j + " %"; }), textposition: "inside", insidetextanchor: "middle",
-      textfont: { color: ink, size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union negativ: %{x} %<br><span style="font-size:11px">n = %{customdata}</span><extra></extra>" }
+      textfont: { color: ink, size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union negativ: %{x} %<br><span style='font-size:11px'>n = %{customdata}</span><extra></extra>" }
   ], Object.assign({}, basis, {
     barmode: "stack", bargap: 0.32,
     xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
@@ -487,11 +487,11 @@ document.addEventListener("DOMContentLoaded", function () {
   Plotly.newPlot("union26-potenzial", [
     { type: "bar", orientation: "h", name: "Davon 2025 Union gewählt", y: potY, x: pot.map(function (p) { return p[2]; }), customdata: pot.map(function (p) { return p[4]; }),
       marker: { color: pot.map(function (p) { return farben[p[0]]; }), pattern: { shape: "/", fgcolor: "white", bgcolor: pot.map(function (p) { return farben[p[0]]; }), size: 7, solidity: 0.35 } },
-      hovertemplate: "<b>%{y}</b><br>davon 2025 Union gewählt: %{x:.1f} %<br><span style="font-size:11px">n = %{customdata}</span><extra></extra>" },
+      hovertemplate: "<b>%{y}</b><br>davon 2025 Union gewählt: %{x:.1f} %<br><span style='font-size:11px'>n = %{customdata}</span><extra></extra>" },
     { type: "bar", orientation: "h", name: "2025 anders oder nicht gewählt", showlegend: false, y: potY, x: pot.map(function (p) { return p[1] - p[2]; }),
       customdata: pot.map(function (p) { return [p[1], p[3]]; }), marker: { color: pot.map(function (p) { return farben[p[0]]; }) },
       text: pot.map(function (p) { return de(p[1], 0) + " % <span style='color:#8a8a8a;font-size:11px'>(n = " + p[3] + ")</span>"; }), textposition: "outside", cliponaxis: false,
-      hovertemplate: "<b>%{y}</b><br>Anteil am Potenzial: %{customdata[0]:.1f} %<br><span style="font-size:11px">n = %{customdata[1]}</span><extra></extra>" }
+      hovertemplate: "<b>%{y}</b><br>Anteil am Potenzial: %{customdata[0]:.1f} %<br><span style='font-size:11px'>n = %{customdata[1]}</span><extra></extra>" }
   ], Object.assign({}, basis, {
     barmode: "stack", bargap: 0.32,
     xaxis: { range: [0, 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
