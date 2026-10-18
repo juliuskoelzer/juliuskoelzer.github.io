@@ -203,6 +203,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var gruppen = D.gruppen;
   var gfarbe = { "Bleibt bei CDU/CSU": "#2b2b2b", "Zu SPD/Grünen": "#d71f1d", "Zur AfD": "#009ee0", "Unentschieden": "#a8a8a8" };
   var cfg = { displayModeBar: false, responsive: true };
+  /* narrow screens: facet grids collapse to one column and the chart boxes grow */
+  var schmal = window.innerWidth < 640;
+  function hoehe(id, h) { if (schmal) document.getElementById(id).style.height = h + "px"; }
   var ink = "#1f1f1f", ink2 = "#5a5a5a", ink3 = "#8a8a8a";
   function de(x, d) { return Number(x).toFixed(d === undefined ? 1 : d).replace(".", ","); }
   function vz(x, d) { var s = de(Math.abs(x), d); return (x > 0 ? "+" : x < 0 ? "−" : "") + s; }
@@ -262,7 +265,8 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ---------- 2) demographics: stacked 100 % bars, one facet per characteristic ---------- */
   (function () {
     var blau = ["#d6e4f0", "#9dbdd9", "#5b8fbd", "#2b5d8a"];
-    var axes = gridAxes(D.demografie.length, 2), traces = [], annos = [], lay = {};
+    var sp = schmal ? 1 : 2, axes = gridAxes(D.demografie.length, sp), traces = [], annos = [], lay = {};
+    hoehe("union26-demografie", 1900);
     D.demografie.forEach(function (m, k) {
       var ax = axes[k], ks = m.stufen.length;
       m.stufen.forEach(function (st, j) {
@@ -277,11 +281,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       annos.push(strip(ax, m.merkmal, m.stufen.join(" · ")));
       lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
-      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0, automargin: true, ticklabelstandoff: 6 };
+      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % sp === 0, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-demografie", traces, Object.assign({}, basis, lay, {
       barmode: "stack", bargap: 0.28, annotations: annos,
-      grid: { rows: 4, columns: 2, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.32 },
+      grid: { rows: Math.ceil(D.demografie.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.32 },
       margin: { l: 130, r: 10, t: 50, b: 30 }
     }), cfg);
   })();
@@ -344,7 +348,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* ---------- trust: stacked distributions, one facet per institution ---------- */
   (function () {
-    var pal = ["#b2182b", "#ef8a62", "#d9d9d9", "#67a9cf", "#2166ac"], axes = gridAxes(D.vertrauen.length, 2), traces = [], annos = [], lay = {};
+    var pal = ["#b2182b", "#ef8a62", "#d9d9d9", "#67a9cf", "#2166ac"], sp = schmal ? 1 : 2, axes = gridAxes(D.vertrauen.length, sp), traces = [], annos = [], lay = {};
+    hoehe("union26-vertrauen", 1250);
     D.vertrauen.forEach(function (v, k) {
       var ax = axes[k];
       D.stufen_vertrauen.forEach(function (st, j) {
@@ -355,19 +360,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       annos.push(strip(ax, v.label));
       lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
-      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0, automargin: true, ticklabelstandoff: 6 };
+      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % sp === 0, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-vertrauen", traces, Object.assign({}, basis, lay, {
       barmode: "stack", bargap: 0.25, annotations: annos,
-      grid: { rows: 3, columns: 2, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.3 },
-      legend: { orientation: "h", x: 0, y: 1.08, xanchor: "left", yanchor: "bottom", font: { size: 12 }, traceorder: "normal" },
-      margin: { l: 130, r: 10, t: 90, b: 30 }
+      grid: { rows: Math.ceil(D.vertrauen.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.3 },
+      legend: { orientation: "h", x: 0, y: schmal ? 1.03 : 1.08, xanchor: "left", yanchor: "bottom", font: { size: 12 }, traceorder: "normal" },
+      margin: { l: 130, r: 10, t: schmal ? 120 : 90, b: 30 }
     }), cfg);
   })();
 
   /* ---------- single items: small bar panels ---------- */
   (function () {
-    var axes = gridAxes(D.einzelfragen.length, 3), traces = [], annos = [], lay = {};
+    var sp = schmal ? 1 : 3, axes = gridAxes(D.einzelfragen.length, sp), traces = [], annos = [], lay = {};
+    hoehe("union26-einzel", 1500);
     function wrap(s, n) { var w = s.split(" "), out = [], z = ""; w.forEach(function (x) { if ((z + " " + x).trim().length > n) { out.push(z.trim()); z = x; } else z += " " + x; }); out.push(z.trim()); return out.join("<br>"); }
     D.einzelfragen.forEach(function (e, k) {
       var ax = axes[k];
@@ -378,11 +384,11 @@ document.addEventListener("DOMContentLoaded", function () {
         hovertemplate: "<b>%{y}</b><br>" + e.label + "<br>%{x:.0f} % stimmen zu<extra></extra>" });
       annos.push(strip(ax, wrap(e.label, 26)));
       lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10 } };
-      lay[ax.yaxis] = { fixedrange: true, showticklabels: k % 3 === 0, tickfont: { size: 11 }, automargin: true, ticklabelstandoff: 6 };
+      lay[ax.yaxis] = { fixedrange: true, showticklabels: k % sp === 0, tickfont: { size: 11 }, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-einzel", traces, Object.assign({}, basis, lay, {
       bargap: 0.25, annotations: annos,
-      grid: { rows: 3, columns: 3, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: 0.45 },
+      grid: { rows: Math.ceil(D.einzelfragen.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: schmal ? 0.5 : 0.45 },
       margin: { l: 120, r: 30, t: 70, b: 30 }
     }), cfg);
   })();
@@ -436,7 +442,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "Unentschieden": [[-2.43, -0.71, -1.68, -2.38], [198, 177, 187, 196]] }
   };
   (function () {
-    var merkmale = Object.keys(zeit), axes = gridAxes(merkmale.length, 2), traces = [], shapes = [], annos = [], lay = {};
+    var merkmale = Object.keys(zeit), sp = schmal ? 1 : 2, axes = gridAxes(merkmale.length, sp), traces = [], shapes = [], annos = [], lay = {};
+    hoehe("union26-zeit", 1150);
     merkmale.forEach(function (m, k) {
       var ax = axes[k];
       gruppen.forEach(function (g) {
@@ -452,10 +459,10 @@ document.addEventListener("DOMContentLoaded", function () {
       lay[ax.yaxis] = { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"], gridcolor: "#e6e6e6", zeroline: false, fixedrange: true };
     });
     Plotly.newPlot("union26-zeit", traces, Object.assign({}, basis, lay, {
-      grid: { rows: 2, columns: 2, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: 0.3 },
+      grid: { rows: Math.ceil(merkmale.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: 0.3 },
       shapes: shapes, annotations: annos,
-      legend: { orientation: "h", x: 0, y: 1.12, xanchor: "left", yanchor: "bottom", font: { size: 12 } },
-      margin: { l: 40, r: 20, t: 80, b: 40 }
+      legend: { orientation: "h", x: 0, y: schmal ? 1.04 : 1.12, xanchor: "left", yanchor: "bottom", font: { size: 12 } },
+      margin: { l: 40, r: 20, t: schmal ? 110 : 80, b: 40 }
     }), cfg);
   })();
 
@@ -475,9 +482,9 @@ document.addEventListener("DOMContentLoaded", function () {
     barmode: "stack", bargap: 0.32,
     xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
-    legend: { orientation: "h", x: 0, y: 1.1, xanchor: "left", traceorder: "normal" },
-    margin: { l: 160, r: 20, t: 90, b: 40 },
-    annotations: [{ x: 0, y: 1.2, xref: "paper", yref: "paper", text: "<b>Wen kann die Union zurückholen?</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
+    legend: { orientation: "h", x: 0, y: 1.02, xanchor: "left", yanchor: "bottom", traceorder: "normal" },
+    margin: { l: 160, r: 20, t: schmal ? 130 : 95, b: 40 },
+    annotations: [{ x: 0, y: schmal ? 1.3 : 1.22, xref: "paper", yref: "paper", text: "<b>Wen kann die Union zurückholen?</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
   }), cfg);
 
   /* ---------- 6) where the potential sits ---------- */
