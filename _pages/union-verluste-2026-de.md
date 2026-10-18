@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gruppen.forEach(function (g) {
       traces.push({ type: "scatter", mode: "markers", name: g, legendgroup: g,
         x: items.map(function (it) { return it.werte[g]; }), y: pos,
-        marker: marker(g, 11), hovertemplate: opt.fmt + "<extra></extra>" });
+        marker: marker(g, 11), customdata: items.map(function (it) { return opt.fmt(it.werte[g]); }), hovertemplate: "%{customdata}<extra></extra>" });
     });
     var lay = Object.assign({}, basis, {
       xaxis: Object.assign({ gridcolor: "#e6e6e6", fixedrange: true, zeroline: false }, opt.xaxis),
@@ -303,9 +303,12 @@ document.addEventListener("DOMContentLoaded", function () {
     Plotly.newPlot(id, traces, lay, cfg);
   }
   var pct = { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticksuffix: " %" };
-  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: "%{x:.0f} %", xaxis: pct });
-  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: "%{x:.0f} %", xaxis: pct });
-  dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: "%{x:+.1f}",
+  /* Plotly ignores the "+" flag in hover templates, so signed values are preformatted here */
+  function prozent(v) { return Math.round(v) + " %"; }
+  function signiert(v) { return (v > 0 ? "+" : v < 0 ? "−" : "") + de(Math.abs(v)); }
+  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: prozent, xaxis: pct });
+  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: prozent, xaxis: pct });
+  dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: signiert,
     xaxis: { range: [-5, 5], tickvals: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5], ticktext: ["−5", "−4", "−3", "−2", "−1", "0", "+1", "+2", "+3", "+4", "+5"] },
     shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 0, x1: 5, y0: 0, y1: 1, fillcolor: "#f5f5f5", line: { width: 0 }, layer: "below" },
              { type: "line", xref: "x", yref: "paper", x0: 0, x1: 0, y0: 0, y1: 1, line: { color: ink3, width: 1 } }] });
@@ -427,9 +430,9 @@ document.addEventListener("DOMContentLoaded", function () {
       gruppen.forEach(function (g) {
         var d = zeit[m][g];
         traces.push({ type: "scatter", mode: "lines+markers", name: g, legendgroup: g, showlegend: k === 0,
-          x: wellen, y: d[0], customdata: d[1], xaxis: ax.x, yaxis: ax.y, connectgaps: false,
+          x: wellen, y: d[0], customdata: d[0].map(signiert), xaxis: ax.x, yaxis: ax.y, connectgaps: false,
           line: { color: gfarbe[g], width: 3, dash: g === "Zu SPD/Grünen" ? "dash" : "solid" }, marker: marker(g, 10),
-          hovertemplate: "<b>" + g + "</b><br>%{x}: Ø %{y:+.1f}<br>n = %{customdata}<extra></extra>" });
+          hovertemplate: "%{customdata}<extra></extra>" });
       });
       shapes.push({ type: "rect", xref: ax.x, yref: ax.y + " domain", x0: -0.5, x1: 0.5, y0: 0, y1: 1, fillcolor: "#f3f3f3", line: { width: 0 }, layer: "below" });
       annos.push(strip(ax, m));
