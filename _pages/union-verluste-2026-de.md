@@ -2,6 +2,11 @@
 layout: page
 title: "Wohin die Union ihre Wähler verliert – und wen sie zurückholen kann"
 description: "Seit der Bundestagswahl 2025 hat die Union fast jeden dritten Wähler verloren. Das GLES-Panel zeigt, wohin sie gegangen sind, wie sie sich von den Bleibenden unterscheiden und wo die Partei noch Potenzial hat."
+header:
+  image: union26_social.jpg
+  image_width: 1200
+  image_height: 600
+  image_alt: "Wohin die Union ihre Wähler verliert – und wen sie zurückholen kann"
 permalink: /union-verluste-2026-de/
 author_profile: true
 published: true
@@ -17,11 +22,25 @@ Entwurf: Dieser Beitrag ist noch nicht veröffentlicht. Alle Texte sind Platzhal
 
 </p>
 
-<h1 class="blog-page-title">
+<figure class="ltw-header ltw-hero">
 
-Wohin die Union ihre Wähler verliert – und wen sie zurückholen kann
+<img src="/images/union26_header.jpg" alt="Markus Söder, Friedrich Merz, Lars Klingbeil und Saskia Esken bei der Unterzeichnung des Koalitionsvertrags im Mai 2025, dahinter der Schriftzug „Verantwortung für Deutschland“"/>
+
+<div class="ltw-hero-shade"></div>
+
+<h1 class="ltw-hero-title">
+
+Wohin die Union ihre Wähler verliert –<br>und wen sie zurückholen kann
 
 </h1>
+
+</figure>
+
+<p class="ltw-photo-credit">
+
+Foto: <a href="https://commons.wikimedia.org/wiki/File:2025-05-05_Unterzeichnung_des_Koalitionsvertrages_der_21._Wahlperiode_des_Bundestages_(Martin_Rulsch)_072.jpg">Martin Rulsch, Wikimedia Commons</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>, zugeschnitten) – Unterzeichnung des Koalitionsvertrags, 5. Mai 2025
+
+</p>
 
 <p class="ltw-standfirst">
 
