@@ -24,7 +24,7 @@ Entwurf: Dieser Beitrag ist noch nicht veröffentlicht. Alle Texte sind Platzhal
 
 <figure class="ltw-header ltw-hero">
 
-<img src="/images/union26_header.jpg" alt="CDU-Wahlabend im Konrad-Adenauer-Haus am 23. Februar 2025: Friedrich Merz und Markus Söder mit weiteren CDU-Politikern auf der Bühne vor dem Schriftzug „nach vorne“"/>
+<img src="/images/union26_header.jpg" alt="Schwarz-weiß-Montage vom CDU-Wahlabend im Konrad-Adenauer-Haus am 23. Februar 2025: links Friedrich Merz im Porträt, rechts Markus Söder, Merz und weitere CDU-Politiker auf der Bühne"/>
 
 <div class="ltw-hero-shade"></div>
 
@@ -38,7 +38,7 @@ Wohin die Union ihre Wähler verliert –<br>und wen sie zurückholen kann
 
 <p class="ltw-photo-credit">
 
-Foto: <a href="https://commons.wikimedia.org/wiki/File:2025-02-23_Bundestagswahl_%E2%80%93_Wahlabend_CDU_by_Sandro_Halank%E2%80%93013.jpg">Sandro Halank, Wikimedia Commons</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>, zugeschnitten) – CDU-Wahlabend im Konrad-Adenauer-Haus, 23. Februar 2025
+Fotos: Sandro Halank, Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File:2025-02-23_Bundestagswahl_%E2%80%93_Wahlabend_CDU_by_Sandro_Halank%E2%80%93070.jpg">Porträt Friedrich Merz</a>, <a href="https://commons.wikimedia.org/wiki/File:2025-02-23_Bundestagswahl_%E2%80%93_Wahlabend_CDU_by_Sandro_Halank%E2%80%93013.jpg">Bühne</a>; <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>, Montage aus zwei Fotos, zugeschnitten, schwarz-weiß) – CDU-Wahlabend im Konrad-Adenauer-Haus, 23. Februar 2025
 
 </p>
 
