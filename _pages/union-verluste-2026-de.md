@@ -206,6 +206,8 @@ document.addEventListener("DOMContentLoaded", function () {
   /* narrow screens: facet grids collapse to one column and the chart boxes grow */
   var schmal = window.innerWidth < 640;
   function hoehe(id, h) { if (schmal) document.getElementById(id).style.height = h + "px"; }
+  /* soft line breaks for facet headers */
+  function wrap(s, n) { var w = s.split(" "), out = [], z = ""; w.forEach(function (x) { if ((z + " " + x).trim().length > n) { out.push(z.trim()); z = x; } else z += " " + x; }); out.push(z.trim()); return out.join("<br>"); }
   var ink = "#1f1f1f", ink2 = "#5a5a5a", ink3 = "#8a8a8a";
   function de(x, d) { return Number(x).toFixed(d === undefined ? 1 : d).replace(".", ","); }
   function vz(x, d) { var s = de(Math.abs(x), d); return (x > 0 ? "+" : x < 0 ? "−" : "") + s; }
@@ -279,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
           customdata: gruppen.slice().reverse().map(function () { return st; }),
           hovertemplate: "<b>%{y}</b><br>" + m.merkmal + ": %{customdata}<br>%{x:.0f} %<extra></extra>" });
       });
-      annos.push(strip(ax, m.merkmal, m.stufen.join(" · ")));
+      annos.push(strip(ax, m.merkmal, schmal ? wrap(m.stufen.join(" · "), 34) : m.stufen.join(" · ")));
       lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
       lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % sp === 0, automargin: true, ticklabelstandoff: 6 };
     });
@@ -374,7 +376,6 @@ document.addEventListener("DOMContentLoaded", function () {
   (function () {
     var sp = schmal ? 1 : 3, axes = gridAxes(D.einzelfragen.length, sp), traces = [], annos = [], lay = {};
     hoehe("union26-einzel", 1500);
-    function wrap(s, n) { var w = s.split(" "), out = [], z = ""; w.forEach(function (x) { if ((z + " " + x).trim().length > n) { out.push(z.trim()); z = x; } else z += " " + x; }); out.push(z.trim()); return out.join("<br>"); }
     D.einzelfragen.forEach(function (e, k) {
       var ax = axes[k];
       traces.push({ type: "bar", orientation: "h", xaxis: ax.x, yaxis: ax.y, showlegend: false,
@@ -484,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function () {
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0, y: 1.02, xanchor: "left", yanchor: "bottom", traceorder: "normal" },
     margin: { l: 160, r: 20, t: schmal ? 130 : 95, b: 40 },
-    annotations: [{ x: 0, y: schmal ? 1.3 : 1.22, xref: "paper", yref: "paper", text: "<b>Wen kann die Union zurückholen?</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
+    title: { text: "<b>Wen kann die Union zurückholen?</b>", x: 0.02, xref: "container", xanchor: "left", y: 0.98, yanchor: "top", font: { size: 15 } }
   }), cfg);
 
   /* ---------- 6) where the potential sits ---------- */
@@ -505,7 +506,7 @@ document.addEventListener("DOMContentLoaded", function () {
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0.98, y: 0.06, xanchor: "right", yanchor: "bottom", bgcolor: "rgba(255,255,255,0.9)" },
     margin: { l: 125, r: 20, t: 50, b: 40 },
-    annotations: [{ x: 0, y: 1.1, xref: "paper", yref: "paper", text: "<b>Wo das Potenzial der Union heute steckt</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
+    title: { text: "<b>Wo das Potenzial der Union heute steckt</b>", x: 0.02, xref: "container", xanchor: "left", y: 0.98, yanchor: "top", font: { size: 15 } }
   }), cfg);
 
   /* ---------- lightbox for the static header image ---------- */
