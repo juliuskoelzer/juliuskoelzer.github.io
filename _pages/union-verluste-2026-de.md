@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Plotly.newPlot("union26-demografie", traces, Object.assign({}, basis, lay, {
       barmode: "stack", bargap: 0.28, annotations: annos,
       grid: { rows: Math.ceil(D.demografie.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.32 },
-      margin: { l: 130, r: 10, t: 50, b: 30 }
+      margin: { l: 130, r: schmal ? 30 : 10, t: 50, b: 30 }
     }), cfg);
   })();
 
@@ -368,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
       barmode: "stack", bargap: 0.25, annotations: annos,
       grid: { rows: Math.ceil(D.vertrauen.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.3 },
       legend: { orientation: "h", x: 0, y: schmal ? 1.03 : 1.08, xanchor: "left", yanchor: "bottom", font: { size: 12 }, traceorder: "normal" },
-      margin: { l: 130, r: 10, t: schmal ? 120 : 90, b: 30 }
+      margin: { l: 130, r: schmal ? 30 : 10, t: schmal ? 120 : 90, b: 30 }
     }), cfg);
   })();
 
@@ -484,7 +484,7 @@ document.addEventListener("DOMContentLoaded", function () {
     xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0, y: 1.02, xanchor: "left", yanchor: "bottom", traceorder: "normal" },
-    margin: { l: 160, r: 20, t: schmal ? 130 : 95, b: 40 },
+    margin: { l: 160, r: 20, t: schmal ? 105 : 95, b: 40 },
     title: { text: "<b>Wen kann die Union zurückholen?</b>", x: 0.02, xref: "container", xanchor: "left", y: 0.98, yanchor: "top", font: { size: 15 } }
   }), cfg);
 
