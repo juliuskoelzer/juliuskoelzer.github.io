@@ -276,8 +276,8 @@ document.addEventListener("DOMContentLoaded", function () {
           hovertemplate: "<b>%{y}</b><br>" + m.merkmal + ": %{customdata}<br>%{x:.0f} %<extra></extra>" });
       });
       annos.push(strip(ax, m.merkmal, m.stufen.join(" · ")));
-      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
-      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0, automargin: true };
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-demografie", traces, Object.assign({}, basis, lay, {
       barmode: "stack", bargap: 0.28, annotations: annos,
@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     Plotly.newPlot(id, traces, lay, cfg);
   }
-  var pct = { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticksuffix: " %" };
+  var pct = { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"] };
   /* Plotly ignores the "+" flag in hover templates, so signed values are preformatted here */
   function prozent(v) { return Math.round(v) + " %"; }
   function signiert(v) { return (v > 0 ? "+" : v < 0 ? "−" : "") + de(Math.abs(v)); }
@@ -354,8 +354,8 @@ document.addEventListener("DOMContentLoaded", function () {
           hovertemplate: "<b>%{y}</b><br>" + v.label + ": vertraue " + st + "<br>%{x:.0f} %<extra></extra>" });
       });
       annos.push(strip(ax, v.label));
-      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
-      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0, automargin: true };
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-vertrauen", traces, Object.assign({}, basis, lay, {
       barmode: "stack", bargap: 0.25, annotations: annos,
@@ -377,8 +377,8 @@ document.addEventListener("DOMContentLoaded", function () {
         text: gruppen.slice().reverse().map(function (g) { return Math.round(e.werte[g]) + " %"; }), textposition: "outside", cliponaxis: false, textfont: { size: 11 },
         hovertemplate: "<b>%{y}</b><br>" + e.label + "<br>%{x:.0f} % stimmen zu<extra></extra>" });
       annos.push(strip(ax, wrap(e.label, 26)));
-      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10 } };
-      lay[ax.yaxis] = { fixedrange: true, showticklabels: k % 3 === 0, tickfont: { size: 11 }, automargin: true };
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10 } };
+      lay[ax.yaxis] = { fixedrange: true, showticklabels: k % 3 === 0, tickfont: { size: 11 }, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-einzel", traces, Object.assign({}, basis, lay, {
       bargap: 0.25, annotations: annos,
@@ -474,7 +474,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ], Object.assign({}, basis, {
     barmode: "stack", bargap: 0.32,
     xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
-    yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, ticksuffix: "  ", automargin: true },
+    yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0, y: 1.1, xanchor: "left", traceorder: "normal" },
     margin: { l: 160, r: 20, t: 90, b: 40 },
     annotations: [{ x: 0, y: 1.2, xref: "paper", yref: "paper", text: "<b>Wen kann die Union zurückholen?</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
@@ -495,7 +495,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ], Object.assign({}, basis, {
     barmode: "stack", bargap: 0.32,
     xaxis: { range: [0, 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
-    yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, ticksuffix: "  ", automargin: true },
+    yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0.98, y: 0.06, xanchor: "right", yanchor: "bottom", bgcolor: "rgba(255,255,255,0.9)" },
     margin: { l: 125, r: 20, t: 50, b: 40 },
     annotations: [{ x: 0, y: 1.1, xref: "paper", yref: "paper", text: "<b>Wo das Potenzial der Union heute steckt</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
