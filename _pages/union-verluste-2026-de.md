@@ -24,7 +24,7 @@ Entwurf: Dieser Beitrag ist noch nicht veröffentlicht. Alle Texte sind Platzhal
 
 <figure class="ltw-header ltw-hero">
 
-<img src="/images/union26_header.jpg" alt="Markus Söder, Friedrich Merz, Lars Klingbeil und Saskia Esken bei der Unterzeichnung des Koalitionsvertrags im Mai 2025, dahinter der Schriftzug „Verantwortung für Deutschland“"/>
+<img src="/images/union26_header.jpg" alt="CDU-Wahlabend im Konrad-Adenauer-Haus am 23. Februar 2025: Friedrich Merz und Markus Söder mit weiteren CDU-Politikern auf der Bühne vor dem Schriftzug „nach vorne“"/>
 
 <div class="ltw-hero-shade"></div>
 
@@ -38,7 +38,7 @@ Wohin die Union ihre Wähler verliert –<br>und wen sie zurückholen kann
 
 <p class="ltw-photo-credit">
 
-Foto: <a href="https://commons.wikimedia.org/wiki/File:2025-05-05_Unterzeichnung_des_Koalitionsvertrages_der_21._Wahlperiode_des_Bundestages_(Martin_Rulsch)_072.jpg">Martin Rulsch, Wikimedia Commons</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>, zugeschnitten) – Unterzeichnung des Koalitionsvertrags, 5. Mai 2025
+Foto: <a href="https://commons.wikimedia.org/wiki/File:2025-02-23_Bundestagswahl_%E2%80%93_Wahlabend_CDU_by_Sandro_Halank%E2%80%93013.jpg">Sandro Halank, Wikimedia Commons</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>, zugeschnitten) – CDU-Wahlabend im Konrad-Adenauer-Haus, 23. Februar 2025
 
 </p>
 
@@ -71,84 +71,60 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 
 [Platzhalter] Auffällig sind drei Dinge: Die Bleibenden sind die älteste Gruppe, die Unentschiedenen sind zu fast zwei Dritteln Frauen, und wer zur AfD geht oder unentschieden ist, ordnet sich häufiger der Unter- oder Arbeiterschicht zu.
 
-<figure>
-
-<img src="/images/union26_demografie.png" alt="Gestapelte Balken: Zusammensetzung der vier Gruppen nach Geschlecht, Alter, Schulabschluss, Einkommen, Erwerbsstatus, Region, subjektiver Schicht und Wohnort"/>
-
-<figcaption>Zusammensetzung der vier Gruppen nach acht soziodemografischen Merkmalen aus den Profilwellen. Je Balken 100 Prozent.</figcaption>
-
+<figure class="ltw-plotly">
+<div id="union26-demografie" class="union26-chart" style="height: 980px;"></div>
+<figcaption>Zusammensetzung der vier Gruppen nach acht soziodemografischen Merkmalen aus den Profilwellen. Je Balken 100 Prozent; Kategorien im Kopf jedes Feldes von hell nach dunkel.</figcaption>
 </figure>
 
 ## 3. Wer bleibt, wer geht? Die Einstellungen
 
 [Platzhalter] Deutlicher als die Soziodemografie trennen die politischen Einstellungen. Am größten sind die Unterschiede beim Urteil über Parteien und Spitzenpolitiker: Wer zur AfD gewechselt ist, bewertet die AfD inzwischen klar positiv und die Union negativ. Wer zu SPD oder Grünen gewechselt ist, sieht die Union im Schnitt noch leicht positiv.
 
-<figure>
-
-<img src="/images/union26_skala_bewertung.png" alt="Punktdiagramm: durchschnittliche Bewertung von Parteien, Politikern und Ländern auf der Skala von minus 5 bis plus 5, nach Gruppe"/>
-
+<figure class="ltw-plotly">
+<div id="union26-bewertung" class="union26-chart" style="height: 760px;"></div>
 <figcaption>Durchschnittliche Bewertung auf der Skala von −5 bis +5. CDU/CSU: Mittel aus den getrennt erfragten Bewertungen von CDU und CSU.</figcaption>
-
 </figure>
 
 [Platzhalter] Bei den Aussagen zu Politik und Demokratie zeigt sich das Muster noch einmal: Die AfD-Wechsler stimmen populistischen Aussagen weit häufiger zu, fühlen sich häufiger abgehängt und wollen Gesetze auch mit AfD-Stimmen beschließen. Die Unentschiedenen liegen in vielen Fragen zwischen den Bleibenden und den AfD-Wechslern.
 
-<figure>
-
-<img src="/images/union26_skala_zustimmung_politik.png" alt="Punktdiagramm: Zustimmung zu Aussagen über Populismus, Abgehängtsein, AfD und Extremismus, nach Gruppe"/>
-
+<figure class="ltw-plotly">
+<div id="union26-zust-politik" class="union26-chart" style="height: 680px;"></div>
 <figcaption>Anteil, der der Aussage (eher) zustimmt. Skala von 1 (stimme überhaupt nicht zu) bis 5 (stimme voll und ganz zu); gezeigt: 4 und 5.</figcaption>
-
 </figure>
 
 [Platzhalter] In den Sachfragen sind die Unterschiede kleiner. Beim Bürgergeld, bei der Ukraine-Hilfe und bei den Schulden gehen die Gruppen auseinander, bei Mietpreisen, Preisobergrenzen und Verteidigungsausgaben liegen sie nah beieinander.
 
-<figure>
-
-<img src="/images/union26_skala_zustimmung_sachfragen.png" alt="Punktdiagramm: Zustimmung zu Aussagen über Sozialstaat, Haushalt, Globalisierung und Außenpolitik, nach Gruppe"/>
-
+<figure class="ltw-plotly">
+<div id="union26-zust-sach" class="union26-chart" style="height: 760px;"></div>
 <figcaption>Anteil, der der Aussage (eher) zustimmt. Skala von 1 bis 5; gezeigt: 4 und 5.</figcaption>
-
 </figure>
 
 [Platzhalter] Auf den Positionsskalen zwischen zwei Polen steht die AfD-Gruppe fast überall am Rand: beim Zuzug, bei den Sanktionen gegen Russland und bei den Waffenlieferungen an die Ukraine. Die Wechsler zu SPD und Grünen stehen bei Sozialstaat und Klimaschutz etwas links der Bleibenden.
 
-<figure>
-
-<img src="/images/union26_skala_positionen.png" alt="Punktdiagramm: durchschnittliche Position auf fünf Skalen zwischen zwei Polen, nach Gruppe"/>
-
+<figure class="ltw-plotly">
+<div id="union26-positionen" class="union26-chart" style="height: 380px;"></div>
 <figcaption>Durchschnittliche Position auf der Skala von 1 bis 7 zwischen zwei gegensätzlichen Aussagen.</figcaption>
-
 </figure>
 
 [Platzhalter] Das Vertrauen in die Institutionen ist bei den AfD-Wechslern eingebrochen: Rund die Hälfte vertraut Bundestag und Bundesregierung „überhaupt nicht“. Polizei und Bundesverfassungsgericht genießen dagegen in allen Gruppen mehrheitlich Vertrauen.
 
-<figure>
-
-<img src="/images/union26_skala_vertrauen.png" alt="Gestapelte Balken: Verteilung des Vertrauens in sechs Institutionen, nach Gruppe"/>
-
+<figure class="ltw-plotly">
+<div id="union26-vertrauen" class="union26-chart" style="height: 620px;"></div>
 <figcaption>Vertrauen in Institutionen auf der Skala von 1 (vertraue ich überhaupt nicht) bis 5 (vertraue ich voll und ganz).</figcaption>
-
 </figure>
 
 [Platzhalter] Auch bei Demokratiezufriedenheit, Gerechtigkeitsempfinden und der Einschätzung der wirtschaftlichen Lage heben sich die AfD-Wechsler ab. Gut die Hälfte von ihnen ist unzufrieden mit der Demokratie, drei Viertel halten die allgemeine Wirtschaftslage für schlecht.
 
-<figure>
-
-<img src="/images/union26_skala_einzelfragen.png" alt="Balkendiagramme: Zustimmung zu sieben Einzelfragen über Demokratie, Gerechtigkeit und Wirtschaftslage, nach Gruppe"/>
-
+<figure class="ltw-plotly">
+<div id="union26-einzel" class="union26-chart" style="height: 720px;"></div>
 <figcaption>Anteil, der zustimmt: jeweils die beiden Stufen der Fünferskala in Richtung der genannten Aussage.</figcaption>
-
 </figure>
 
 [Platzhalter] Auf der Links-Rechts-Skala liegen alle vier Gruppen mit dem Gipfel knapp rechts der Mitte. Die AfD-Wechsler streuen aber deutlich weiter nach rechts, die Wechsler zu SPD und Grünen etwas nach links.
 
-<figure class="ltw-fig-narrow">
-
-<img src="/images/union26_skala_links_rechts.png" alt="Geglättete Verteilungen der Links-Rechts-Selbsteinstufung, eine Kurve je Gruppe"/>
-
+<figure class="ltw-plotly">
+<div id="union26-lr" class="union26-chart" style="height: 620px;"></div>
 <figcaption>Links-Rechts-Selbsteinstufung von 1 (links) bis 11 (rechts), geglättet mit einer Kerndichteschätzung; gestrichelte Linie: Mittelwert.</figcaption>
-
 </figure>
 
 ## 4. Merz und die Bundesregierung im Zeitverlauf
@@ -202,22 +178,44 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 .ltw-article .union26-chart .js-plotly-plot { cursor: default; }
 </style>
 
+{% include union26_data.html %}
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  var D = window.UNION26;
   var schrift = "Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif";
   var farben = { "CDU/CSU": "#2b2b2b", "AfD": "#009ee0", "SPD": "#d71f1d", "Grüne": "#3f8f2f", "Linke": "#b8236d",
                  "BSW": "#7a2a55", "FDP": "#e5c300", "Andere": "#a0a0a0", "Nichtwahl": "#8c8c8c", "unentschieden": "#b4b4b4" };
-  var cfg = { displayModeBar: false, responsive: true, locale: "de" };
-  function de(x, d) { return x.toFixed(d === undefined ? 1 : d).replace(".", ","); }
+  var gruppen = D.gruppen;
+  var gfarbe = { "Bleibt bei CDU/CSU": "#2b2b2b", "Zu SPD/Grünen": "#d71f1d", "Zur AfD": "#009ee0", "Unentschieden": "#a8a8a8" };
+  var cfg = { displayModeBar: false, responsive: true };
+  var ink = "#1f1f1f", ink2 = "#5a5a5a", ink3 = "#8a8a8a";
+  function de(x, d) { return Number(x).toFixed(d === undefined ? 1 : d).replace(".", ","); }
+  function vz(x, d) { var s = de(Math.abs(x), d); return (x > 0 ? "+" : x < 0 ? "−" : "") + s; }
   function hexAlpha(hex, a) {
     var r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
     return "rgba(" + r + "," + g + "," + b + "," + a + ")";
   }
-  var basis = { font: { family: schrift, color: "#1f1f1f", size: 13 }, paper_bgcolor: "white", plot_bgcolor: "white",
-                hoverlabel: { font: { family: schrift, size: 13 }, bgcolor: "white", bordercolor: "#bbb" } };
+  /* readable hover box: dark background, white text, larger font */
+  var hover = { bgcolor: "#1f1f1f", bordercolor: "#1f1f1f", font: { family: schrift, size: 14, color: "#ffffff" }, align: "left" };
+  var basis = { font: { family: schrift, color: ink, size: 13 }, paper_bgcolor: "white", plot_bgcolor: "white", hoverlabel: hover, hovermode: "closest" };
+  /* marker per group: SPD/Greens = red fill with green outline */
+  function marker(g, size) {
+    return g === "Zu SPD/Grünen" ? { color: "#d71f1d", size: size, line: { color: "#3f8f2f", width: 2.5 } }
+                                 : { color: gfarbe[g], size: size, line: { color: gfarbe[g], width: 1 } };
+  }
+  function strip(ax, text, sub) {
+    return { xref: ax.x + " domain", yref: ax.y + " domain", x: 0, y: 1.02, yanchor: "bottom", xanchor: "left", showarrow: false, align: "left",
+             text: "<b>" + text + "</b>" + (sub ? "<br><i>" + sub + "</i>" : ""), font: { size: 12.5, color: ink },
+             bgcolor: "#e6e6e6", borderpad: 5, width: 0 };
+  }
+  function gridAxes(n, cols) {
+    var axes = [];
+    for (var i = 0; i < n; i++) { var s = i === 0 ? "" : String(i + 1); axes.push({ x: "x" + s, y: "y" + s, xaxis: "xaxis" + s, yaxis: "yaxis" + s }); }
+    return axes;
+  }
 
-  /* 1) Sankey: Union voters 2025 -> intention April 2026 */
+  /* ---------- 1) Sankey: Union voters 2025 -> intention April 2026 ---------- */
   var ziele = ["CDU/CSU", "AfD", "SPD", "Grüne", "FDP", "unentschieden", "Linke", "BSW", "Andere", "Nichtwahl"];
   var anteil = [70.2, 7.7, 3.9, 2.3, 2.1, 8.1, 1.0, 0.8, 2.5, 1.3];
   var nz = [1590, 195, 93, 55, 52, 199, 24, 20, 66, 32];
@@ -233,22 +231,172 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "sankey", arrangement: "snap", orientation: "h",
     node: { pad: 6, thickness: 22, line: { color: "white", width: 1 }, label: labels, color: nodeFarben,
             x: [0.02].concat(ziele.map(function () { return 0.98; })), y: [0.5].concat(ys),
-            customdata: ["CDU/CSU 2025"].concat(ziele), hovertemplate: "%{customdata}<extra></extra>" },
+            customdata: ["CDU/CSU 2025"].concat(ziele), hovertemplate: "<b>%{customdata}</b><extra></extra>" },
     link: { source: ziele.map(function () { return 0; }), target: ziele.map(function (z, i) { return i + 1; }),
             value: anteil, customdata: ziele.map(function (z, i) { return [z, de(anteil[i]), nz[i]]; }),
             color: ziele.map(function (z) { return z === "CDU/CSU" ? "rgba(43,43,43,0.22)" : hexAlpha(farben[z], 0.75); }),
-            hovertemplate: "CDU/CSU 2025 → <b>%{customdata[0]}</b><br>%{customdata[1]} % (n = %{customdata[2]})<extra></extra>" }
+            hoverlabel: { bgcolor: "#1f1f1f", bordercolor: "#1f1f1f", font: { family: schrift, size: 15, color: "#ffffff" } },
+            hovertemplate: "<b>%{customdata[0]}</b><br>%{customdata[1]} % der Unionswähler 2025<br>n = %{customdata[2]}<extra></extra>" }
   }], Object.assign({}, basis, {
     margin: { l: 10, r: 10, t: 40, b: 60 },
-    annotations: [{ x: 0.0, y: -0.1, xref: "paper", yref: "paper", text: "Bundestagswahl 2025", showarrow: false, font: { size: 13, color: "#5a5a5a" }, xanchor: "left" },
-                  { x: 1.0, y: -0.1, xref: "paper", yref: "paper", text: "Wahlabsicht April 2026", showarrow: false, font: { size: 13, color: "#5a5a5a" }, xanchor: "right" },
+    annotations: [{ x: 0.0, y: -0.1, xref: "paper", yref: "paper", text: "Bundestagswahl 2025", showarrow: false, font: { size: 13, color: ink2 }, xanchor: "left" },
+                  { x: 1.0, y: -0.1, xref: "paper", yref: "paper", text: "Wahlabsicht April 2026", showarrow: false, font: { size: 13, color: ink2 }, xanchor: "right" },
                   { x: 0.0, y: 1.06, xref: "paper", yref: "paper", text: "<b>Wohin hat die Union seit der Bundestagswahl Wähler verloren?</b>", showarrow: false, font: { size: 15 }, xanchor: "left" }]
   }), cfg);
 
-  /* 4) time course: Merz and the federal government */
+  /* ---------- 2) demographics: stacked 100 % bars, one facet per characteristic ---------- */
+  (function () {
+    var blau = ["#d6e4f0", "#9dbdd9", "#5b8fbd", "#2b5d8a"];
+    var axes = gridAxes(D.demografie.length, 2), traces = [], annos = [], lay = {};
+    D.demografie.forEach(function (m, k) {
+      var ax = axes[k], ks = m.stufen.length;
+      m.stufen.forEach(function (st, j) {
+        var col = blau[Math.round((ks === 1 ? 0 : j * 3 / (ks - 1)))];
+        traces.push({ type: "bar", orientation: "h", xaxis: ax.x, yaxis: ax.y, name: st, showlegend: false,
+          y: gruppen.slice().reverse(), x: gruppen.slice().reverse().map(function (g) { return m.gruppen[g][j]; }),
+          marker: { color: col, line: { color: "white", width: 1 } },
+          text: gruppen.slice().reverse().map(function (g) { var v = m.gruppen[g][j]; return v >= 8 ? String(Math.round(v)) : ""; }),
+          textposition: "inside", insidetextanchor: "middle", textfont: { size: 11, color: j * 3 / Math.max(ks - 1, 1) >= 2 ? "white" : ink },
+          customdata: gruppen.slice().reverse().map(function () { return st; }),
+          hovertemplate: "<b>%{y}</b><br>" + m.merkmal + ": %{customdata}<br>%{x:.0f} %<extra></extra>" });
+      });
+      annos.push(strip(ax, m.merkmal, m.stufen.join(" · ")));
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0 };
+    });
+    Plotly.newPlot("union26-demografie", traces, Object.assign({}, basis, lay, {
+      barmode: "stack", bargap: 0.28, annotations: annos,
+      grid: { rows: 4, columns: 2, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.32 },
+      margin: { l: 130, r: 10, t: 50, b: 30 }
+    }), cfg);
+  })();
+
+  /* ---------- generic dot plot by group, items grouped in blocks ---------- */
+  function dotPlot(id, items, opt) {
+    /* rows are numbered from the top; block headers get their own (bold) row */
+    var tickvals = [], ticktext = [], pos = [], row = 0, last = null;
+    items.forEach(function (it) {
+      if (opt.blocks && it.block !== last) { row -= 1; tickvals.push(row); ticktext.push("<b>" + it.block + "</b>"); last = it.block; }
+      row -= 1; tickvals.push(row); ticktext.push(it.label); pos.push(row);
+    });
+    var traces = [];
+    /* grey range line per item */
+    items.forEach(function (it, i) {
+      var v = gruppen.map(function (g) { return it.werte[g]; });
+      traces.push({ type: "scatter", mode: "lines", x: [Math.min.apply(null, v), Math.max.apply(null, v)], y: [pos[i], pos[i]],
+                    line: { color: "#dcdcdc", width: 5 }, hoverinfo: "skip", showlegend: false });
+    });
+    gruppen.forEach(function (g) {
+      traces.push({ type: "scatter", mode: "markers", name: g, legendgroup: g,
+        x: items.map(function (it) { return it.werte[g]; }), y: pos,
+        marker: marker(g, 11), customdata: items.map(function (it) { return [it.label, D.n[g]]; }),
+        hovertemplate: "<b>" + g + "</b><br>%{customdata[0]}<br>" + opt.fmt + "<br>n = %{customdata[1]}<extra></extra>" });
+    });
+    var lay = Object.assign({}, basis, {
+      xaxis: Object.assign({ gridcolor: "#e6e6e6", fixedrange: true, zeroline: false }, opt.xaxis),
+      yaxis: { tickvals: tickvals, ticktext: ticktext, range: [row - 0.7, -0.3], showgrid: false, zeroline: false, fixedrange: true, tickfont: { size: 12 }, automargin: true },
+      legend: { orientation: "h", x: 0, y: 1.08, xanchor: "left", yanchor: "bottom", font: { size: 12 } },
+      margin: { l: 10, r: opt.rightMargin || 20, t: 70, b: 40 }, shapes: opt.shapes || [], annotations: opt.annos || []
+    });
+    Plotly.newPlot(id, traces, lay, cfg);
+  }
+  var pct = { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticksuffix: " %" };
+  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: "%{x:.0f} % stimmen zu", xaxis: pct });
+  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: "%{x:.0f} % stimmen zu", xaxis: pct });
+  dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: "Ø %{x:+.1f}",
+    xaxis: { range: [-5, 5], tickvals: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5], ticktext: ["−5", "−4", "−3", "−2", "−1", "0", "+1", "+2", "+3", "+4", "+5"] },
+    shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 0, x1: 5, y0: 0, y1: 1, fillcolor: "#f5f5f5", line: { width: 0 }, layer: "below" },
+             { type: "line", xref: "x", yref: "paper", x0: 0, x1: 0, y0: 0, y1: 1, line: { color: ink3, width: 1 } }] });
+
+  /* ---------- positions between two poles ---------- */
+  (function () {
+    var it = D.positionen, pos = it.map(function (p, i) { return -(i + 1); });
+    var traces = it.map(function (p, i) { return { type: "scatter", mode: "lines", x: [1, 7], y: [pos[i], pos[i]], line: { color: "#d9d9d9", width: 9 }, hoverinfo: "skip", showlegend: false }; });
+    gruppen.forEach(function (g) {
+      traces.push({ type: "scatter", mode: "markers", name: g, x: it.map(function (p) { return p.werte[g]; }), y: pos, marker: marker(g, 13),
+        customdata: it.map(function (p) { return [p.links, p.rechts, D.n[g]]; }),
+        hovertemplate: "<b>" + g + "</b><br>%{customdata[0]} (1) … %{customdata[1]} (7)<br>Ø %{x:.1f}<br>n = %{customdata[2]}<extra></extra>" });
+    });
+    Plotly.newPlot("union26-positionen", traces, Object.assign({}, basis, {
+      xaxis: { range: [0.7, 7.3], tickvals: [1, 2, 3, 4, 5, 6, 7], showgrid: false, fixedrange: true, tickfont: { color: ink3 } },
+      yaxis: { tickvals: pos, ticktext: it.map(function (p) { return p.links; }), range: [-(it.length) - 0.7, -0.3], showgrid: false, zeroline: false, fixedrange: true, tickfont: { size: 12 }, automargin: true },
+      legend: { orientation: "h", x: 0, y: 1.1, xanchor: "left", yanchor: "bottom", font: { size: 11 }, itemwidth: 20 },
+      annotations: it.map(function (p, i) { return { xref: "x", yref: "y", x: 7.3, y: pos[i], text: p.rechts, showarrow: false, xanchor: "left", font: { size: 11.5 } }; }),
+      margin: { l: 10, r: 215, t: 60, b: 40 }
+    }), cfg);
+  })();
+
+  /* ---------- trust: stacked distributions, one facet per institution ---------- */
+  (function () {
+    var pal = ["#b2182b", "#ef8a62", "#d9d9d9", "#67a9cf", "#2166ac"], axes = gridAxes(D.vertrauen.length, 2), traces = [], annos = [], lay = {};
+    D.vertrauen.forEach(function (v, k) {
+      var ax = axes[k];
+      D.stufen_vertrauen.forEach(function (st, j) {
+        traces.push({ type: "bar", orientation: "h", xaxis: ax.x, yaxis: ax.y, name: st, legendgroup: st, showlegend: k === 0,
+          y: gruppen.slice().reverse(), x: gruppen.slice().reverse().map(function (g) { return v.gruppen[g][j]; }),
+          marker: { color: pal[j], line: { color: "white", width: 0.5 } },
+          hovertemplate: "<b>%{y}</b><br>" + v.label + ": vertraue " + st + "<br>%{x:.0f} %<extra></extra>" });
+      });
+      annos.push(strip(ax, v.label));
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.yaxis] = { fixedrange: true, tickfont: { size: 12 }, showticklabels: k % 2 === 0 };
+    });
+    Plotly.newPlot("union26-vertrauen", traces, Object.assign({}, basis, lay, {
+      barmode: "stack", bargap: 0.25, annotations: annos,
+      grid: { rows: 3, columns: 2, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.3 },
+      legend: { orientation: "h", x: 0, y: 1.08, xanchor: "left", yanchor: "bottom", font: { size: 12 }, traceorder: "normal" },
+      margin: { l: 130, r: 10, t: 90, b: 30 }
+    }), cfg);
+  })();
+
+  /* ---------- single items: small bar panels ---------- */
+  (function () {
+    var axes = gridAxes(D.einzelfragen.length, 3), traces = [], annos = [], lay = {};
+    function wrap(s, n) { var w = s.split(" "), out = [], z = ""; w.forEach(function (x) { if ((z + " " + x).trim().length > n) { out.push(z.trim()); z = x; } else z += " " + x; }); out.push(z.trim()); return out.join("<br>"); }
+    D.einzelfragen.forEach(function (e, k) {
+      var ax = axes[k];
+      traces.push({ type: "bar", orientation: "h", xaxis: ax.x, yaxis: ax.y, showlegend: false,
+        y: gruppen.slice().reverse(), x: gruppen.slice().reverse().map(function (g) { return e.werte[g]; }),
+        marker: { color: gruppen.slice().reverse().map(function (g) { return gfarbe[g]; }) },
+        text: gruppen.slice().reverse().map(function (g) { return Math.round(e.werte[g]) + " %"; }), textposition: "outside", cliponaxis: false, textfont: { size: 11 },
+        hovertemplate: "<b>%{y}</b><br>" + e.label + "<br>%{x:.0f} % stimmen zu<extra></extra>" });
+      annos.push(strip(ax, wrap(e.label, 26)));
+      lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10 } };
+      lay[ax.yaxis] = { fixedrange: true, showticklabels: k % 3 === 0, tickfont: { size: 11 } };
+    });
+    Plotly.newPlot("union26-einzel", traces, Object.assign({}, basis, lay, {
+      bargap: 0.25, annotations: annos,
+      grid: { rows: 3, columns: 3, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: 0.45 },
+      margin: { l: 120, r: 30, t: 70, b: 30 }
+    }), cfg);
+  })();
+
+  /* ---------- left-right: smoothed distributions, one facet per group ---------- */
+  (function () {
+    var axes = gridAxes(gruppen.length, 1), traces = [], annos = [], shapes = [], lay = {}, L = D.links_rechts;
+    var ymax = 0; gruppen.forEach(function (g) { L.gruppen[g].forEach(function (y) { if (y > ymax) ymax = y; }); });
+    gruppen.forEach(function (g, k) {
+      var ax = axes[k], spdg = g === "Zu SPD/Grünen";
+      traces.push({ type: "scatter", mode: "lines", xaxis: ax.x, yaxis: ax.y, x: L.x, y: L.gruppen[g], fill: "tozeroy", showlegend: false, name: g,
+        fillcolor: spdg ? hexAlpha("#d71f1d", 0.75) : hexAlpha(gfarbe[g], 0.9),
+        line: { color: spdg ? "#3f8f2f" : gfarbe[g], width: spdg ? 3 : 1.5, dash: spdg ? "dash" : "solid" },
+        hovertemplate: "<b>" + g + "</b><br>Position %{x:.1f}<extra></extra>" });
+      shapes.push({ type: "line", xref: ax.x, yref: ax.y + " domain", x0: L.mittel[g], x1: L.mittel[g], y0: 0, y1: 1, line: { color: ink, width: 1.2, dash: "dot" } });
+      annos.push(strip(ax, g));
+      annos.push({ xref: ax.x, yref: ax.y + " domain", x: L.mittel[g] + 0.1, y: 0.95, text: "Ø " + de(L.mittel[g]), showarrow: false, xanchor: "left", font: { size: 12 } });
+      lay[ax.xaxis] = { range: [1, 11], tickvals: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], ticktext: ["1<br>links", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11<br>rechts"],
+                        showgrid: false, fixedrange: true, showticklabels: k === gruppen.length - 1, tickfont: { size: 11 } };
+      lay[ax.yaxis] = { range: [0, ymax * 1.05], showticklabels: false, showgrid: false, fixedrange: true, zeroline: false };
+    });
+    Plotly.newPlot("union26-lr", traces, Object.assign({}, basis, lay, {
+      annotations: annos, shapes: shapes, hovermode: "x",
+      grid: { rows: 4, columns: 1, pattern: "independent", roworder: "top to bottom", ygap: 0.35 },
+      margin: { l: 20, r: 20, t: 50, b: 50 }
+    }), cfg);
+  })();
+
+  /* ---------- 4) time course: Merz and the federal government ---------- */
   var wellen = ["Feb./März 2025", "Mai 2025", "Nov. 2025", "April 2026"];
-  var gruppen = ["Bleibt bei CDU/CSU", "Zu SPD/Grünen", "Zur AfD", "Unentschieden"];
-  var gfarbe = { "Bleibt bei CDU/CSU": "#2b2b2b", "Zu SPD/Grünen": "#d71f1d", "Zur AfD": "#009ee0", "Unentschieden": "#a8a8a8" };
   var zeit = {
     "Bewertung von Merz": {
       "Bleibt bei CDU/CSU": [[2.72, 2.28, 2.20, 2.05], [1583, 1498, 1492, 1578]],
@@ -271,34 +419,31 @@ document.addEventListener("DOMContentLoaded", function () {
       "Zur AfD": [[-3.50, -1.89, -3.49, -3.81], [195, 181, 185, 191]],
       "Unentschieden": [[-2.43, -0.71, -1.68, -2.38], [198, 177, 187, 196]] }
   };
-  var merkmale = Object.keys(zeit), traces = [], shapes = [], annos = [];
-  merkmale.forEach(function (m, k) {
-    var ax = k === 0 ? "" : String(k + 1);
-    gruppen.forEach(function (g) {
-      var d = zeit[m][g];
-      traces.push({
-        type: "scatter", mode: "lines+markers", name: g, legendgroup: g, showlegend: k === 0,
-        x: wellen, y: d[0], customdata: d[1], xaxis: "x" + ax, yaxis: "y" + ax,
-        line: { color: gfarbe[g], width: 3, dash: g === "Zu SPD/Grünen" ? "dash" : "solid" },
-        marker: { color: g === "Zu SPD/Grünen" ? "#3f8f2f" : gfarbe[g], size: 10, line: { color: g === "Zu SPD/Grünen" ? "#d71f1d" : gfarbe[g], width: 2 } },
-        connectgaps: false,
-        hovertemplate: "<b>" + g + "</b><br>%{x}: Ø " + "%{y:+.1f}<br>n = %{customdata}<extra></extra>"
+  (function () {
+    var merkmale = Object.keys(zeit), axes = gridAxes(merkmale.length, 2), traces = [], shapes = [], annos = [], lay = {};
+    merkmale.forEach(function (m, k) {
+      var ax = axes[k];
+      gruppen.forEach(function (g) {
+        var d = zeit[m][g];
+        traces.push({ type: "scatter", mode: "lines+markers", name: g, legendgroup: g, showlegend: k === 0,
+          x: wellen, y: d[0], customdata: d[1], xaxis: ax.x, yaxis: ax.y, connectgaps: false,
+          line: { color: gfarbe[g], width: 3, dash: g === "Zu SPD/Grünen" ? "dash" : "solid" }, marker: marker(g, 10),
+          hovertemplate: "<b>" + g + "</b><br>%{x}: Ø %{y:+.1f}<br>n = %{customdata}<extra></extra>" });
       });
+      shapes.push({ type: "rect", xref: ax.x, yref: ax.y + " domain", x0: -0.5, x1: 0.5, y0: 0, y1: 1, fillcolor: "#f3f3f3", line: { width: 0 }, layer: "below" });
+      annos.push(strip(ax, m));
+      lay[ax.xaxis] = { type: "category", showgrid: false, fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.yaxis] = { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"], gridcolor: "#e6e6e6", zeroline: false, fixedrange: true };
     });
-    shapes.push({ type: "rect", xref: "x" + ax, yref: "y" + ax + " domain", x0: -0.5, x1: 0.5, y0: 0, y1: 1, fillcolor: "#f3f3f3", line: { width: 0 }, layer: "below" });
-    annos.push({ xref: "x" + ax + " domain", yref: "y" + ax + " domain", x: 0, y: 1.08, text: "<b>" + m + "</b>", showarrow: false, xanchor: "left", font: { size: 13 } });
-  });
-  var yax = { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"], gridcolor: "#e6e6e6", zeroline: false, fixedrange: true };
-  var xax = { type: "category", gridcolor: "#e6e6e6", showgrid: false, fixedrange: true, tickfont: { size: 11 } };
-  Plotly.newPlot("union26-zeit", traces, Object.assign({}, basis, {
-    grid: { rows: 2, columns: 2, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: 0.26 },
-    xaxis: xax, xaxis2: xax, xaxis3: xax, xaxis4: xax, yaxis: yax, yaxis2: yax, yaxis3: yax, yaxis4: yax,
-    shapes: shapes, annotations: annos, hovermode: "closest",
-    legend: { orientation: "h", x: 0, y: 1.16, xanchor: "left", font: { size: 12 } },
-    margin: { l: 40, r: 20, t: 70, b: 40 }
-  }), cfg);
+    Plotly.newPlot("union26-zeit", traces, Object.assign({}, basis, lay, {
+      grid: { rows: 2, columns: 2, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: 0.3 },
+      shapes: shapes, annotations: annos,
+      legend: { orientation: "h", x: 0, y: 1.12, xanchor: "left", yanchor: "bottom", font: { size: 12 } },
+      margin: { l: 40, r: 20, t: 80, b: 40 }
+    }), cfg);
+  })();
 
-  /* 5) who can be won back: former Union voters by current intention */
+  /* ---------- 5) who can be won back: former Union voters by current intention ---------- */
   var rh = [["Zur SPD", 73.2, 92], ["Zur FDP", 72.5, 51], ["Zu den Grünen", 71.8, 54], ["Zur Linken", 55.8, 24], ["Zur Nichtwahl", 55.6, 29],
             ["Zur AfD", 47.9, 192], ["Zu anderen Parteien", 45.5, 66], ["Zum BSW", 42.7, 20], ["Unentschieden", 36.9, 197]];
   var rhY = rh.map(function (r) { return r[0]; });
@@ -309,9 +454,9 @@ document.addEventListener("DOMContentLoaded", function () {
       textfont: { color: "white", size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union positiv: %{x} %<br>n = %{customdata}<extra></extra>" },
     { type: "bar", orientation: "h", name: "Sieht Union negativ", y: rhY, x: rhNein, customdata: rh.map(function (r) { return r[2]; }),
       marker: { color: "#dcdcdc" }, text: rhNein.map(function (j) { return j + " %"; }), textposition: "inside", insidetextanchor: "middle",
-      textfont: { color: "#1f1f1f", size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union negativ: %{x} %<br>n = %{customdata}<extra></extra>" }
+      textfont: { color: ink, size: 13 }, hovertemplate: "<b>%{y}</b><br>sieht Union negativ: %{x} %<br>n = %{customdata}<extra></extra>" }
   ], Object.assign({}, basis, {
-    barmode: "stack", bargap: 0.32, hovermode: "closest",
+    barmode: "stack", bargap: 0.32,
     xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, ticksuffix: "  " },
     legend: { orientation: "h", x: 0, y: 1.1, xanchor: "left", traceorder: "normal" },
@@ -319,7 +464,7 @@ document.addEventListener("DOMContentLoaded", function () {
     annotations: [{ x: 0, y: 1.2, xref: "paper", yref: "paper", text: "<b>Wen kann die Union zurückholen?</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
   }), cfg);
 
-  /* 6) where the potential sits */
+  /* ---------- 6) where the potential sits ---------- */
   var pot = [["SPD", 25.3, 4.1, 439, 64], ["AfD", 19.0, 5.2, 332, 89], ["Grüne", 15.0, 2.3, 273, 37], ["unentschieden", 9.5, 4.3, 157, 70],
              ["FDP", 9.4, 2.2, 165, 37], ["Nichtwahl", 7.8, 0.9, 51, 15], ["Andere", 5.5, 1.7, 106, 28], ["Linke", 5.2, 0.8, 84, 12], ["BSW", 3.3, 0.5, 67, 7]];
   var potY = pot.map(function (p) { return p[0]; });
@@ -332,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function () {
       text: pot.map(function (p) { return de(p[1], 0) + " % <span style='color:#8a8a8a;font-size:11px'>(n = " + p[3] + ")</span>"; }), textposition: "outside", cliponaxis: false,
       hovertemplate: "<b>%{y}</b><br>Anteil am Potenzial: %{customdata[0]:.1f} %<br>n = %{customdata[1]}<extra></extra>" }
   ], Object.assign({}, basis, {
-    barmode: "stack", bargap: 0.32, hovermode: "closest",
+    barmode: "stack", bargap: 0.32,
     xaxis: { range: [0, 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, ticksuffix: "  " },
     legend: { orientation: "h", x: 0.98, y: 0.06, xanchor: "right", yanchor: "bottom", bgcolor: "rgba(255,255,255,0.9)" },
@@ -340,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function () {
     annotations: [{ x: 0, y: 1.1, xref: "paper", yref: "paper", text: "<b>Wo das Potenzial der Union heute steckt</b>", showarrow: false, xanchor: "left", font: { size: 15 } }]
   }), cfg);
 
-  /* lightbox for the static figures */
+  /* ---------- lightbox for the static header image ---------- */
   document.querySelectorAll(".ltw-article figure img").forEach(function (img) {
     img.addEventListener("click", function () {
       var overlay = document.createElement("div");
