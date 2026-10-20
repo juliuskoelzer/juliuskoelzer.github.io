@@ -138,6 +138,11 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figcaption>Dieselben Befragten in vier Wellen, gruppiert nach Wahlabsicht im April 2026; Mittelwert auf der Skala von −5 bis +5. Grau: vor Amtsantritt der Regierung; Regierungsarbeit erst ab Mai 2025 erfragt. Gruppen: Unionswähler 2025 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die späteren AfD-Wechsler bewerteten Friedrich Merz kurz nach der Wahl im Februar/März 2025 noch mit +2,3. Im April 2026 liegt ihr Urteil bei −2,1.</i></figcaption>
 </figure>
 
+<figure class="ltw-plotly">
+<div id="union26-zeit-lage" class="union26-chart" style="height: 660px;"></div>
+<figcaption>Dieselben Befragten in vier Wellen, gruppiert nach Wahlabsicht im April 2026; Anteil der Stufen 4 und 5 der jeweiligen Fünferskala. Grau: vor Amtsantritt der Regierung; Gerechtigkeitsfragen nur im Mai 2025 und April 2026 erhoben. Gruppen: Unionswähler 2025 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Im Februar/März 2025 erwarteten 33 Prozent der späteren AfD-Wechsler, dass die allgemeine wirtschaftliche Lage in einem Jahr schlechter sein wird. Im April 2026 sind es 68 Prozent.</i></figcaption>
+</figure>
+
 ## 5. Wen kann die Union zurückholen?
 
 [Platzhalter] Die Wahlabsicht zeigt nur einen Moment. Für die Union zählt auch, wer ihr noch positiv gegenübersteht. Von den Unionswählern des Jahres 2025, die heute etwas anderes wählen wollen, bewertet gut die Hälfte die Union weiter positiv.
@@ -365,17 +370,20 @@ document.addEventListener("DOMContentLoaded", function () {
     hoehe("union26-einzel", 1500);
     D.einzelfragen.forEach(function (e, k) {
       var ax = axes[k];
-      traces.push({ type: "bar", orientation: "h", xaxis: ax.x, yaxis: ax.y, showlegend: false,
+      traces.push({ type: "bar", orientation: "h", xaxis: ax.x, yaxis: ax.y, showlegend: false, width: 0.7,
         y: gruppen.slice().reverse(), x: gruppen.slice().reverse().map(function (g) { return e.werte[g]; }),
         marker: { color: gruppen.slice().reverse().map(function (g) { return gfarbe[g]; }) },
         text: gruppen.slice().reverse().map(function (g) { return Math.round(e.werte[g]) + " %"; }), textposition: "outside", cliponaxis: false, textfont: { size: 11 },
         hovertemplate: "<b>%{y}</b><br>" + e.label + "<br>%{x:.0f} % stimmen zu<extra></extra>" });
+      /* SPD/Greens: green upper half over the red bar */
+      traces.push({ type: "bar", orientation: "h", xaxis: ax.x, yaxis: ax.y, showlegend: false, hoverinfo: "skip",
+        y: ["Zu SPD/Grünen"], x: [e.werte["Zu SPD/Grünen"]], width: 0.35, offset: 0, marker: { color: "#3f8f2f" } });
       annos.push(strip(ax, wrap(e.label, 26)));
       lay[ax.xaxis] = { range: [0, 100], tickvals: [0, 50, 100], ticktext: ["0 %", "50 %", "100 %"], gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 9.5, color: ink2 } };
       lay[ax.yaxis] = { fixedrange: true, showticklabels: k % sp === 0, tickfont: { size: 11 }, automargin: true, ticklabelstandoff: 6 };
     });
     Plotly.newPlot("union26-einzel", traces, Object.assign({}, basis, lay, {
-      bargap: 0.25, annotations: annos,
+      barmode: "overlay", bargap: 0.25, annotations: annos,
       grid: { rows: Math.ceil(D.einzelfragen.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: schmal ? 0.5 : 0.45 },
       margin: { l: 120, r: 30, t: 70, b: 30 }
     }), cfg);
@@ -429,30 +437,74 @@ document.addEventListener("DOMContentLoaded", function () {
       "Zur AfD": [[-3.50, -1.89, -3.49, -3.81], [195, 181, 185, 191]],
       "Unentschieden": [[-2.43, -0.71, -1.68, -2.38], [198, 177, 187, 196]] }
   };
-  (function () {
-    var merkmale = Object.keys(zeit), sp = schmal ? 1 : 2, axes = gridAxes(merkmale.length, sp), traces = [], shapes = [], annos = [], lay = {};
-    hoehe("union26-zeit", 1150);
+  var lage = {
+    "Allgemeine wirtschaftliche Lage schlecht": {
+      "Bleibt bei CDU/CSU": [[58.9, 50.8, 49.1, 50.5], [1567, 1492, 1482, 1558]],
+      "Zu SPD/Grünen": [[58.8, 46.5, 54.7, 47.5], [145, 137, 133, 139]],
+      "Zur AfD": [[75.1, 68.9, 76.7, 75.5], [194, 180, 185, 189]],
+      "Unentschieden": [[68.0, 62.2, 62.6, 65.3], [198, 176, 186, 194]] },
+    "Allgemeine Lage in einem Jahr schlechter": {
+      "Bleibt bei CDU/CSU": [[14.4, 13.3, 23.8, 32.4], [1583, 1496, 1490, 1561]],
+      "Zu SPD/Grünen": [[17.0, 20.8, 30.4, 44.0], [146, 137, 134, 143]],
+      "Zur AfD": [[32.9, 34.8, 56.6, 68.2], [194, 180, 185, 191]],
+      "Unentschieden": [[21.1, 24.4, 44.3, 52.3], [198, 177, 183, 196]] },
+    "Eigene wirtschaftliche Lage schlecht": {
+      "Bleibt bei CDU/CSU": [[13.1, 13.4, 12.2, 13.1], [1581, 1496, 1490, 1561]],
+      "Zu SPD/Grünen": [[22.1, 18.6, 20.2, 20.8], [147, 137, 134, 143]],
+      "Zur AfD": [[24.2, 22.4, 24.5, 21.9], [194, 181, 186, 191]],
+      "Unentschieden": [[18.2, 22.4, 20.1, 19.2], [198, 177, 187, 194]] },
+    "Eigene Lage in einem Jahr schlechter": {
+      "Bleibt bei CDU/CSU": [[17.0, 15.6, 18.1, 23.9], [1578, 1493, 1486, 1560]],
+      "Zu SPD/Grünen": [[22.9, 21.9, 26.6, 28.9], [145, 136, 133, 143]],
+      "Zur AfD": [[32.5, 35.6, 33.5, 46.4], [194, 180, 185, 189]],
+      "Unentschieden": [[20.9, 24.4, 27.9, 35.7], [198, 177, 187, 195]] },
+    "Unzufrieden mit der Demokratie, wie sie in Deutschland besteht": {
+      "Bleibt bei CDU/CSU": [[13.2, 9.3, 8.7, 8.5], [1584, 1504, 1494, 1580]],
+      "Zu SPD/Grünen": [[10.7, 10.6, 15.6, 15.7], [147, 139, 135, 147]],
+      "Zur AfD": [[54.4, 52.9, 54.3, 53.9], [195, 181, 185, 195]],
+      "Unentschieden": [[16.7, 16.9, 22.8, 28.3], [198, 179, 187, 199]] },
+    "In der Gesellschaft geht es ungerecht zu": {
+      "Bleibt bei CDU/CSU": [[null, 22.9, null, 25.1], [null, 1496, null, 1562]],
+      "Zu SPD/Grünen": [[null, 33.0, null, 35.3], [null, 137, null, 143]],
+      "Zur AfD": [[null, 54.4, null, 66.8], [null, 181, null, 190]],
+      "Unentschieden": [[null, 36.6, null, 45.1], [null, 177, null, 195]] },
+    "Erhalte weniger als den gerechten Anteil": {
+      "Bleibt bei CDU/CSU": [[null, 31.5, null, 33.1], [null, 1496, null, 1565]],
+      "Zu SPD/Grünen": [[null, 36.8, null, 41.5], [null, 137, null, 143]],
+      "Zur AfD": [[null, 48.5, null, 58.0], [null, 181, null, 191]],
+      "Unentschieden": [[null, 44.9, null, 57.2], [null, 177, null, 196]] }
+  };
+  function zeitChart(id, daten, opt) {
+    var merkmale = Object.keys(daten), sp = schmal ? 1 : opt.spalten, axes = gridAxes(merkmale.length, sp), traces = [], shapes = [], annos = [], lay = {};
+    hoehe(id, opt.hoeheSchmal);
     merkmale.forEach(function (m, k) {
       var ax = axes[k];
       gruppen.forEach(function (g) {
-        var d = zeit[m][g];
-        traces.push({ type: "scatter", mode: "lines+markers", name: g, legendgroup: g, showlegend: k === 0,
-          x: wellen, y: d[0], customdata: d[0].map(signiert), xaxis: ax.x, yaxis: ax.y, connectgaps: false,
-          line: { color: gfarbe[g], width: 3, dash: g === "Zu SPD/Grünen" ? "dash" : "solid" }, marker: marker(g, 10),
-          hovertemplate: "%{customdata}<extra></extra>" });
+        var d = daten[m][g], spdg = g === "Zu SPD/Grünen";
+        if (spdg) {
+          traces.push({ type: "scatter", mode: "lines", x: wellen, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#d71f1d", width: 3 } });
+          traces.push({ type: "scatter", mode: "lines", x: wellen, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#3f8f2f", width: 3, dash: "dash" } });
+        }
+        traces.push({ type: "scatter", mode: spdg ? "markers" : "lines+markers", name: g, legendgroup: g, showlegend: k === 0,
+          x: wellen, y: d[0], customdata: d[0].map(function (v) { return v === null ? "" : opt.fmt(v); }), xaxis: ax.x, yaxis: ax.y, connectgaps: true,
+          line: { color: gfarbe[g], width: 3 }, marker: marker(g, 10), hovertemplate: "%{customdata}<extra></extra>" });
       });
       shapes.push({ type: "rect", xref: ax.x, yref: ax.y + " domain", x0: -0.5, x1: 0.5, y0: 0, y1: 1, fillcolor: "#f3f3f3", line: { width: 0 }, layer: "below" });
-      annos.push(strip(ax, m));
+      annos.push(strip(ax, wrap(m, opt.umbruch)));
       lay[ax.xaxis] = { type: "category", showgrid: false, fixedrange: true, tickfont: { size: 11 } };
-      lay[ax.yaxis] = { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"], gridcolor: "#e6e6e6", zeroline: false, fixedrange: true };
+      lay[ax.yaxis] = Object.assign({ gridcolor: "#e6e6e6", zeroline: false, fixedrange: true }, opt.yachse);
     });
-    Plotly.newPlot("union26-zeit", traces, Object.assign({}, basis, lay, {
-      grid: { rows: Math.ceil(merkmale.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: 0.3 },
+    Plotly.newPlot(id, traces, Object.assign({}, basis, lay, {
+      grid: { rows: Math.ceil(merkmale.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.14, ygap: opt.ygap },
       shapes: shapes, annotations: annos,
-      legend: { orientation: "h", x: 0, y: schmal ? 1.04 : 1.12, xanchor: "left", yanchor: "bottom", font: { size: 12 } },
-      margin: { l: 40, r: 20, t: schmal ? 110 : 80, b: 40 }
+      legend: { orientation: "h", x: 0, y: schmal ? 1.04 : opt.legendeY, xanchor: "left", yanchor: "bottom", font: { size: 12 } },
+      margin: { l: 45, r: 20, t: schmal ? 110 : opt.oben, b: 40 }
     }), cfg);
-  })();
+  }
+  zeitChart("union26-zeit", zeit, { spalten: 2, hoeheSchmal: 1150, umbruch: 60, ygap: 0.3, legendeY: 1.12, oben: 80, fmt: signiert,
+    yachse: { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"] } });
+  zeitChart("union26-zeit-lage", lage, { spalten: 4, hoeheSchmal: 2000, umbruch: 24, ygap: 0.5, legendeY: 1.16, oben: 110, fmt: prozent,
+    yachse: { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"], tickfont: { size: 10, color: ink2 } } });
 
   /* ---------- 5) who can be won back: former Union voters by current intention ---------- */
   var rh = [["Zur SPD", 73.2, 92], ["Zur FDP", 72.5, 51], ["Zu den Grünen", 71.8, 54], ["Zur Linken", 55.8, 24], ["Zur Nichtwahl", 55.6, 29],
