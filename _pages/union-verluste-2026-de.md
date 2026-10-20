@@ -54,7 +54,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 
 </p>
 
-## 1. Fast jeder dritte Unionswähler ist heute woanders
+## 1. Fast jeder dritte Unionswähler hat sich abgewandt
 
 [Platzhalter] Bei der Bundestagswahl im Februar 2025 holte die Union 28,6 Prozent. Gut ein Jahr später liegt sie in den Umfragen deutlich darunter. Das GLES-Panel kann zeigen, wer gegangen ist: Es befragt dieselben Personen bei der Wahl und seither mehrfach erneut. Von den Unionswählern des Februar 2025 wollen im April 2026 nur noch 70 Prozent wieder CDU oder CSU wählen.
 
@@ -65,7 +65,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figcaption>Unionswähler der Bundestagswahl 2025 (n = 2.326) nach Wahlabsicht im April 2026; nur Abgänge, Zugewinne der Union wegen zu kleiner Fallzahlen nicht betrachtet. Ohne Beschriftung: Linke 1,0 %, BSW 0,8 %, andere 2,5 %, Nichtwahl 1,3 %. Unentschieden = „weiß nicht“; Fallzahlen beim Hovern. Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 7,7 Prozent der Menschen, die 2025 CDU/CSU gewählt haben, wollen im April 2026 AfD wählen. Das sind 195 Befragte.</i></figcaption>
 </figure>
 
-## 2. Wer bleibt, wer geht? Die Soziodemografie
+## 2. Wer geht, ist jünger, häufiger weiblich und verdient weniger
 
 [Platzhalter] Die folgenden Abschnitte vergleichen vier Gruppen von Unionswählern 2025: diejenigen, die bei CDU/CSU bleiben, die Wechsler zu SPD oder Grünen, die Wechsler zur AfD und die Unentschiedenen. Soziodemografisch unterscheiden sich die Gruppen weniger stark, als man erwarten könnte.
 
@@ -76,58 +76,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figcaption>Zusammensetzung der Gruppen nach acht Merkmalen; je Balken 100 %, Kategorien im Feldkopf von hell nach dunkel. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Unter den Unentschiedenen sind 62 Prozent Frauen und 38 Prozent Männer. Unter denen, die bei der Union bleiben, sind es 43 Prozent Frauen.</i></figcaption>
 </figure>
 
-## 3. Wer bleibt, wer geht? Die Einstellungen
-
-[Platzhalter] Deutlicher als die Soziodemografie trennen die politischen Einstellungen. Am größten sind die Unterschiede beim Urteil über Parteien und Spitzenpolitiker: Wer zur AfD gewechselt ist, bewertet die AfD inzwischen klar positiv und die Union negativ. Wer zu SPD oder Grünen gewechselt ist, sieht die Union im Schnitt noch leicht positiv.
-
-<figure class="ltw-plotly">
-<div id="union26-bewertung" class="union26-chart" style="height: 760px;"></div>
-<figcaption>Mittlere Bewertung auf der Skala von −5 bis +5. CDU/CSU: Mittel aus CDU- und CSU-Bewertung. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Wer zur AfD gewechselt ist, bewertet Friedrich Merz im Schnitt mit −2,1, wer bei der Union bleibt, bewertet ihn mit +2,0.</i></figcaption>
-</figure>
-
-[Platzhalter] Bei den Aussagen zu Politik und Demokratie zeigt sich das Muster noch einmal: Die AfD-Wechsler stimmen populistischen Aussagen weit häufiger zu, fühlen sich häufiger abgehängt und wollen Gesetze auch mit AfD-Stimmen beschließen. Die Unentschiedenen liegen in vielen Fragen zwischen den Bleibenden und den AfD-Wechslern.
-
-<figure class="ltw-plotly">
-<div id="union26-zust-politik" class="union26-chart" style="height: 680px;"></div>
-<figcaption>Anteil, der zustimmt (Stufen 4–5 von 5). Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 87 Prozent der AfD-Wechsler finden, dass Gesetze in wichtigen Sachfragen auch mit Stimmen der AfD beschlossen werden sollten. Unter den Bleibenden sind es 44 Prozent.</i></figcaption>
-</figure>
-
-[Platzhalter] In den Sachfragen sind die Unterschiede kleiner. Beim Bürgergeld, bei der Ukraine-Hilfe und bei den Schulden gehen die Gruppen auseinander, bei Mietpreisen, Preisobergrenzen und Verteidigungsausgaben liegen sie nah beieinander.
-
-<figure class="ltw-plotly">
-<div id="union26-zust-sach" class="union26-chart" style="height: 760px;"></div>
-<figcaption>Anteil, der zustimmt (Stufen 4–5 von 5). Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 72 Prozent der AfD-Wechsler wollen das Bürgergeld deutlich absenken, aber nur 33 Prozent derjenigen, die zu SPD oder Grünen gewechselt sind.</i></figcaption>
-</figure>
-
-[Platzhalter] Auf den Positionsskalen zwischen zwei Polen steht die AfD-Gruppe fast überall am Rand: beim Zuzug, bei den Sanktionen gegen Russland und bei den Waffenlieferungen an die Ukraine. Die Wechsler zu SPD und Grünen stehen bei Sozialstaat und Klimaschutz etwas links der Bleibenden.
-
-<figure class="ltw-plotly">
-<div id="union26-positionen" class="union26-chart" style="height: 380px;"></div>
-<figcaption>Mittlere Position auf der Skala von 1 bis 7 zwischen zwei gegensätzlichen Aussagen. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Beim Thema Zuwanderung stehen die AfD-Wechsler im Schnitt bei 6,5 auf der Skala von 1 („Zuwanderung erleichtern“) bis 7 („Zuwanderung einschränken“).</i></figcaption>
-</figure>
-
-[Platzhalter] Das Vertrauen in die Institutionen ist bei den AfD-Wechslern eingebrochen: Rund die Hälfte vertraut Bundestag und Bundesregierung „überhaupt nicht“. Polizei und Bundesverfassungsgericht genießen dagegen in allen Gruppen mehrheitlich Vertrauen.
-
-<figure class="ltw-plotly">
-<div id="union26-vertrauen" class="union26-chart" style="height: 620px;"></div>
-<figcaption>Vertrauen auf der Skala von 1 (überhaupt nicht, dunkelrot) bis 5 (voll und ganz, dunkelblau); je Balken 100 %. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 49 Prozent der AfD-Wechsler vertrauen der Bundesregierung „überhaupt nicht“. Unter den Bleibenden sind es 5 Prozent.</i></figcaption>
-</figure>
-
-[Platzhalter] Auch bei Demokratiezufriedenheit, Gerechtigkeitsempfinden und der Einschätzung der wirtschaftlichen Lage heben sich die AfD-Wechsler ab. Gut die Hälfte von ihnen ist unzufrieden mit der Demokratie, drei Viertel halten die allgemeine Wirtschaftslage für schlecht.
-
-<figure class="ltw-plotly">
-<div id="union26-einzel" class="union26-chart" style="height: 720px;"></div>
-<figcaption>Anteil, der die genannte Einschätzung teilt (zwei von fünf Stufen in Richtung der Aussage). Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 54 Prozent der AfD-Wechsler sind unzufrieden oder sehr unzufrieden mit der Demokratie in Deutschland. Unter den Bleibenden sind es 9 Prozent.</i></figcaption>
-</figure>
-
-[Platzhalter] Auf der Links-Rechts-Skala liegen alle vier Gruppen mit dem Gipfel knapp rechts der Mitte. Die AfD-Wechsler streuen aber deutlich weiter nach rechts, die Wechsler zu SPD und Grünen etwas nach links.
-
-<figure class="ltw-plotly">
-<div id="union26-lr" class="union26-chart" style="height: 620px;"></div>
-<figcaption>Links-Rechts-Selbsteinstufung von 1 (links) bis 11 (rechts), geglättet; gepunktet = Mittelwert. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die AfD-Wechsler stufen sich im Schnitt bei 7,0 ein, die Wechsler zu SPD und Grünen bei 5,9.</i></figcaption>
-</figure>
-
-## 4. Merz und die Bundesregierung im Zeitverlauf
+## 3. Die Enttäuschung über Merz und die Regierung wächst
 
 [Platzhalter] Das Panel erlaubt auch den Blick zurück: Wie dachten die Gruppen kurz nach der Wahl, als sie alle noch Unionswähler waren? Die späteren AfD-Wechsler bewerteten Friedrich Merz im Februar und März 2025 noch fast so gut wie die Bleibenden. Seither ist ihr Urteil Welle für Welle gefallen.
 
@@ -138,12 +87,58 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figcaption>Dieselben Befragten in vier Wellen, gruppiert nach Wahlabsicht im April 2026; Mittelwert auf der Skala von −5 bis +5. Grau: vor Amtsantritt der Regierung; Regierungsarbeit erst ab Mai 2025 erfragt. Gruppen: Unionswähler 2025 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die späteren AfD-Wechsler bewerteten Friedrich Merz kurz nach der Wahl im Februar/März 2025 noch mit +2,3. Im April 2026 liegt ihr Urteil bei −2,1.</i></figcaption>
 </figure>
 
+[Platzhalter] Auch bei Demokratiezufriedenheit, Gerechtigkeitsempfinden und der Einschätzung der wirtschaftlichen Lage heben sich die AfD-Wechsler ab. Gut die Hälfte von ihnen ist unzufrieden mit der Demokratie, drei Viertel halten die allgemeine Wirtschaftslage für schlecht.
+
 <figure class="ltw-plotly">
 <div id="union26-zeit-lage" class="union26-chart" style="height: 760px;"></div>
 <figcaption>Dieselben Befragten in vier Wellen, gruppiert nach Wahlabsicht im April 2026; Anteil der Stufen 4 und 5 der jeweiligen Fünferskala. Grau: vor Amtsantritt der Regierung; Gerechtigkeitsfragen nur im Mai 2025 und April 2026 erhoben. Gruppen: Unionswähler 2025 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Im Februar/März 2025 erwarteten 33 Prozent der späteren AfD-Wechsler, dass die allgemeine wirtschaftliche Lage in einem Jahr schlechter sein wird. Im April 2026 sind es 68 Prozent.</i></figcaption>
 </figure>
 
-## 5. Wen kann die Union zurückholen?
+[Platzhalter] Deutlicher als die Soziodemografie trennen die politischen Einstellungen. Am größten sind die Unterschiede beim Urteil über Parteien und Spitzenpolitiker: Wer zur AfD gewechselt ist, bewertet die AfD inzwischen klar positiv und die Union negativ. Wer zu SPD oder Grünen gewechselt ist, sieht die Union im Schnitt noch leicht positiv.
+
+<figure class="ltw-plotly">
+<div id="union26-bewertung" class="union26-chart" style="height: 760px;"></div>
+<figcaption>Mittlere Bewertung auf der Skala von −5 bis +5. CDU/CSU: Mittel aus CDU- und CSU-Bewertung. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Wer zur AfD gewechselt ist, bewertet Friedrich Merz im Schnitt mit −2,1, wer bei der Union bleibt, bewertet ihn mit +2,0.</i></figcaption>
+</figure>
+
+## 4. Wo die Abgewanderten politisch stehen
+
+[Platzhalter] Auf der Links-Rechts-Skala liegen alle vier Gruppen mit dem Gipfel knapp rechts der Mitte. Die AfD-Wechsler streuen aber deutlich weiter nach rechts, die Wechsler zu SPD und Grünen etwas nach links.
+
+<figure class="ltw-plotly">
+<div id="union26-lr" class="union26-chart" style="height: 620px;"></div>
+<figcaption>Links-Rechts-Selbsteinstufung von 1 (links) bis 11 (rechts), geglättet; gepunktet = Mittelwert. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die AfD-Wechsler stufen sich im Schnitt bei 7,0 ein, die Wechsler zu SPD und Grünen bei 5,9.</i></figcaption>
+</figure>
+
+[Platzhalter] Auf den Positionsskalen zwischen zwei Polen steht die AfD-Gruppe fast überall am Rand: beim Zuzug, bei den Sanktionen gegen Russland und bei den Waffenlieferungen an die Ukraine. Die Wechsler zu SPD und Grünen stehen bei Sozialstaat und Klimaschutz etwas links der Bleibenden.
+
+<figure class="ltw-plotly">
+<div id="union26-positionen" class="union26-chart" style="height: 380px;"></div>
+<figcaption>Mittlere Position auf der Skala von 1 bis 7 zwischen zwei gegensätzlichen Aussagen. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Beim Thema Zuwanderung stehen die AfD-Wechsler im Schnitt bei 6,5 auf der Skala von 1 („Zuwanderung erleichtern“) bis 7 („Zuwanderung einschränken“).</i></figcaption>
+</figure>
+
+[Platzhalter] In den Sachfragen sind die Unterschiede kleiner. Beim Bürgergeld, bei der Ukraine-Hilfe und bei den Schulden gehen die Gruppen auseinander, bei Mietpreisen, Preisobergrenzen und Verteidigungsausgaben liegen sie nah beieinander.
+
+<figure class="ltw-plotly">
+<div id="union26-zust-sach" class="union26-chart" style="height: 760px;"></div>
+<figcaption>Anteil, der zustimmt (Stufen 4–5 von 5). Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 72 Prozent der AfD-Wechsler wollen das Bürgergeld deutlich absenken, aber nur 33 Prozent derjenigen, die zu SPD oder Grünen gewechselt sind.</i></figcaption>
+</figure>
+
+[Platzhalter] Bei den Aussagen zu Politik und Demokratie zeigt sich das Muster noch einmal: Die AfD-Wechsler stimmen populistischen Aussagen weit häufiger zu, fühlen sich häufiger abgehängt und wollen Gesetze auch mit AfD-Stimmen beschließen. Die Unentschiedenen liegen in vielen Fragen zwischen den Bleibenden und den AfD-Wechslern.
+
+<figure class="ltw-plotly">
+<div id="union26-zust-politik" class="union26-chart" style="height: 680px;"></div>
+<figcaption>Anteil, der zustimmt (Stufen 4–5 von 5). Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 87 Prozent der AfD-Wechsler finden, dass Gesetze in wichtigen Sachfragen auch mit Stimmen der AfD beschlossen werden sollten. Unter den Bleibenden sind es 44 Prozent.</i></figcaption>
+</figure>
+
+[Platzhalter] Das Vertrauen in die Institutionen ist bei den AfD-Wechslern eingebrochen: Rund die Hälfte vertraut Bundestag und Bundesregierung „überhaupt nicht“. Polizei und Bundesverfassungsgericht genießen dagegen in allen Gruppen mehrheitlich Vertrauen.
+
+<figure class="ltw-plotly">
+<div id="union26-vertrauen" class="union26-chart" style="height: 620px;"></div>
+<figcaption>Vertrauen auf der Skala von 1 (überhaupt nicht, dunkelrot) bis 5 (voll und ganz, dunkelblau); je Balken 100 %. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 49 Prozent der AfD-Wechsler vertrauen der Bundesregierung „überhaupt nicht“. Unter den Bleibenden sind es 5 Prozent.</i></figcaption>
+</figure>
+
+## 5. Wen die Union zurückgewinnen kann
 
 [Platzhalter] Die Wahlabsicht zeigt nur einen Moment. Für die Union zählt auch, wer ihr noch positiv gegenübersteht. Von den Unionswählern des Jahres 2025, die heute etwas anderes wählen wollen, bewertet gut die Hälfte die Union weiter positiv.
 
@@ -153,8 +148,6 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <div id="union26-rueckhol" class="union26-chart" style="height: 460px;"></div>
 <figcaption>Unionswähler 2025 mit anderer Wahlabsicht im April 2026, nach Ziel. Positiv = Bewertung der Union +1 bis +5, negativ = 0 bis −5; Fallzahlen beim Hovern. Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Von den früheren Unionswählern, die heute SPD wählen wollen, sehen 73 Prozent die Union weiterhin positiv (n = 92). Von denen, die zur AfD gewechselt sind, sind es 48 Prozent.</i></figcaption>
 </figure>
-
-## 6. Wo das Potenzial der Union heute steckt
 
 [Platzhalter] Dreht man die Perspektive um und fragt, wo alle Menschen stehen, die derzeit nicht Union wählen, sie aber positiv bewerten, dann liegt das größte Potenzial bei den SPD-Wählern. Ein Viertel des Potenzials wählt heute SPD, knapp ein Fünftel AfD, 15 Prozent Grüne.
 
@@ -366,6 +359,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* ---------- single items: small bar panels ---------- */
   (function () {
+    if (!document.getElementById("union26-einzel")) return;
     var sp = schmal ? 1 : 3, axes = gridAxes(D.einzelfragen.length, sp), traces = [], annos = [], lay = {};
     hoehe("union26-einzel", 1500);
     D.einzelfragen.forEach(function (e, k) {
