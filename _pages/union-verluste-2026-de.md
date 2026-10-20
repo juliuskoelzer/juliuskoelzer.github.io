@@ -139,7 +139,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 </figure>
 
 <figure class="ltw-plotly">
-<div id="union26-zeit-lage" class="union26-chart" style="height: 660px;"></div>
+<div id="union26-zeit-lage" class="union26-chart" style="height: 760px;"></div>
 <figcaption>Dieselben Befragten in vier Wellen, gruppiert nach Wahlabsicht im April 2026; Anteil der Stufen 4 und 5 der jeweiligen Fünferskala. Grau: vor Amtsantritt der Regierung; Gerechtigkeitsfragen nur im Mai 2025 und April 2026 erhoben. Gruppen: Unionswähler 2025 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Im Februar/März 2025 erwarteten 33 Prozent der späteren AfD-Wechsler, dass die allgemeine wirtschaftliche Lage in einem Jahr schlechter sein wird. Im April 2026 sind es 68 Prozent.</i></figcaption>
 </figure>
 
@@ -491,7 +491,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       shapes.push({ type: "rect", xref: ax.x, yref: ax.y + " domain", x0: -0.5, x1: 0.5, y0: 0, y1: 1, fillcolor: "#f3f3f3", line: { width: 0 }, layer: "below" });
       annos.push(strip(ax, wrap(m, opt.umbruch)));
-      lay[ax.xaxis] = { type: "category", showgrid: false, fixedrange: true, tickfont: { size: 11 } };
+      lay[ax.xaxis] = { type: "category", showgrid: false, fixedrange: true, tickfont: { size: 10.5 }, tickangle: 0,
+                        tickvals: wellen, ticktext: wellen.map(function (w) { return w.replace(" 20", "<br>20"); }) };
       lay[ax.yaxis] = Object.assign({ gridcolor: "#e6e6e6", zeroline: false, fixedrange: true }, opt.yachse);
     });
     Plotly.newPlot(id, traces, Object.assign({}, basis, lay, {
@@ -503,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   zeitChart("union26-zeit", zeit, { spalten: 2, hoeheSchmal: 1150, umbruch: 60, ygap: 0.3, legendeY: 1.12, oben: 80, fmt: signiert,
     yachse: { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"] } });
-  zeitChart("union26-zeit-lage", lage, { spalten: 4, hoeheSchmal: 2000, umbruch: 24, ygap: 0.5, legendeY: 1.16, oben: 110, fmt: prozent,
+  zeitChart("union26-zeit-lage", lage, { spalten: 4, hoeheSchmal: 2000, umbruch: 26, ygap: 0.55, legendeY: 1.14, oben: 120, fmt: prozent,
     yachse: { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"], tickfont: { size: 10, color: ink2 } } });
 
   /* ---------- 5) who can be won back: former Union voters by current intention ---------- */
