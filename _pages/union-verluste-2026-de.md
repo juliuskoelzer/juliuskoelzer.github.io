@@ -175,12 +175,12 @@ Offen bleibt, ob sich diese Unterschiede erst seit der Wahl herausgebildet haben
 
 <figure class="ltw-plotly">
 <div id="union26-anhang-1" class="union26-chart" style="height: 1500px;"></div>
-<figcaption>A1: Bewertungen (−5 bis +5), eigene Positionen und wahrgenommene Positionen der CDU/CSU (1 bis 7, Links-Rechts 0 bis 10), Mittelwert; „weiß nicht“ nicht berücksichtigt. Dieselben Unionswähler 2025, gruppiert nach ihrer Wahlabsicht im April 2026; nur wer beide Male geantwortet hat. Wert „Wahl 2025“ aus der letzten Welle vor der Wahl, die die Frage enthielt (Dezember 2024 bis Februar 2025); * erst direkt nach der Wahl erhoben (Februar/März 2025). Fallzahlen je Gruppe und Frage: bleibt bei CDU/CSU 1.317–1.564, zu SPD/Grünen 112–143, zur AfD 150–191, unentschieden 112–196. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die späteren AfD-Wechsler bewerteten die AfD vor der Wahl im Schnitt mit +0,9, im April 2026 mit +2,4. Die Bleibenden lagen beide Male bei −3,9.</i></figcaption>
+<figcaption>A1: Bewertungen (−5 bis +5), eigene Positionen und wahrgenommene Positionen der CDU/CSU (1 bis 7, Links-Rechts 0 bis 10), Mittelwert; „weiß nicht“ nicht berücksichtigt. Dieselben Unionswähler 2025, gruppiert nach ihrer Wahlabsicht im April 2026; nur wer beide Male geantwortet hat. Wert „Vor der Wahl 2025“ aus der letzten Welle vor der Wahl, die die Frage enthielt (Dezember 2024 bis Februar 2025); * erst direkt nach der Wahl erhoben (Februar/März 2025). Fallzahlen je Gruppe und Frage: bleibt bei CDU/CSU 1.317–1.564, zu SPD/Grünen 112–143, zur AfD 150–191, unentschieden 112–196. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die späteren AfD-Wechsler bewerteten die AfD vor der Wahl im Schnitt mit +0,9, im April 2026 mit +2,4. Die Bleibenden lagen beide Male bei −3,9.</i></figcaption>
 </figure>
 
 <figure class="ltw-plotly">
 <div id="union26-anhang-2" class="union26-chart" style="height: 2100px;"></div>
-<figcaption>A2: Anteil, der (eher) zustimmt bzw. (eher) vertraut (Stufen 4 und 5 der Fünferskala); Vertrauen in die Bundesregierung im Februar/März 2025 noch in die alte Regierung. Dieselben Unionswähler 2025, gruppiert nach ihrer Wahlabsicht im April 2026; nur wer beide Male geantwortet hat. Wert „Wahl 2025“ aus der letzten Welle vor der Wahl, die die Frage enthielt (Dezember 2024 bis Februar 2025); * erst direkt nach der Wahl erhoben (Februar/März 2025). Fallzahlen je Gruppe und Frage: bleibt bei CDU/CSU 1.317–1.564, zu SPD/Grünen 112–143, zur AfD 150–191, unentschieden 112–196. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Vor der Wahl fanden 40 Prozent der späteren AfD-Wechsler, Leute wie sie dürften ihre Meinung nicht frei äußern, im April 2026 sind es 53 Prozent. Bei den Bleibenden blieb der Anteil bei rund 16 Prozent.</i></figcaption>
+<figcaption>A2: Anteil, der (eher) zustimmt bzw. (eher) vertraut (Stufen 4 und 5 der Fünferskala); Vertrauen in die Bundesregierung im Februar/März 2025 noch in die alte Regierung. Dieselben Unionswähler 2025, gruppiert nach ihrer Wahlabsicht im April 2026; nur wer beide Male geantwortet hat. Wert „Vor der Wahl 2025“ aus der letzten Welle vor der Wahl, die die Frage enthielt (Dezember 2024 bis Februar 2025); * erst direkt nach der Wahl erhoben (Februar/März 2025). Fallzahlen je Gruppe und Frage: bleibt bei CDU/CSU 1.317–1.564, zu SPD/Grünen 112–143, zur AfD 150–191, unentschieden 112–196. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Vor der Wahl fanden 40 Prozent der späteren AfD-Wechsler, Leute wie sie dürften ihre Meinung nicht frei äußern, im April 2026 sind es 53 Prozent. Bei den Bleibenden blieb der Anteil bei rund 16 Prozent.</i></figcaption>
 </figure>
 
 <div class="ltw-sources" markdown="1">
@@ -460,52 +460,52 @@ document.addEventListener("DOMContentLoaded", function () {
   var wellen = ["Feb./März 2025", "Mai 2025", "Nov. 2025", "April 2026"];
   var zeit = {
     "Bewertung von Merz": {
-      "Bleibt bei CDU/CSU": [[2.72, 2.28, 2.20, 2.05], [1583, 1498, 1492, 1578]],
-      "Zu SPD/Grünen": [[1.42, 0.95, 0.38, 0.36], [147, 138, 135, 146]],
-      "Zur AfD": [[2.30, 0.13, -1.01, -2.11], [194, 180, 186, 193]],
-      "Unentschieden": [[1.20, 0.32, -0.40, -1.43], [198, 175, 185, 197]] },
+      "Bleibt bei CDU/CSU": [[2.44, 2.28, 2.20, 2.05], [1538, 1498, 1492, 1578]],
+      "Zu SPD/Grünen": [[0.27, 0.95, 0.38, 0.36], [138, 138, 135, 146]],
+      "Zur AfD": [[2.02, 0.13, -1.01, -2.11], [184, 180, 186, 193]],
+      "Unentschieden": [[0.66, 0.32, -0.40, -1.43], [193, 175, 185, 197]] },
     "Zufriedenheit mit der Bundesregierung": {
-      "Bleibt bei CDU/CSU": [[-3.30, 1.38, 0.88, 0.65], [1581, 1500, 1496, 1565]],
-      "Zu SPD/Grünen": [[-1.87, 1.39, -0.17, -0.35], [148, 137, 134, 143]],
-      "Zur AfD": [[-4.21, -0.60, -2.50, -3.25], [194, 181, 186, 190]],
-      "Unentschieden": [[-3.39, 0.13, -1.20, -1.92], [198, 177, 187, 196]] },
+      "Bleibt bei CDU/CSU": [[-3.34, 1.38, 0.88, 0.65], [1539, 1500, 1496, 1565]],
+      "Zu SPD/Grünen": [[-1.63, 1.39, -0.17, -0.35], [140, 137, 134, 143]],
+      "Zur AfD": [[-4.16, -0.60, -2.50, -3.25], [185, 181, 186, 190]],
+      "Unentschieden": [[-3.54, 0.13, -1.20, -1.92], [193, 177, 187, 196]] },
     "Zufriedenheit mit der Regierungsarbeit der CDU/CSU": {
       "Bleibt bei CDU/CSU": [[null, 2.09, 1.81, 1.65], [null, 1500, 1497, 1567]],
       "Zu SPD/Grünen": [[null, 1.34, -0.05, 0.07], [null, 137, 134, 143]],
       "Zur AfD": [[null, 0.38, -0.93, -1.72], [null, 181, 186, 191]],
       "Unentschieden": [[null, 0.44, -0.64, -1.29], [null, 177, 187, 196]] },
     "Zufriedenheit mit der Regierungsarbeit der SPD": {
-      "Bleibt bei CDU/CSU": [[-2.53, 0.34, -0.79, -1.23], [1580, 1499, 1493, 1566]],
-      "Zu SPD/Grünen": [[-0.99, 0.89, 0.22, -0.34], [147, 137, 134, 142]],
-      "Zur AfD": [[-3.50, -1.89, -3.49, -3.81], [195, 181, 185, 191]],
-      "Unentschieden": [[-2.43, -0.71, -1.68, -2.38], [198, 177, 187, 196]] }
+      "Bleibt bei CDU/CSU": [[null, 0.34, -0.79, -1.23], [null, 1499, 1493, 1566]],
+      "Zu SPD/Grünen": [[null, 0.89, 0.22, -0.34], [null, 137, 134, 142]],
+      "Zur AfD": [[null, -1.89, -3.49, -3.81], [null, 181, 185, 191]],
+      "Unentschieden": [[null, -0.71, -1.68, -2.38], [null, 177, 187, 196]] }
   };
   var lage = {
     "Allgemeine wirtschaftliche Lage schlecht": {
-      "Bleibt bei CDU/CSU": [[58.90, 50.82, 49.14, 50.48], [1567, 1492, 1482, 1558]],
-      "Zu SPD/Grünen": [[58.85, 46.51, 54.68, 47.48], [145, 137, 133, 139]],
-      "Zur AfD": [[75.05, 68.93, 76.68, 75.50], [194, 180, 185, 189]],
-      "Unentschieden": [[68.03, 62.22, 62.59, 65.26], [198, 176, 186, 194]] },
+      "Bleibt bei CDU/CSU": [[63.48, 50.82, 49.14, 50.48], [1531, 1492, 1482, 1558]],
+      "Zu SPD/Grünen": [[57.10, 46.51, 54.68, 47.48], [140, 137, 133, 139]],
+      "Zur AfD": [[79.78, 68.93, 76.68, 75.50], [181, 180, 185, 189]],
+      "Unentschieden": [[68.55, 62.22, 62.59, 65.26], [191, 176, 186, 194]] },
     "Allgemeine Lage in einem Jahr schlechter": {
-      "Bleibt bei CDU/CSU": [[14.43, 13.32, 23.77, 32.38], [1583, 1496, 1490, 1561]],
-      "Zu SPD/Grünen": [[17.04, 20.75, 30.39, 43.96], [146, 137, 134, 143]],
-      "Zur AfD": [[32.87, 34.83, 56.61, 68.16], [194, 180, 185, 191]],
-      "Unentschieden": [[21.05, 24.43, 44.26, 52.30], [198, 177, 183, 196]] },
+      "Bleibt bei CDU/CSU": [[21.37, 13.32, 23.77, 32.38], [1540, 1496, 1490, 1561]],
+      "Zu SPD/Grünen": [[23.71, 20.75, 30.39, 43.96], [140, 137, 134, 143]],
+      "Zur AfD": [[37.20, 34.83, 56.61, 68.16], [183, 180, 185, 191]],
+      "Unentschieden": [[27.15, 24.43, 44.26, 52.30], [192, 177, 183, 196]] },
     "Eigene wirtschaftliche Lage schlecht": {
-      "Bleibt bei CDU/CSU": [[13.05, 13.36, 12.24, 13.14], [1581, 1496, 1490, 1561]],
-      "Zu SPD/Grünen": [[22.07, 18.58, 20.16, 20.84], [147, 137, 134, 143]],
-      "Zur AfD": [[24.20, 22.42, 24.51, 21.94], [194, 181, 186, 191]],
-      "Unentschieden": [[18.22, 22.39, 20.09, 19.25], [198, 177, 187, 194]] },
+      "Bleibt bei CDU/CSU": [[14.90, 13.36, 12.24, 13.14], [1539, 1496, 1490, 1561]],
+      "Zu SPD/Grünen": [[20.76, 18.58, 20.16, 20.84], [139, 137, 134, 143]],
+      "Zur AfD": [[23.74, 22.42, 24.51, 21.94], [183, 181, 186, 191]],
+      "Unentschieden": [[19.33, 22.39, 20.09, 19.25], [192, 177, 187, 194]] },
     "Eigene Lage in einem Jahr schlechter": {
-      "Bleibt bei CDU/CSU": [[16.95, 15.65, 18.15, 23.87], [1578, 1493, 1486, 1560]],
-      "Zu SPD/Grünen": [[22.92, 21.87, 26.59, 28.93], [145, 136, 133, 143]],
-      "Zur AfD": [[32.54, 35.63, 33.48, 46.45], [194, 180, 185, 189]],
-      "Unentschieden": [[20.91, 24.38, 27.93, 35.72], [198, 177, 187, 195]] },
+      "Bleibt bei CDU/CSU": [[20.28, 15.65, 18.15, 23.87], [1536, 1493, 1486, 1560]],
+      "Zu SPD/Grünen": [[27.31, 21.87, 26.59, 28.93], [139, 136, 133, 143]],
+      "Zur AfD": [[34.00, 35.63, 33.48, 46.45], [183, 180, 185, 189]],
+      "Unentschieden": [[26.47, 24.38, 27.93, 35.72], [190, 177, 187, 195]] },
     "Unzufrieden mit der Demokratie, wie sie in Deutschland besteht": {
-      "Bleibt bei CDU/CSU": [[13.18, 9.30, 8.66, 8.46], [1584, 1504, 1494, 1580]],
-      "Zu SPD/Grünen": [[10.74, 10.65, 15.62, 15.71], [147, 139, 135, 147]],
-      "Zur AfD": [[54.42, 52.86, 54.29, 53.85], [195, 181, 185, 195]],
-      "Unentschieden": [[16.68, 16.93, 22.76, 28.28], [198, 179, 187, 199]] },
+      "Bleibt bei CDU/CSU": [[17.21, 9.30, 8.66, 8.46], [1546, 1504, 1494, 1580]],
+      "Zu SPD/Grünen": [[20.61, 10.65, 15.62, 15.71], [141, 139, 135, 147]],
+      "Zur AfD": [[56.60, 52.86, 54.29, 53.85], [184, 181, 185, 195]],
+      "Unentschieden": [[23.76, 16.93, 22.76, 28.28], [192, 179, 187, 199]] },
     "In der Gesellschaft geht es ungerecht zu": {
       "Bleibt bei CDU/CSU": [[null, 22.92, null, 25.08], [null, 1496, null, 1562]],
       "Zu SPD/Grünen": [[null, 33.01, null, 35.27], [null, 137, null, 143]],
@@ -569,7 +569,7 @@ document.addEventListener("DOMContentLoaded", function () {
       achsen[f.titel] = { range: [f.unten - rand, f.oben + rand], tickvals: tv,
                          ticktext: tv.map(function (v) { return anteil ? v + " %" : de(v, v % 1 ? 1 : 0); }) };
     });
-    zeitChart(id, daten, { wellen: ["Wahl 2025", "April 2026"], grau: false, tol: anteil ? 2.5 : 0.2, schritt: 0.06, spalten: 4,
+    zeitChart(id, daten, { wellen: ["Vor der Wahl 2025", "April 2026"], grau: false, tol: anteil ? 2.5 : 0.2, schritt: 0.06, spalten: 4,
       hoeheSchmal: fig.facetten.length * 270 + 160, umbruch: 26, ygap: anteil ? 0.42 : 0.5, legendeY: anteil ? 1.05 : 1.08, oben: 100,
       fmt: anteil ? prozent : function (v) { return de(v); }, yachse: {}, yachseJe: achsen });
   });
