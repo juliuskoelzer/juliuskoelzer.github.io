@@ -190,6 +190,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var farben = { "CDU/CSU": "#2b2b2b", "AfD": "#009ee0", "SPD": "#d71f1d", "Grüne": "#3f8f2f", "Linke": "#b8236d",
                  "BSW": "#7a2a55", "FDP": "#e5c300", "Andere": "#a0a0a0", "Nichtwahl": "#8c8c8c", "unentschieden": "#b4b4b4" };
   var gruppen = D.gruppen;
+  /* drawing order: the "stays with CDU/CSU" points last, so they are never hidden */
+  var obenAuf = gruppen.slice(1).concat([gruppen[0]]);
   var gfarbe = { "Bleibt bei CDU/CSU": "#2b2b2b", "Zu SPD/Grünen": "#d71f1d", "Zur AfD": "#009ee0", "Unentschieden": "#a8a8a8" };
   var cfg = { displayModeBar: false, responsive: true };
   /* narrow screens: facet grids collapse to one column and the chart boxes grow */
@@ -295,8 +297,8 @@ document.addEventListener("DOMContentLoaded", function () {
       traces.push({ type: "scatter", mode: "lines", x: [Math.min.apply(null, v), Math.max.apply(null, v)], y: [pos[i], pos[i]],
                     line: { color: "#dcdcdc", width: 5 }, hoverinfo: "skip", showlegend: false });
     });
-    gruppen.forEach(function (g) {
-      traces.push({ type: "scatter", mode: "markers", name: g, legendgroup: g,
+    obenAuf.forEach(function (g) {
+      traces.push({ type: "scatter", mode: "markers", name: g, legendgroup: g, legendrank: gruppen.indexOf(g),
         x: items.map(function (it) { return it.werte[g]; }), y: pos,
         marker: marker(g, 11), customdata: items.map(function (it) { return opt.fmt(it.werte[g]); }), hovertemplate: "%{customdata}<extra></extra>" });
     });
@@ -324,8 +326,8 @@ document.addEventListener("DOMContentLoaded", function () {
   (function () {
     var it = D.positionen, pos = it.map(function (p, i) { return -(i + 1); });
     var traces = it.map(function (p, i) { return { type: "scatter", mode: "lines", x: [1, 7], y: [pos[i], pos[i]], line: { color: "#d9d9d9", width: 9 }, hoverinfo: "skip", showlegend: false }; });
-    gruppen.forEach(function (g) {
-      traces.push({ type: "scatter", mode: "markers", name: g, x: it.map(function (p) { return p.werte[g]; }), y: pos, marker: marker(g, 13),
+    obenAuf.forEach(function (g) {
+      traces.push({ type: "scatter", mode: "markers", name: g, legendrank: gruppen.indexOf(g), x: it.map(function (p) { return p.werte[g]; }), y: pos, marker: marker(g, 13),
         hovertemplate: "%{x:.1f}<extra></extra>" });
     });
     Plotly.newPlot("union26-positionen", traces, Object.assign({}, basis, {
@@ -477,13 +479,13 @@ document.addEventListener("DOMContentLoaded", function () {
     hoehe(id, opt.hoeheSchmal);
     merkmale.forEach(function (m, k) {
       var ax = axes[k];
-      gruppen.forEach(function (g) {
+      obenAuf.forEach(function (g) {
         var d = daten[m][g], spdg = g === "Zu SPD/Grünen";
         if (spdg) {
           traces.push({ type: "scatter", mode: "lines", x: wellen, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#d71f1d", width: 3 } });
           traces.push({ type: "scatter", mode: "lines", x: wellen, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#3f8f2f", width: 3, dash: "dash" } });
         }
-        traces.push({ type: "scatter", mode: spdg ? "markers" : "lines+markers", name: g, legendgroup: g, showlegend: k === 0,
+        traces.push({ type: "scatter", mode: spdg ? "markers" : "lines+markers", name: g, legendgroup: g, legendrank: gruppen.indexOf(g), showlegend: k === 0,
           x: wellen, y: d[0], customdata: d[0].map(function (v) { return v === null ? "" : opt.fmt(v); }), xaxis: ax.x, yaxis: ax.y, connectgaps: true,
           line: { color: gfarbe[g], width: 3 }, marker: marker(g, 10), hovertemplate: "%{customdata}<extra></extra>" });
       });
@@ -523,8 +525,8 @@ document.addEventListener("DOMContentLoaded", function () {
                        text: "", showarrow: true, arrowhead: 2, startarrowhead: 2, arrowside: "end+start", arrowsize: 1, startarrowsize: 1, arrowwidth: 1.3, arrowcolor: ink2 });
         }
       });
-      gruppen.forEach(function (g) {
-        traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: g, legendgroup: g, showlegend: k === 0,
+      obenAuf.forEach(function (g) {
+        traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: g, legendgroup: g, legendrank: gruppen.indexOf(g), showlegend: k === 0,
           x: [th.selbst[g]], y: [g], marker: marker(g, 12), customdata: [de(th.selbst[g])], hovertemplate: "Eigene Position: %{customdata}<extra></extra>" });
       });
       traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: "Wahrnehmung der CDU/CSU-Position", legendgroup: "union", showlegend: k === 0,
