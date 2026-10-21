@@ -140,7 +140,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 
 <figure class="ltw-plotly">
 <div id="union26-union-position" class="union26-chart" style="height: 760px;"></div>
-<figcaption>Eigene Position (Punkt) und Wahrnehmung der CDU/CSU-Position (Raute), im Mittel auf Skalen von 1 bis 7; der Pfeil führt von der eigenen Position zur wahrgenommenen Position der CDU/CSU. CDU/CSU: Mittel aus den Einstufungen von CDU und CSU, „weiß nicht“ nicht berücksichtigt. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Bei der Zuwanderung verorten sich die AfD-Wechsler im Schnitt bei 6,5, also nahe am Pol „Zuzug einschränken“. Die Union sehen sie bei 4,7.</i></figcaption>
+<figcaption>Eigene Position (Punkt) und Wahrnehmung der CDU/CSU-Position (Raute), im Mittel auf Skalen von 1 bis 7; der Doppelpfeil zeigt den Abstand zwischen eigener und wahrgenommener Position der CDU/CSU. CDU/CSU: Mittel aus den Einstufungen von CDU und CSU, „weiß nicht“ nicht berücksichtigt. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Bei der Zuwanderung verorten sich die AfD-Wechsler im Schnitt bei 6,5, also nahe am Pol „Zuzug einschränken“. Die Union sehen sie bei 4,7.</i></figcaption>
 </figure>
 
 [Platzhalter] Die Wahlabsicht zeigt nur einen Moment. Für die Union zählt auch, wer ihr noch positiv gegenübersteht. Von den Unionswählern des Jahres 2025, die heute etwas anderes wählen wollen, bewertet gut die Hälfte die Union weiter positiv.
@@ -516,9 +516,10 @@ document.addEventListener("DOMContentLoaded", function () {
       reihen.forEach(function (g, i) {
         shapes.push({ type: "line", xref: ax.x, yref: ax.y, x0: 1, x1: 7, y0: i, y1: i, line: { color: "#e3e3e3", width: 7 }, layer: "below" });
         var a = th.selbst[g], b = th.union[g];
-        if (Math.abs(b - a) > 0.15) {
-          annos.push({ xref: ax.x, yref: ax.y, axref: ax.x, ayref: ax.y, x: b - (b > a ? 0.12 : -0.12), y: i, ax: a, ay: i,
-                       text: "", showarrow: true, arrowhead: 2, arrowsize: 1, arrowwidth: 1.3, arrowcolor: ink2 });
+        if (Math.abs(b - a) > 0.3) {
+          var r = b > a ? 0.12 : -0.12;
+          annos.push({ xref: ax.x, yref: ax.y, axref: ax.x, ayref: ax.y, x: b - r, y: i, ax: a + r, ay: i,
+                       text: "", showarrow: true, arrowhead: 2, startarrowhead: 2, arrowside: "end+start", arrowsize: 1, startarrowsize: 1, arrowwidth: 1.3, arrowcolor: ink2 });
         }
       });
       gruppen.forEach(function (g) {
