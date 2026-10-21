@@ -105,7 +105,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 
 <figure class="ltw-plotly">
 <div id="union26-lr" class="union26-chart" style="height: 620px;"></div>
-<figcaption>Links-Rechts-Selbsteinstufung von 1 (links) bis 11 (rechts), geglättet; gepunktet = Mittelwert. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die AfD-Wechsler stufen sich im Schnitt bei 7,0 ein, die Wechsler zu SPD und Grünen bei 5,9.</i></figcaption>
+<figcaption>Links-Rechts-Selbsteinstufung von 0 (links) bis 10 (rechts), geglättet; gepunktet = Mittelwert. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Die AfD-Wechsler stufen sich im Schnitt bei 6,0 ein, die Wechsler zu SPD und Grünen bei 4,9.</i></figcaption>
 </figure>
 
 [Platzhalter] Auf den Positionsskalen zwischen zwei Polen steht die AfD-Gruppe fast überall am Rand: beim Zuzug, bei den Sanktionen gegen Russland und bei den Waffenlieferungen an die Ukraine. Die Wechsler zu SPD und Grünen stehen bei Sozialstaat und Klimaschutz etwas links der Bleibenden.
@@ -394,7 +394,7 @@ document.addEventListener("DOMContentLoaded", function () {
       shapes.push({ type: "line", xref: ax.x, yref: ax.y + " domain", x0: L.mittel[g], x1: L.mittel[g], y0: 0, y1: 1, line: { color: ink, width: 1.2, dash: "dot" } });
       annos.push(strip(ax, g));
       annos.push({ xref: ax.x, yref: ax.y + " domain", x: L.mittel[g] + 0.1, y: 0.95, text: "Ø " + de(L.mittel[g]), showarrow: false, xanchor: "left", font: { size: 12 } });
-      lay[ax.xaxis] = { range: [1, 11], tickvals: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], ticktext: ["1<br>links", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11<br>rechts"],
+      lay[ax.xaxis] = { range: [0, 10], tickvals: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], ticktext: ["0<br>links", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10<br>rechts"],
                         showgrid: false, fixedrange: true, showticklabels: k === gruppen.length - 1, tickfont: { size: 11 } };
       lay[ax.yaxis] = { range: [0, ymax * 1.05], showticklabels: false, showgrid: false, fixedrange: true, zeroline: false };
     });
