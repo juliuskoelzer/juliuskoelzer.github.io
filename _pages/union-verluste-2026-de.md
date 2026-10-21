@@ -140,7 +140,7 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 
 <figure class="ltw-plotly">
 <div id="union26-union-position" class="union26-chart" style="height: 760px;"></div>
-<figcaption>Eigene Position (Punkt) und Position, die die jeweilige Gruppe CDU/CSU zuschreibt (Raute), im Mittel auf Skalen von 1 bis 7; der Pfeil führt von der eigenen Position zur wahrgenommenen Union. CDU/CSU: Mittel aus den Einstufungen von CDU und CSU, „weiß nicht“ nicht berücksichtigt. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Bei der Zuwanderung verorten sich die AfD-Wechsler im Schnitt bei 6,5, also nahe am Pol „Zuzug einschränken“. Die Union sehen sie bei 4,7.</i></figcaption>
+<figcaption>Eigene Position (Punkt) und Wahrnehmung der CDU/CSU-Position (Raute), im Mittel auf Skalen von 1 bis 7; der Pfeil führt von der eigenen Position zur wahrgenommenen Position der CDU/CSU. CDU/CSU: Mittel aus den Einstufungen von CDU und CSU, „weiß nicht“ nicht berücksichtigt. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Bei der Zuwanderung verorten sich die AfD-Wechsler im Schnitt bei 6,5, also nahe am Pol „Zuzug einschränken“. Die Union sehen sie bei 4,7.</i></figcaption>
 </figure>
 
 [Platzhalter] Die Wahlabsicht zeigt nur einen Moment. Für die Union zählt auch, wer ihr noch positiv gegenübersteht. Von den Unionswählern des Jahres 2025, die heute etwas anderes wählen wollen, bewertet gut die Hälfte die Union weiter positiv.
@@ -525,10 +525,10 @@ document.addEventListener("DOMContentLoaded", function () {
         traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: g, legendgroup: g, showlegend: k === 0,
           x: [th.selbst[g]], y: [g], marker: marker(g, 12), customdata: [de(th.selbst[g])], hovertemplate: "Eigene Position: %{customdata}<extra></extra>" });
       });
-      traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: "CDU/CSU, wie die Gruppe sie sieht", legendgroup: "union", showlegend: k === 0,
+      traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: "Wahrnehmung der CDU/CSU-Position", legendgroup: "union", showlegend: k === 0,
         x: reihen.map(function (g) { return th.union[g]; }), y: reihen,
         marker: { symbol: "diamond-open", size: 12, color: ink, line: { color: ink, width: 2 } },
-        customdata: reihen.map(function (g) { return de(th.union[g]); }), hovertemplate: "CDU/CSU: %{customdata}<extra></extra>" });
+        customdata: reihen.map(function (g) { return de(th.union[g]); }), hovertemplate: "Wahrnehmung CDU/CSU: %{customdata}<extra></extra>" });
       annos.push(strip(ax, th.thema, "1 = " + th.links + " · 7 = " + th.rechts));
       lay[ax.xaxis] = { range: [0.8, 7.2], tickvals: [1, 2, 3, 4, 5, 6, 7], gridcolor: "#f0f0f0", zeroline: false, fixedrange: true, tickfont: { size: 10, color: ink2 } };
       lay[ax.yaxis] = { type: "category", categoryorder: "array", categoryarray: reihen, range: [-0.6, reihen.length - 0.4], fixedrange: true,
