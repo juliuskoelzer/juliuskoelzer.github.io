@@ -136,6 +136,10 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 <figcaption>Vertrauen auf der Skala von 1 (überhaupt nicht, dunkelrot) bis 5 (voll und ganz, dunkelblau); je Balken 100 %. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: 49 Prozent der AfD-Wechsler vertrauen der Bundesregierung „überhaupt nicht“. Unter den Bleibenden sind es 5 Prozent.</i></figcaption>
 </figure>
 
+Insgesamt zeigt sich ein klares Muster: Die zur AfD Abgewanderten unterscheiden sich von den verbliebenen Unionswählern nicht so sehr in einzelnen Sachfragen wie in ihrem grundsätzlichen Verhältnis zur Politik. Sie sind deutlich unzufriedener mit der Demokratie, misstrauen Institutionen stärker, teilen häufiger populistische Positionen, befürworten mit großer Mehrheit Mehrheiten unter Einschluss der AfD und sehen die Wirtschaft pessimistischer. Die Wechsler zu SPD und Grünen liegen dagegen in den meisten Fragen nah bei den Bleibenden oder etwas links von ihnen; die Unentschlossenen stehen häufig dazwischen.
+
+Offen bleibt, ob sich diese Unterschiede erst seit der Wahl herausgebildet haben oder schon vorher bestanden. Weil das GLES-Panel dieselben Personen bereits vor der Bundestagswahl befragt hat, lässt sich das prüfen (siehe Anhang). Die meisten Unterschiede waren demnach schon vor der Wahl vorhanden: Die späteren AfD-Wechsler standen der AfD schon damals deutlich näher, waren unzufriedener mit der Demokratie und offener für Gesetze mit AfD-Stimmen. Neu entstanden ist vor allem ihr Urteil über Friedrich Merz und die Union, das kurz nach der Wahl noch kaum schlechter ausfiel als bei den Bleibenden, sowie ein wachsender wirtschaftlicher Pessimismus. Die Union hat also vor allem Wähler verloren, die schon bei der Wahl anders dachten als ihre Stammwählerschaft, und deren Erwartungen an Merz sich seither nicht erfüllt haben.
+
 ## 5. Wen die Union zurückgewinnen kann
 
 <figure class="ltw-plotly">
