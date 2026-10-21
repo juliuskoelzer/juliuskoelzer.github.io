@@ -314,12 +314,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     var offs = {}; gruppen.forEach(function (g) { offs[g] = []; });
     items.forEach(function (it, i) {
-      var o = ausweichen(gruppen.map(function (g) { return it.werte[g]; }), opt.tol || 0, 0.28);
+      var o = ausweichen(gruppen.map(function (g) { return it.werte[g]; }), opt.tol || 0, opt.schritt || 0);
       gruppen.forEach(function (g, q) { offs[g][i] = o[q]; });
     });
     obenAuf.forEach(function (g) {
       traces.push({ type: "scatter", mode: "markers", name: g, legendgroup: g, legendrank: gruppen.indexOf(g),
-        x: items.map(function (it) { return it.werte[g]; }), y: pos.map(function (p, i) { return p + offs[g][i]; }),
+        x: items.map(function (it, i) { return it.werte[g] + offs[g][i]; }), y: pos,
         marker: marker(g, 11), customdata: items.map(function (it) { return opt.fmt(it.werte[g]); }), hovertemplate: "%{customdata}<extra></extra>" });
     });
     var lay = Object.assign({}, basis, {
@@ -335,9 +335,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function prozent(v) { return Math.round(v) + " %"; }
   function signiert(v) { return (v > 0 ? "+" : v < 0 ? "−" : "") + de(Math.abs(v)); }
   var linie50 = [{ type: "line", xref: "x", yref: "paper", x0: 50, x1: 50, y0: 0, y1: 1, line: { color: ink3, width: 1, dash: "dot" }, layer: "below" }];
-  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50, tol: 1.8 });
-  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50, tol: 1.8 });
-  dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: signiert, tol: 0.16,
+  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50, tol: 1.8, schritt: 0.9 });
+  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50, tol: 1.8, schritt: 0.9 });
+  dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: signiert, tol: 0.16, schritt: 0.08,
     xaxis: { range: [-5, 5], tickvals: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5], ticktext: ["−5", "−4", "−3", "−2", "−1", "0", "+1", "+2", "+3", "+4", "+5"] },
     shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 0, x1: 5, y0: 0, y1: 1, fillcolor: "#f5f5f5", line: { width: 0 }, layer: "below" },
              { type: "line", xref: "x", yref: "paper", x0: 0, x1: 0, y0: 0, y1: 1, line: { color: ink3, width: 1 } }] });
@@ -348,12 +348,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var traces = it.map(function (p, i) { return { type: "scatter", mode: "lines", x: [1, 7], y: [pos[i], pos[i]], line: { color: "#d9d9d9", width: 9 }, hoverinfo: "skip", showlegend: false }; });
     var offs = {}; gruppen.forEach(function (g) { offs[g] = []; });
     it.forEach(function (p, i) {
-      var o = ausweichen(gruppen.map(function (g) { return p.werte[g]; }), 0.13, 0.22);
+      var o = ausweichen(gruppen.map(function (g) { return p.werte[g]; }), 0.13, 0.065);
       gruppen.forEach(function (g, q) { offs[g][i] = o[q]; });
     });
     obenAuf.forEach(function (g) {
-      traces.push({ type: "scatter", mode: "markers", name: g, legendrank: gruppen.indexOf(g), x: it.map(function (p) { return p.werte[g]; }), y: pos.map(function (y, i) { return y + offs[g][i]; }), marker: marker(g, 13),
-        hovertemplate: "%{x:.1f}<extra></extra>" });
+      traces.push({ type: "scatter", mode: "markers", name: g, legendrank: gruppen.indexOf(g), x: it.map(function (p, i) { return p.werte[g] + offs[g][i]; }), y: pos, marker: marker(g, 13),
+        customdata: it.map(function (p) { return de(p.werte[g]); }), hovertemplate: "%{customdata}<extra></extra>" });
     });
     Plotly.newPlot("union26-positionen", traces, Object.assign({}, basis, {
       xaxis: { range: [0.7, 7.3], tickvals: [1, 2, 3, 4, 5, 6, 7], showgrid: false, fixedrange: true, tickfont: { color: ink3 } },
