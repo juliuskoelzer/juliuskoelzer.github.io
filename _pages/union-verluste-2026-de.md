@@ -138,6 +138,11 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 
 ## 5. Wen die Union zurückgewinnen kann
 
+<figure class="ltw-plotly">
+<div id="union26-union-position" class="union26-chart" style="height: 760px;"></div>
+<figcaption>Eigene Position (Punkt) und Position, die die jeweilige Gruppe CDU/CSU zuschreibt (Raute), im Mittel auf Skalen von 1 bis 7; der Pfeil führt von der eigenen Position zur wahrgenommenen Union. CDU/CSU: Mittel aus den Einstufungen von CDU und CSU, „weiß nicht“ nicht berücksichtigt. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Bei der Zuwanderung verorten sich die AfD-Wechsler im Schnitt bei 6,5, also nahe am Pol „Zuzug einschränken“. Die Union sehen sie bei 4,7.</i></figcaption>
+</figure>
+
 [Platzhalter] Die Wahlabsicht zeigt nur einen Moment. Für die Union zählt auch, wer ihr noch positiv gegenübersteht. Von den Unionswählern des Jahres 2025, die heute etwas anderes wählen wollen, bewertet gut die Hälfte die Union weiter positiv.
 
 [Platzhalter] Die Unterschiede sind groß: Bei den Wechslern zu SPD, Grünen und FDP sind es gut 70 Prozent. Bei den AfD-Wechslern ist es knapp die Hälfte, bei den Unentschiedenen nur gut ein Drittel. Die Unentschiedenen sind also nicht nur unentschlossen, sondern vor allem enttäuscht.
@@ -498,6 +503,44 @@ document.addEventListener("DOMContentLoaded", function () {
     yachse: { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"] } });
   zeitChart("union26-zeit-lage", lage, { spalten: 4, hoeheSchmal: 2000, umbruch: 26, ygap: 0.55, legendeY: 1.14, oben: 120, fmt: prozent,
     yachse: { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"], tickfont: { size: 10, color: ink2 } } });
+
+  /* ---------- 5a) own position vs. where the group places CDU/CSU ---------- */
+  (function () {
+    var el = document.getElementById("union26-union-position");
+    if (!el) return;
+    var T = D.union_position, axes = gridAxes(T.length, 1), traces = [], annos = [], shapes = [], lay = {};
+    var reihen = gruppen.slice().reverse();
+    hoehe("union26-union-position", 1000);
+    T.forEach(function (th, k) {
+      var ax = axes[k];
+      reihen.forEach(function (g, i) {
+        shapes.push({ type: "line", xref: ax.x, yref: ax.y, x0: 1, x1: 7, y0: i, y1: i, line: { color: "#e3e3e3", width: 7 }, layer: "below" });
+        var a = th.selbst[g], b = th.union[g];
+        if (Math.abs(b - a) > 0.15) {
+          annos.push({ xref: ax.x, yref: ax.y, axref: ax.x, ayref: ax.y, x: b - (b > a ? 0.12 : -0.12), y: i, ax: a, ay: i,
+                       text: "", showarrow: true, arrowhead: 2, arrowsize: 1, arrowwidth: 1.3, arrowcolor: ink2 });
+        }
+      });
+      traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: "CDU/CSU, wie die Gruppe sie sieht", legendgroup: "union", showlegend: k === 0,
+        x: reihen.map(function (g) { return th.union[g]; }), y: reihen,
+        marker: { symbol: "diamond", size: 12, color: "white", line: { color: ink, width: 2 } },
+        customdata: reihen.map(function (g) { return de(th.union[g]); }), hovertemplate: "CDU/CSU: %{customdata}<extra></extra>" });
+      gruppen.forEach(function (g) {
+        traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: g, legendgroup: g, showlegend: k === 0,
+          x: [th.selbst[g]], y: [g], marker: marker(g, 12), customdata: [de(th.selbst[g])], hovertemplate: "Eigene Position: %{customdata}<extra></extra>" });
+      });
+      annos.push(strip(ax, th.thema, "1 = " + th.links + " · 7 = " + th.rechts));
+      lay[ax.xaxis] = { range: [0.8, 7.2], tickvals: [1, 2, 3, 4, 5, 6, 7], gridcolor: "#f0f0f0", zeroline: false, fixedrange: true, tickfont: { size: 10, color: ink2 } };
+      lay[ax.yaxis] = { type: "category", categoryorder: "array", categoryarray: reihen, range: [-0.6, reihen.length - 0.4], fixedrange: true,
+                        tickfont: { size: 12 }, automargin: true, ticklabelstandoff: 6 };
+    });
+    Plotly.newPlot(el, traces, Object.assign({}, basis, lay, {
+      grid: { rows: T.length, columns: 1, pattern: "independent", roworder: "top to bottom", ygap: 0.4 },
+      shapes: shapes, annotations: annos,
+      legend: { orientation: "h", x: 0, y: schmal ? 1.04 : 1.1, xanchor: "left", yanchor: "bottom", font: { size: 12 } },
+      margin: { l: 10, r: 20, t: schmal ? 140 : 90, b: 40 }
+    }), cfg);
+  })();
 
   /* ---------- 5) who can be won back: former Union voters by current intention ---------- */
   var rh = [["Zur SPD", 73.2, 92], ["Zur FDP", 72.5, 51], ["Zu den Grünen", 71.8, 54], ["Zur Linken", 55.8, 24], ["Zur Nichtwahl", 55.6, 29],
