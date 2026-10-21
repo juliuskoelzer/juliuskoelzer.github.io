@@ -82,14 +82,14 @@ von <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · O
 
 <figure class="ltw-plotly">
 <div id="union26-zeit" class="union26-chart" style="height: 640px;"></div>
-<figcaption>Dieselben Unionswähler 2025 in allen Wellen, gruppiert nach ihrer Wahlabsicht im April 2026. Mittelwert auf der Skala von −5 bis +5. Grau: vor Amtsantritt der Regierung; Bundesregierung und SPD-Regierungsarbeit beziehen sich dort noch auf die alte Regierung; Regierungsarbeit der CDU/CSU erst ab Mai 2025 erfragt. Fallzahlen je Welle: bleibt bei CDU/CSU 1.492–1.583, zu SPD/Grünen 135–147, zur AfD 180–194, unentschieden 175–198. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Wer im April 2026 zur AfD tendiert, bewertete Friedrich Merz kurz nach der Wahl im Februar/März 2025 noch mit +2,3. Im April 2026 liegt das Urteil derselben Personen bei −2,1.</i></figcaption>
+<figcaption>Dieselben Unionswähler 2025 in allen Wellen, gruppiert nach ihrer Wahlabsicht im April 2026. Mittelwert auf der Skala von −5 bis +5. Grau: Februar 2025, kurz vor der Bundestagswahl; die Zufriedenheit mit der Bundesregierung bezieht sich dort noch auf die alte Regierung; Regierungsarbeit von CDU/CSU und SPD erst ab Mai 2025 erfragt. Fallzahlen je Welle: bleibt bei CDU/CSU 1.492–1.578, zu SPD/Grünen 135–146, zur AfD 180–193, unentschieden 175–197. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Wer im April 2026 zur AfD tendiert, bewertete Friedrich Merz kurz vor der Wahl im Februar 2025 noch mit +2,0. Im April 2026 liegt das Urteil derselben Personen bei −2,1.</i></figcaption>
 </figure>
 
 [Platzhalter] Auch bei Demokratiezufriedenheit, Gerechtigkeitsempfinden und der Einschätzung der wirtschaftlichen Lage heben sich die AfD-Wechsler ab. Gut die Hälfte von ihnen ist unzufrieden mit der Demokratie, drei Viertel halten die allgemeine Wirtschaftslage für schlecht.
 
 <figure class="ltw-plotly">
 <div id="union26-zeit-lage" class="union26-chart" style="height: 760px;"></div>
-<figcaption>Dieselben Unionswähler 2025 in allen Wellen, gruppiert nach ihrer Wahlabsicht im April 2026. Anteil der Stufen 4 und 5 der jeweiligen Fünferskala; Gerechtigkeitsfragen nur im Mai 2025 und April 2026 erhoben. Grau: vor Amtsantritt der Regierung. Fallzahlen je Welle: bleibt bei CDU/CSU 1.492–1.583, zu SPD/Grünen 135–147, zur AfD 180–194, unentschieden 175–198. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Von den späteren AfD-Wechslern erwarteten im Februar/März 2025 33 Prozent, dass die allgemeine wirtschaftliche Lage in einem Jahr schlechter sein wird. Im April 2026 sind es 68 Prozent.</i></figcaption>
+<figcaption>Dieselben Unionswähler 2025 in allen Wellen, gruppiert nach ihrer Wahlabsicht im April 2026. Anteil der Stufen 4 und 5 der jeweiligen Fünferskala; Gerechtigkeitsfragen nur im Mai 2025 und April 2026 im Zeitverlauf erhoben. Grau: Februar 2025, kurz vor der Bundestagswahl. Fallzahlen je Welle: bleibt bei CDU/CSU 1.492–1.578, zu SPD/Grünen 135–146, zur AfD 180–193, unentschieden 175–197. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Von den späteren AfD-Wechslern erwarteten im Februar 2025 37 Prozent, dass die allgemeine wirtschaftliche Lage in einem Jahr schlechter sein wird. Im April 2026 sind es 68 Prozent.</i></figcaption>
 </figure>
 
 [Platzhalter] Deutlicher als die Soziodemografie trennen die politischen Einstellungen. Am größten sind die Unterschiede beim Urteil über Parteien und Spitzenpolitiker: Wer zur AfD gewechselt ist, bewertet die AfD inzwischen klar positiv und die Union negativ. Wer zu SPD oder Grünen gewechselt ist, sieht die Union im Schnitt noch leicht positiv.
@@ -457,7 +457,7 @@ document.addEventListener("DOMContentLoaded", function () {
   })();
 
   /* ---------- 4) time course: Merz and the federal government ---------- */
-  var wellen = ["Feb./März 2025", "Mai 2025", "Nov. 2025", "April 2026"];
+  var wellen = ["Feb. 2025 (vor der Wahl)", "Mai 2025", "Nov. 2025", "April 2026"];
   var zeit = {
     "Bewertung von Merz": {
       "Bleibt bei CDU/CSU": [[2.44, 2.28, 2.20, 2.05], [1538, 1498, 1492, 1578]],
