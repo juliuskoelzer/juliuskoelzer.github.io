@@ -521,14 +521,14 @@ document.addEventListener("DOMContentLoaded", function () {
                        text: "", showarrow: true, arrowhead: 2, arrowsize: 1, arrowwidth: 1.3, arrowcolor: ink2 });
         }
       });
-      traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: "CDU/CSU, wie die Gruppe sie sieht", legendgroup: "union", showlegend: k === 0,
-        x: reihen.map(function (g) { return th.union[g]; }), y: reihen,
-        marker: { symbol: "diamond", size: 12, color: "white", line: { color: ink, width: 2 } },
-        customdata: reihen.map(function (g) { return de(th.union[g]); }), hovertemplate: "CDU/CSU: %{customdata}<extra></extra>" });
       gruppen.forEach(function (g) {
         traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: g, legendgroup: g, showlegend: k === 0,
           x: [th.selbst[g]], y: [g], marker: marker(g, 12), customdata: [de(th.selbst[g])], hovertemplate: "Eigene Position: %{customdata}<extra></extra>" });
       });
+      traces.push({ type: "scatter", mode: "markers", xaxis: ax.x, yaxis: ax.y, name: "CDU/CSU, wie die Gruppe sie sieht", legendgroup: "union", showlegend: k === 0,
+        x: reihen.map(function (g) { return th.union[g]; }), y: reihen,
+        marker: { symbol: "diamond-open", size: 12, color: ink, line: { color: ink, width: 2 } },
+        customdata: reihen.map(function (g) { return de(th.union[g]); }), hovertemplate: "CDU/CSU: %{customdata}<extra></extra>" });
       annos.push(strip(ax, th.thema, "1 = " + th.links + " · 7 = " + th.rechts));
       lay[ax.xaxis] = { range: [0.8, 7.2], tickvals: [1, 2, 3, 4, 5, 6, 7], gridcolor: "#f0f0f0", zeroline: false, fixedrange: true, tickfont: { size: 10, color: ink2 } };
       lay[ax.yaxis] = { type: "category", categoryorder: "array", categoryarray: reihen, range: [-0.6, reihen.length - 0.4], fixedrange: true,
