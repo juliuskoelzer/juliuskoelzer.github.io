@@ -192,6 +192,21 @@ document.addEventListener("DOMContentLoaded", function () {
   var gruppen = D.gruppen;
   /* drawing order: the "stays with CDU/CSU" points last, so they are never hidden */
   var obenAuf = gruppen.slice(1).concat([gruppen[0]]);
+  /* points closer than tol are spread symmetrically around their position; returns one offset per value */
+  function ausweichen(werte, tol, schritt) {
+    var off = werte.map(function () { return 0; });
+    var o = werte.map(function (v, i) { return i; }).filter(function (i) { return werte[i] !== null && werte[i] !== undefined; })
+                 .sort(function (a, b) { return werte[a] - werte[b]; });
+    var start = 0;
+    for (var i = 0; i < o.length; i++) {
+      if (i === o.length - 1 || werte[o[i + 1]] - werte[o[i]] >= tol) {
+        var k = i - start + 1;
+        for (var j = start; j <= i; j++) off[o[j]] = (j - start + 1 - (k + 1) / 2) * schritt;
+        start = i + 1;
+      }
+    }
+    return off;
+  }
   var gfarbe = { "Bleibt bei CDU/CSU": "#2b2b2b", "Zu SPD/Grünen": "#d71f1d", "Zur AfD": "#009ee0", "Unentschieden": "#a8a8a8" };
   var cfg = { displayModeBar: false, responsive: true };
   /* narrow screens: facet grids collapse to one column and the chart boxes grow */
@@ -297,9 +312,14 @@ document.addEventListener("DOMContentLoaded", function () {
       traces.push({ type: "scatter", mode: "lines", x: [Math.min.apply(null, v), Math.max.apply(null, v)], y: [pos[i], pos[i]],
                     line: { color: "#dcdcdc", width: 5 }, hoverinfo: "skip", showlegend: false });
     });
+    var offs = {}; gruppen.forEach(function (g) { offs[g] = []; });
+    items.forEach(function (it, i) {
+      var o = ausweichen(gruppen.map(function (g) { return it.werte[g]; }), opt.tol || 0, 0.28);
+      gruppen.forEach(function (g, q) { offs[g][i] = o[q]; });
+    });
     obenAuf.forEach(function (g) {
       traces.push({ type: "scatter", mode: "markers", name: g, legendgroup: g, legendrank: gruppen.indexOf(g),
-        x: items.map(function (it) { return it.werte[g]; }), y: pos,
+        x: items.map(function (it) { return it.werte[g]; }), y: pos.map(function (p, i) { return p + offs[g][i]; }),
         marker: marker(g, 11), customdata: items.map(function (it) { return opt.fmt(it.werte[g]); }), hovertemplate: "%{customdata}<extra></extra>" });
     });
     var lay = Object.assign({}, basis, {
@@ -315,9 +335,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function prozent(v) { return Math.round(v) + " %"; }
   function signiert(v) { return (v > 0 ? "+" : v < 0 ? "−" : "") + de(Math.abs(v)); }
   var linie50 = [{ type: "line", xref: "x", yref: "paper", x0: 50, x1: 50, y0: 0, y1: 1, line: { color: ink3, width: 1, dash: "dot" }, layer: "below" }];
-  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50 });
-  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50 });
-  dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: signiert,
+  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50, tol: 1.8 });
+  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50, tol: 1.8 });
+  dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: signiert, tol: 0.16,
     xaxis: { range: [-5, 5], tickvals: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5], ticktext: ["−5", "−4", "−3", "−2", "−1", "0", "+1", "+2", "+3", "+4", "+5"] },
     shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 0, x1: 5, y0: 0, y1: 1, fillcolor: "#f5f5f5", line: { width: 0 }, layer: "below" },
              { type: "line", xref: "x", yref: "paper", x0: 0, x1: 0, y0: 0, y1: 1, line: { color: ink3, width: 1 } }] });
@@ -326,8 +346,13 @@ document.addEventListener("DOMContentLoaded", function () {
   (function () {
     var it = D.positionen, pos = it.map(function (p, i) { return -(i + 1); });
     var traces = it.map(function (p, i) { return { type: "scatter", mode: "lines", x: [1, 7], y: [pos[i], pos[i]], line: { color: "#d9d9d9", width: 9 }, hoverinfo: "skip", showlegend: false }; });
+    var offs = {}; gruppen.forEach(function (g) { offs[g] = []; });
+    it.forEach(function (p, i) {
+      var o = ausweichen(gruppen.map(function (g) { return p.werte[g]; }), 0.13, 0.22);
+      gruppen.forEach(function (g, q) { offs[g][i] = o[q]; });
+    });
     obenAuf.forEach(function (g) {
-      traces.push({ type: "scatter", mode: "markers", name: g, legendrank: gruppen.indexOf(g), x: it.map(function (p) { return p.werte[g]; }), y: pos, marker: marker(g, 13),
+      traces.push({ type: "scatter", mode: "markers", name: g, legendrank: gruppen.indexOf(g), x: it.map(function (p) { return p.werte[g]; }), y: pos.map(function (y, i) { return y + offs[g][i]; }), marker: marker(g, 13),
         hovertemplate: "%{x:.1f}<extra></extra>" });
     });
     Plotly.newPlot("union26-positionen", traces, Object.assign({}, basis, {
@@ -479,20 +504,25 @@ document.addEventListener("DOMContentLoaded", function () {
     hoehe(id, opt.hoeheSchmal);
     merkmale.forEach(function (m, k) {
       var ax = axes[k];
+      var xoff = {}; gruppen.forEach(function (g) { xoff[g] = []; });
+      wellen.forEach(function (w, j) {
+        var o = ausweichen(gruppen.map(function (g) { return daten[m][g][0][j]; }), opt.tol, opt.schritt);
+        gruppen.forEach(function (g, q) { xoff[g][j] = j + o[q]; });
+      });
       obenAuf.forEach(function (g) {
-        var d = daten[m][g], spdg = g === "Zu SPD/Grünen";
+        var d = daten[m][g], spdg = g === "Zu SPD/Grünen"; var xs = xoff[g];
         if (spdg) {
-          traces.push({ type: "scatter", mode: "lines", x: wellen, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#d71f1d", width: 3 } });
-          traces.push({ type: "scatter", mode: "lines", x: wellen, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#3f8f2f", width: 3, dash: "dash" } });
+          traces.push({ type: "scatter", mode: "lines", x: xs, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#d71f1d", width: 3 } });
+          traces.push({ type: "scatter", mode: "lines", x: xs, y: d[0], xaxis: ax.x, yaxis: ax.y, connectgaps: true, showlegend: false, hoverinfo: "skip", line: { color: "#3f8f2f", width: 3, dash: "dash" } });
         }
         traces.push({ type: "scatter", mode: spdg ? "markers" : "lines+markers", name: g, legendgroup: g, legendrank: gruppen.indexOf(g), showlegend: k === 0,
-          x: wellen, y: d[0], customdata: d[0].map(function (v) { return v === null ? "" : opt.fmt(v); }), xaxis: ax.x, yaxis: ax.y, connectgaps: true,
+          x: xs, y: d[0], customdata: d[0].map(function (v) { return v === null ? "" : opt.fmt(v); }), xaxis: ax.x, yaxis: ax.y, connectgaps: true,
           line: { color: gfarbe[g], width: 3 }, marker: marker(g, 10), hovertemplate: "%{customdata}<extra></extra>" });
       });
       shapes.push({ type: "rect", xref: ax.x, yref: ax.y + " domain", x0: -0.5, x1: 0.5, y0: 0, y1: 1, fillcolor: "#f3f3f3", line: { width: 0 }, layer: "below" });
       annos.push(strip(ax, wrap(m, opt.umbruch)));
-      lay[ax.xaxis] = { type: "category", showgrid: false, fixedrange: true, tickfont: { size: 10.5 }, tickangle: 0,
-                        tickvals: wellen, ticktext: wellen.map(function (w) { return w.replace(" 20", "<br>20"); }) };
+      lay[ax.xaxis] = { range: [-0.5, wellen.length - 0.5], showgrid: false, zeroline: false, fixedrange: true, tickfont: { size: 10.5 }, tickangle: 0,
+                        tickvals: wellen.map(function (w, j) { return j; }), ticktext: wellen.map(function (w) { return w.replace(" 20", "<br>20"); }) };
       lay[ax.yaxis] = Object.assign({ gridcolor: "#e6e6e6", zeroline: false, fixedrange: true }, opt.yachse);
     });
     Plotly.newPlot(id, traces, Object.assign({}, basis, lay, {
@@ -502,9 +532,9 @@ document.addEventListener("DOMContentLoaded", function () {
       margin: { l: 45, r: 20, t: schmal ? 110 : opt.oben, b: 40 }
     }), cfg);
   }
-  zeitChart("union26-zeit", zeit, { spalten: 2, hoeheSchmal: 1150, umbruch: 60, ygap: 0.3, legendeY: 1.12, oben: 80, fmt: signiert,
+  zeitChart("union26-zeit", zeit, { tol: 0.5, schritt: 0.07, spalten: 2, hoeheSchmal: 1150, umbruch: 60, ygap: 0.3, legendeY: 1.12, oben: 80, fmt: signiert,
     yachse: { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"] } });
-  zeitChart("union26-zeit-lage", lage, { spalten: 4, hoeheSchmal: 2000, umbruch: 26, ygap: 0.55, legendeY: 1.14, oben: 120, fmt: prozent,
+  zeitChart("union26-zeit-lage", lage, { tol: 5.5, schritt: 0.12, spalten: 4, hoeheSchmal: 2000, umbruch: 26, ygap: 0.55, legendeY: 1.14, oben: 120, fmt: prozent,
     yachse: { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"], tickfont: { size: 10, color: ink2 } } });
 
   /* ---------- 5a) own position vs. where the group places CDU/CSU ---------- */
