@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", function () {
       reihen.forEach(function (g, i) {
         shapes.push({ type: "line", xref: ax.x, yref: ax.y, x0: 1, x1: 7, y0: i, y1: i, line: { color: "#e3e3e3", width: 7 }, layer: "below" });
         var a = th.selbst[g], b = th.union[g];
-        if (Math.abs(b - a) > 0.3) {
+        if (Math.abs(b - a) > 0.25) {
           var r = b > a ? 0.12 : -0.12;
           annos.push({ xref: ax.x, yref: ax.y, axref: ax.x, ayref: ax.y, x: b - r, y: i, ax: a + r, ay: i,
                        text: "", showarrow: true, arrowhead: 2, startarrowhead: 2, arrowside: "end+start", arrowsize: 1, startarrowsize: 1, arrowwidth: 1.3, arrowcolor: ink2 });
