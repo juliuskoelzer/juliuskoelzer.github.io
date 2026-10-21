@@ -312,8 +312,9 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Plotly ignores the "+" flag in hover templates, so signed values are preformatted here */
   function prozent(v) { return Math.round(v) + " %"; }
   function signiert(v) { return (v > 0 ? "+" : v < 0 ? "−" : "") + de(Math.abs(v)); }
-  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: prozent, xaxis: pct });
-  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: prozent, xaxis: pct });
+  var linie50 = [{ type: "line", xref: "x", yref: "paper", x0: 50, x1: 50, y0: 0, y1: 1, line: { color: ink3, width: 1, dash: "dot" }, layer: "below" }];
+  dotPlot("union26-zust-politik", D.zustimmung.politik, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50 });
+  dotPlot("union26-zust-sach", D.zustimmung.sachfragen, { blocks: true, fmt: prozent, xaxis: pct, shapes: linie50 });
   dotPlot("union26-bewertung", D.bewertung, { blocks: true, fmt: signiert,
     xaxis: { range: [-5, 5], tickvals: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5], ticktext: ["−5", "−4", "−3", "−2", "−1", "0", "+1", "+2", "+3", "+4", "+5"] },
     shapes: [{ type: "rect", xref: "x", yref: "paper", x0: 0, x1: 5, y0: 0, y1: 1, fillcolor: "#f5f5f5", line: { width: 0 }, layer: "below" },
