@@ -144,11 +144,11 @@ Offen bleibt, ob sich diese Unterschiede erst seit der Wahl herausgebildet haben
 
 [Platzhalter] Die Wahlabsicht zeigt nur einen Moment. Für die Union zählt auch, wer ihr noch positiv gegenübersteht. Von den Unionswählern des Jahres 2025, die heute etwas anderes wählen wollen, bewertet gut die Hälfte die Union weiter positiv.
 
-[Platzhalter] Die Unterschiede sind groß: Unter den Wechslern zu SPD oder Grünen und zur FDP sehen jeweils 73 Prozent die Union weiterhin positiv. Bei den AfD-Wechslern ist es knapp die Hälfte (48 Prozent), bei den Unentschiedenen nur gut ein Drittel (37 Prozent).
+[Platzhalter] Die Unterschiede sind groß: Unter den Wechslern zu SPD oder Grünen sehen 73 Prozent die Union weiterhin positiv. Bei den AfD-Wechslern ist es knapp die Hälfte (48 Prozent), bei den Unentschiedenen nur gut ein Drittel (37 Prozent).
 
 <figure class="ltw-plotly">
-<div id="union26-rueckhol" class="union26-chart" style="height: 320px;"></div>
-<figcaption>Unionswähler 2025, die im April 2026 zu SPD oder Grünen, zur AfD oder zur FDP tendieren oder unentschieden sind. Positiv = Bewertung der Union +1 bis +5, negativ = 0 bis −5; Fallzahlen beim Hovern. Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Von den früheren Unionswählern, die heute SPD wählen wollen, sehen 73 Prozent die Union weiterhin positiv (n = 92). Von denen, die zur AfD gewechselt sind, sind es 48 Prozent.</i></figcaption>
+<div id="union26-rueckhol" class="union26-chart" style="height: 280px;"></div>
+<figcaption>Unionswähler 2025, die im April 2026 zu SPD oder Grünen oder zur AfD tendieren oder unentschieden sind. Positiv = Bewertung der Union +1 bis +5, negativ = 0 bis −5; Fallzahlen beim Hovern. Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. <i>Lesebeispiel: Von den früheren Unionswählern, die heute SPD wählen wollen, sehen 73 Prozent die Union weiterhin positiv (n = 92). Von denen, die zur AfD gewechselt sind, sind es 48 Prozent.</i></figcaption>
 </figure>
 
 <figure class="ltw-plotly">
@@ -615,7 +615,7 @@ document.addEventListener("DOMContentLoaded", function () {
   })();
 
   /* ---------- 5) who can be won back: former Union voters by current intention ---------- */
-  var rh = [["Zu SPD/Grünen", 72.7, 146], ["Zur FDP", 72.5, 51], ["Zur AfD", 47.9, 192], ["Unentschieden", 36.9, 197]];
+  var rh = [["Zu SPD/Grünen", 72.7, 146], ["Zur AfD", 47.9, 192], ["Unentschieden", 36.9, 197]];
   var rhY = rh.map(function (r) { return r[0]; });
   var rhJa = rh.map(function (r) { return Math.round(r[1]); }), rhNein = rhJa.map(function (j) { return 100 - j; });
   Plotly.newPlot("union26-rueckhol", [
