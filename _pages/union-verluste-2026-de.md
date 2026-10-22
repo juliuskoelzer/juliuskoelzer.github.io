@@ -388,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Plotly.newPlot("union26-demografie", traces, Object.assign({}, basis, lay, {
       barmode: "stack", bargap: 0.28, annotations: annos,
       grid: { rows: Math.ceil(D.demografie.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.32 },
-      margin: { l: 130, r: schmal ? 30 : 10, t: 50, b: 30 }
+      margin: { l: 130, r: schmal ? 30 : 28, t: 50, b: 30 }
     }), cfg);
   })();
 
@@ -459,7 +459,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ? [].concat.apply([], it.map(function (p, i) { return [
             { xref: "x", yref: "y", x: 0.7, y: pos[i] + 0.42, text: wrap(p.links, 22), showarrow: false, xanchor: "left", yanchor: "bottom", align: "left", font: { size: 10.5 } },
             { xref: "x", yref: "y", x: 7.3, y: pos[i] + 0.42, text: wrap(p.rechts, 22), showarrow: false, xanchor: "right", yanchor: "bottom", align: "right", font: { size: 10.5 } }]; }))
-        : it.map(function (p, i) { return { xref: "x", yref: "y", x: 7.3, y: pos[i], text: p.rechts, showarrow: false, xanchor: "left", font: { size: 11.5 } }; }),
+        : it.map(function (p, i) { return { xref: "x", yref: "y", x: 7.3, y: pos[i], text: wrap(p.rechts, 26), showarrow: false, xanchor: "left", align: "left", font: { size: 11.5 } }; }),
       margin: schmal ? { l: 10, r: 10, t: 90, b: 40 } : { l: 10, r: 215, t: 60, b: 40 }
     }), cfg);
   })();
@@ -484,7 +484,7 @@ document.addEventListener("DOMContentLoaded", function () {
       barmode: "stack", bargap: 0.25, annotations: annos,
       grid: { rows: Math.ceil(D.vertrauen.length / sp), columns: sp, pattern: "independent", roworder: "top to bottom", xgap: 0.1, ygap: 0.3 },
       legend: { orientation: "h", x: 0, y: schmal ? 1.03 : 1.08, xanchor: "left", yanchor: "bottom", font: { size: 12 }, traceorder: "normal" },
-      margin: { l: 130, r: schmal ? 30 : 10, t: schmal ? 120 : 90, b: 30 }
+      margin: { l: 130, r: schmal ? 30 : 28, t: schmal ? 120 : 90, b: 30 }
     }), cfg);
   })();
 
