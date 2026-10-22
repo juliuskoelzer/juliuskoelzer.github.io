@@ -15,6 +15,8 @@ I am a Doctoral Researcher in the PhD program [DYNAMICS](https://www.sowi.hu-ber
 
 On this website, you’ll find my [CV](https://juliuskoelzer.de/cv/), [publications and working papers](https://juliuskoelzer.de/research/), [articles & blog posts](https://juliuskoelzer.de/blog/), and the [podcast](https://juliuskoelzer.de/podcast/) I produce.
 
+**New: An analysis of where the CDU/CSU has lost its voters since the 2025 federal election – and whom it can win back – is available [in German](https://juliuskoelzer.de/union-verluste-2026-de/).**
+
 **A recent analysis of the 2026 state election in Saxony-Anhalt is available in [English](https://juliuskoelzer.de/saxony-anhalt-2026-en/) and [German](https://juliuskoelzer.de/sachsen-anhalt-2026-de/).**
 
 <p style="margin-top:15px;"></p>

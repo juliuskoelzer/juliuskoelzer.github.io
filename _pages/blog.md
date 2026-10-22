@@ -69,6 +69,12 @@ author_profile: true
 
 <div class="blog-container">
   <div class="blog-card">
+    <img src="/images/union26_social.jpg" alt="Wohin die Union ihre Wähler verliert" class="blog-card-img">
+    <h3><a href="/union-verluste-2026-de/">Wohin die Union ihre Wähler verliert – und wen sie zurückholen kann</a></h3>
+    <p>Julius Kölzer. Blog post, October 2026 (in German).</p>
+  </div>
+
+  <div class="blog-card">
     <img src="/images/ltw26_karte_veraenderung.png" alt="Saxony-Anhalt state election 2026" class="blog-card-img">
     <h3><a href="/saxony-anhalt-2026-en/">Turning Blue? The 2026 State Election in Saxony-Anhalt. A Municipality-Level Analysis and the Revenge of the Village</a></h3>
     <p>Julius Kölzer. Blog post, September 2026 (in English).</p>

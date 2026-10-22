@@ -10,8 +10,6 @@ header:
 permalink: /union-verluste-2026-de/
 author_profile: true
 published: true
-sitemap: false
-noindex: true
 ---
 
 <div class="ltw-article" markdown="1">
