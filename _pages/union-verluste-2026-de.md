@@ -57,6 +57,7 @@ Ein Blick auf die Wählerwanderungen zeigt zunächst, wohin sich die ehemaligen 
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="sankey">Wohin hat die Union seit der Bundestagswahl Wähler verloren?</p>
 <div id="union26-sankey" class="union26-chart" style="height: 520px;"></div>
 
 <figcaption>Unionswähler der Bundestagswahl 2025 (n = 2.326) nach Wahlabsicht im April 2026; nur Abgänge, Zugewinne der Union wegen zu kleiner Fallzahlen nicht betrachtet. Ohne Beschriftung: Linke 1,0 %, BSW 0,8 %, andere 2,5 %, Nichtwahl 1,3 %. Unentschieden = „weiß nicht“; Fallzahlen beim Hovern. Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: 7,7 Prozent der Menschen, die 2025 CDU/CSU gewählt haben, wollen im April 2026 AfD wählen. Das sind 195 Befragte.</i></figcaption>
@@ -77,6 +78,7 @@ Regional fallen die Unterschiede geringer aus. Unter den AfD-Abgewanderten ist d
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="demografie">Wer bleibt, wer geht? Soziodemografische Merkmale</p>
 <div id="union26-demografie" class="union26-chart" style="height: 980px;"></div>
 
 <figcaption>Zusammensetzung der Gruppen nach acht Merkmalen; je Balken 100 %, Kategorien im Feldkopf von hell nach dunkel. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Unter den Unentschiedenen sind 62 Prozent Frauen und 38 Prozent Männer. Unter denen, die bei der Union bleiben, sind es 43 Prozent Frauen.</i></figcaption>
@@ -91,6 +93,7 @@ Ein anderes Muster zeigt sich bei der Zufriedenheit mit der Bundesregierung. Am 
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="zeit">Merz und die Bundesregierung im Zeitverlauf</p>
 <div id="union26-zeit" class="union26-chart" style="height: 640px;"></div>
 
 <figcaption>Dieselben Unionswähler 2025 in allen Wellen, gruppiert nach ihrer Wahlabsicht im April 2026. Mittelwert auf der Skala von −5 bis +5. Grau: Februar 2025, kurz vor der Bundestagswahl; die Zufriedenheit mit der Bundesregierung bezieht sich dort noch auf die alte Regierung; Regierungsarbeit von CDU/CSU und SPD erst ab Mai 2025 erfragt. Fallzahlen je Welle: bleibt bei CDU/CSU 1.492–1.578, zu SPD/Grünen 135–146, zur AfD 180–193, unentschieden 175–197. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Wer im April 2026 zur AfD tendiert, bewertete Friedrich Merz kurz vor der Wahl im Februar 2025 noch mit +2,0. Im April 2026 liegt das Urteil derselben Personen bei −2,1.</i></figcaption>
@@ -101,6 +104,7 @@ Auch bei der Bewertung der wirtschaftlichen und gesellschaftlichen Lage zeigen s
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="zeit-lage">Wirtschaftliche Lage, Gerechtigkeit und Demokratie im Zeitverlauf</p>
 <div id="union26-zeit-lage" class="union26-chart" style="height: 660px;"></div>
 
 <figcaption>Dieselben Unionswähler 2025 in allen Wellen, gruppiert nach ihrer Wahlabsicht im April 2026. Anteil der Stufen 4 und 5 der jeweiligen Fünferskala; Gerechtigkeitsfragen nur im Mai 2025 und April 2026 im Zeitverlauf erhoben. Grau: Februar 2025, kurz vor der Bundestagswahl. Fallzahlen je Welle: bleibt bei CDU/CSU 1.492–1.578, zu SPD/Grünen 135–146, zur AfD 180–193, unentschieden 175–197. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Von den späteren AfD-Wechslern erwarteten im Februar 2025 37 Prozent, dass die allgemeine wirtschaftliche Lage in einem Jahr schlechter sein wird. Im April 2026 sind es 68 Prozent.</i></figcaption>
@@ -111,6 +115,7 @@ Die zur AfD abgewanderten Unionswähler scheinen nicht nur eine diffuse Unzufrie
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="bewertung">Bewertung von Parteien und Politikern</p>
 <div id="union26-bewertung" class="union26-chart" style="height: 760px;"></div>
 
 <figcaption>Mittlere Bewertung auf der Skala von −5 bis +5. CDU/CSU: Mittel aus CDU- und CSU-Bewertung. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Wer zur AfD gewechselt ist, bewertet Friedrich Merz im Schnitt mit −2,1, wer bei der Union bleibt, bewertet ihn mit +2,0.</i></figcaption>
@@ -123,6 +128,7 @@ Bereits diese Zahlen deuten darauf hin, dass zwischen den verschiedenen Wählerg
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="lr">Links-Rechts-Selbsteinstufung</p>
 <div id="union26-lr" class="union26-chart" style="height: 620px;"></div>
 
 <figcaption>Links-Rechts-Selbsteinstufung von 0 (links) bis 10 (rechts), geglättet; gepunktet = Mittelwert. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Die AfD-Wechsler stufen sich im Schnitt bei 6,0 ein, die Wechsler zu SPD und Grünen bei 4,9.</i></figcaption>
@@ -133,6 +139,7 @@ Deutlicher werden die Unterschiede, wenn man statt der allgemeinen Links-Rechts-
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="positionen">Positionen zwischen zwei Polen</p>
 <div id="union26-positionen" class="union26-chart" style="height: 380px;"></div>
 
 <figcaption>Mittlere Position auf der Skala von 1 bis 7 zwischen zwei gegensätzlichen Aussagen. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Beim Thema Zuwanderung stehen die AfD-Wechsler im Schnitt bei 6,5 auf der Skala von 1 („Zuwanderung erleichtern“) bis 7 („Zuwanderung einschränken“).</i></figcaption>
@@ -147,6 +154,7 @@ Bei sozial- und verteilungspolitischen Fragen ergibt sich dagegen ein heterogene
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="zust-sach">Zustimmung zu Aussagen über Sachfragen</p>
 <div id="union26-zust-sach" class="union26-chart" style="height: 760px;"></div>
 
 <figcaption>Anteil, der zustimmt (Stufen 4–5 von 5). Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: 72 Prozent der AfD-Wechsler wollen das Bürgergeld deutlich absenken, aber nur 33 Prozent derjenigen, die zu SPD oder Grünen gewechselt sind.</i></figcaption>
@@ -157,6 +165,7 @@ Bei Einstellungen, die sich weniger auf konkrete Sachfragen als auf die Politik 
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="zust-politik">Zustimmung zu Aussagen über Politik und Demokratie</p>
 <div id="union26-zust-politik" class="union26-chart" style="height: 680px;"></div>
 
 <figcaption>Anteil, der zustimmt (Stufen 4–5 von 5). Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: 87 Prozent der AfD-Wechsler finden, dass Gesetze in wichtigen Sachfragen auch mit Stimmen der AfD beschlossen werden sollten. Unter den Bleibenden sind es 44 Prozent.</i></figcaption>
@@ -167,6 +176,7 @@ Die populistischeren Einstellungen der AfD-Wechsler spiegeln sich auch in ihrem 
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="vertrauen">Vertrauen in Institutionen</p>
 <div id="union26-vertrauen" class="union26-chart" style="height: 620px;"></div>
 
 <figcaption>Vertrauen auf der Skala von 1 (überhaupt nicht, dunkelrot) bis 5 (voll und ganz, dunkelblau); je Balken 100 %. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: 49 Prozent der AfD-Wechsler vertrauen der Bundesregierung „überhaupt nicht“. Unter den Bleibenden sind es 5 Prozent.</i></figcaption>
@@ -187,6 +197,7 @@ Ein erster Anhaltspunkt für die mögliche Rückgewinnung ehemaliger Unionswähl
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="rueckhol">Wen kann die Union zurückholen?</p>
 <div id="union26-rueckhol" class="union26-chart" style="height: 280px;"></div>
 
 <figcaption>Unionswähler 2025, die im April 2026 zu SPD oder Grünen oder zur AfD tendieren oder unentschieden sind. Positiv = Bewertung der Union +1 bis +5, negativ = 0 bis −5; Fallzahlen beim Hovern. Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Von den früheren Unionswählern, die heute zu SPD oder Grünen tendieren, sehen 73 Prozent die Union weiterhin positiv (n = 146). Von denen, die zur AfD gewechselt sind, sind es 48 Prozent.</i></figcaption>
@@ -197,6 +208,7 @@ Ein möglicher Grund für diese Unterschiede in der Rückgewinnbarkeit ehemalige
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="union-position">Wo die Gruppen stehen und wo sie die Union sehen</p>
 <div id="union26-union-position" class="union26-chart" style="height: 760px;"></div>
 
 <figcaption>Eigene Position (Punkt) und Wahrnehmung der CDU/CSU-Position (Raute), im Mittel auf Skalen von 1 bis 7; der Doppelpfeil zeigt den Abstand zwischen eigener und wahrgenommener Position der CDU/CSU. CDU/CSU: Mittel aus den Einstufungen von CDU und CSU, „weiß nicht“ nicht berücksichtigt. Gruppen: Unionswähler 2025 nach Wahlabsicht im April 2026 – bleibt bei CDU/CSU (n = 1.590), zu SPD/Grünen (148), zur AfD (195), unentschieden (199). Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Bei der Zuwanderung verorten sich die AfD-Wechsler im Schnitt bei 6,5, also nahe am Pol „Zuzug einschränken“. Die Union sehen sie bei 4,7.</i></figcaption>
@@ -209,6 +221,7 @@ Dabei zeigt sich zunächst, dass ehemalige Unionswähler von 2025, die inzwische
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="potenzial">Wo das Potenzial der Union heute steckt</p>
 <div id="union26-potenzial" class="union26-chart" style="height: 460px;"></div>
 
 <figcaption>Nicht-Unionswähler im April 2026, die die Union positiv bewerten (+1 bis +5), nach Wahlabsicht; Balken summieren sich auf 100 %. Schraffiert: 2025 Union gewählt. Soziodemografisch gewichtet und an das amtliche Wahlergebnis 2025 inkl. Nichtwählern angepasst; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: 25 Prozent aller Menschen, die derzeit nicht Union wählen, sie aber positiv sehen, wollen SPD wählen. Davon haben 4 Prozentpunkte 2025 noch Union gewählt (schraffiert), 21 Prozentpunkte nicht.</i></figcaption>
@@ -229,6 +242,7 @@ Die folgenden Abbildungen zeigen für alle weiteren Fragen, wie dieselben Unions
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="anhang-1">A1: Bewertungen und Positionen – vor der Wahl und heute</p>
 <div id="union26-anhang-1" class="union26-chart" style="height: 1500px;"></div>
 
 <figcaption>A1: Bewertungen (−5 bis +5), eigene Positionen und wahrgenommene Positionen der CDU/CSU (1 bis 7, Links-Rechts 0 bis 10), Mittelwert; „weiß nicht“ nicht berücksichtigt. Dieselben Unionswähler 2025, gruppiert nach ihrer Wahlabsicht im April 2026; nur wer beide Male geantwortet hat. Wert „Vor der Wahl 2025“ aus der letzten Welle vor der Wahl, die die Frage enthielt (Dezember 2024 bis Februar 2025); * erst direkt nach der Wahl erhoben (Februar/März 2025). Fallzahlen je Gruppe und Frage: bleibt bei CDU/CSU 1.317–1.564, zu SPD/Grünen 112–143, zur AfD 150–191, unentschieden 112–196. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Die späteren AfD-Wechsler bewerteten die AfD vor der Wahl im Schnitt mit +0,9, im April 2026 mit +2,4. Die Bleibenden lagen beide Male bei −3,9.</i></figcaption>
@@ -237,6 +251,7 @@ Die folgenden Abbildungen zeigen für alle weiteren Fragen, wie dieselben Unions
 
 <figure class="ltw-plotly">
 
+<p class="union26-titel" data-für="anhang-2">A2: Zustimmung und Vertrauen – vor der Wahl und heute</p>
 <div id="union26-anhang-2" class="union26-chart" style="height: 2100px;"></div>
 
 <figcaption>A2: Anteil, der (eher) zustimmt bzw. (eher) vertraut (Stufen 4 und 5 der Fünferskala); Vertrauen in die Bundesregierung im Februar/März 2025 noch in die alte Regierung. Dieselben Unionswähler 2025, gruppiert nach ihrer Wahlabsicht im April 2026; nur wer beide Male geantwortet hat. Wert „Vor der Wahl 2025“ aus der letzten Welle vor der Wahl, die die Frage enthielt (Dezember 2024 bis Februar 2025); * erst direkt nach der Wahl erhoben (Februar/März 2025). Fallzahlen je Gruppe und Frage: bleibt bei CDU/CSU 1.317–1.564, zu SPD/Grünen 112–143, zur AfD 150–191, unentschieden 112–196. Soziodemografisch gewichtet; n ungewichtet. Daten: GLES Panel. Kleine Unterschiede wegen geringer Fallzahlen nicht überinterpretieren.<sup><a href="#fn-fallzahlen">1</a></sup> <i>Lesebeispiel: Vor der Wahl fanden 40 Prozent der späteren AfD-Wechsler, Leute wie sie dürften ihre Meinung nicht frei äußern, im April 2026 sind es 53 Prozent. Bei den Bleibenden blieb der Anteil bei rund 16 Prozent.</i></figcaption>
@@ -255,6 +270,7 @@ Die folgenden Abbildungen zeigen für alle weiteren Fragen, wie dieselben Unions
 .ltw-article figure.ltw-plotly { padding: 14px 6px 10px 6px; }
 .ltw-article .union26-chart { width: 100%; }
 .ltw-article .union26-chart .js-plotly-plot { cursor: default; }
+.ltw-article .union26-titel { font-weight: 700; font-size: 1.02em; line-height: 1.35; color: #1f1f1f; margin: 4px 6px 10px 6px; text-align: left; }
 .ltw-article figure.ltw-plotly figcaption { text-align: justify; hyphens: auto; font-size: 0.76em; line-height: 1.5; color: #666; margin: 8px 6px 0 6px; }
 .ltw-article figure.ltw-plotly figcaption i { color: #444; }
 </style>
@@ -343,10 +359,9 @@ document.addEventListener("DOMContentLoaded", function () {
             hoverlabel: { bgcolor: "#1f1f1f", bordercolor: "#1f1f1f", font: { family: schrift, size: 15, color: "#ffffff" } },
             hovertemplate: "<b>%{customdata[0]}</b><br>%{customdata[1]} % der Unionswähler 2025<br><span style='font-size:11px'>n = %{customdata[2]}</span><extra></extra>" }
   }], Object.assign({}, basis, {
-    margin: { l: 10, r: 10, t: 40, b: 60 },
+    margin: { l: 10, r: 10, t: 15, b: 60 },
     annotations: [{ x: 0.0, y: -0.1, xref: "paper", yref: "paper", text: "Bundestagswahl 2025", showarrow: false, font: { size: 13, color: ink2 }, xanchor: "left" },
-                  { x: 1.0, y: -0.1, xref: "paper", yref: "paper", text: "Wahlabsicht April 2026", showarrow: false, font: { size: 13, color: ink2 }, xanchor: "right" },
-                  { x: 0.0, y: 1.06, xref: "paper", yref: "paper", text: "<b>Wohin hat die Union seit der Bundestagswahl Wähler verloren?</b>", showarrow: false, font: { size: 15 }, xanchor: "left" }]
+                  { x: 1.0, y: -0.1, xref: "paper", yref: "paper", text: "Wahlabsicht April 2026", showarrow: false, font: { size: 13, color: ink2 }, xanchor: "right" }]
   }), cfg);
 
   /* ---------- 2) demographics: stacked 100 % bars, one facet per characteristic ---------- */
@@ -691,8 +706,7 @@ document.addEventListener("DOMContentLoaded", function () {
     xaxis: { range: [0, 100], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10, color: ink2 } },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0, y: 1.02, xanchor: "left", yanchor: "bottom", traceorder: "normal" },
-    margin: { l: 160, r: 20, t: schmal ? 105 : 95, b: 40 },
-    title: { text: "<b>Wen kann die Union zurückholen?</b>", x: 0.02, xref: "container", xanchor: "left", y: 0.98, yanchor: "top", font: { size: 15 } }
+    margin: { l: 160, r: 20, t: 45, b: 40 }
   }), cfg);
 
   /* ---------- 6) where the potential sits ---------- */
@@ -712,8 +726,7 @@ document.addEventListener("DOMContentLoaded", function () {
     xaxis: { range: [0, 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10, color: ink2 } },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0.98, y: 0.06, xanchor: "right", yanchor: "bottom", bgcolor: "rgba(255,255,255,0.9)" },
-    margin: { l: 125, r: 20, t: 50, b: 40 },
-    title: { text: "<b>Wo das Potenzial der Union heute steckt</b>", x: 0.02, xref: "container", xanchor: "left", y: 0.98, yanchor: "top", font: { size: 15 } }
+    margin: { l: 125, r: 20, t: 15, b: 40 }
   }), cfg);
 
   /* ---------- lightbox for the static header image ---------- */
