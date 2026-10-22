@@ -270,6 +270,7 @@ Die folgenden Abbildungen zeigen für alle weiteren Fragen, wie dieselben Unions
 .ltw-article figure.ltw-plotly { padding: 14px 6px 10px 6px; }
 .ltw-article .union26-chart { width: 100%; }
 .ltw-article .union26-chart .js-plotly-plot { cursor: default; }
+@media (max-width: 700px) { .ltw-article .ltw-hero-title br { display: none; } }
 .ltw-article .union26-titel { font-weight: 700; font-size: 1.02em; line-height: 1.35; color: #1f1f1f; margin: 4px 6px 10px 6px; text-align: left; }
 .ltw-article figure.ltw-plotly figcaption { text-align: justify; hyphens: auto; font-size: 0.76em; line-height: 1.5; color: #666; margin: 8px 6px 0 6px; }
 .ltw-article figure.ltw-plotly figcaption i { color: #444; }
