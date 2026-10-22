@@ -21,7 +21,7 @@ published: true
 
 <h1 class="ltw-hero-title">
 
-Wohin die Union ihre Wähler verliert –<br>und wen sie zurückholen kann
+Wohin die Union ihre Wähler verliert – <br>und wen sie zurückholen kann
 
 </h1>
 
