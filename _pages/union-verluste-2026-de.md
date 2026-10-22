@@ -397,8 +397,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /* rows are numbered from the top; block headers get their own (bold) row */
     var tickvals = [], ticktext = [], pos = [], row = 0, last = null;
     items.forEach(function (it) {
-      if (opt.blocks && it.block !== last) { row -= 1; tickvals.push(row); ticktext.push("<b>" + it.block + "</b>"); last = it.block; }
-      row -= 1; tickvals.push(row); ticktext.push(it.label); pos.push(row);
+      if (opt.blocks && it.block !== last) { row -= 1; tickvals.push(row); ticktext.push("<b>" + (schmal ? wrap(it.block, 24) : it.block) + "</b>"); last = it.block; }
+      row -= 1; tickvals.push(row); ticktext.push(schmal ? wrap(it.label, 24) : it.label); pos.push(row);
     });
     var traces = [];
     /* grey range line per item */
@@ -450,12 +450,17 @@ document.addEventListener("DOMContentLoaded", function () {
       traces.push({ type: "scatter", mode: "markers", name: g, legendrank: gruppen.indexOf(g), x: it.map(function (p, i) { return p.werte[g] + offs[g][i]; }), y: pos, marker: marker(g, 13),
         customdata: it.map(function (p) { return de(p.werte[g]); }), hovertemplate: "%{customdata}<extra></extra>" });
     });
+    hoehe("union26-positionen", 620);
     Plotly.newPlot("union26-positionen", traces, Object.assign({}, basis, {
       xaxis: { range: [0.7, 7.3], tickvals: [1, 2, 3, 4, 5, 6, 7], showgrid: false, fixedrange: true, tickfont: { color: ink3 } },
-      yaxis: { tickvals: pos, ticktext: it.map(function (p) { return p.links; }), range: [-(it.length) - 0.7, -0.3], showgrid: false, zeroline: false, fixedrange: true, tickfont: { size: 12 }, automargin: true },
-      legend: { orientation: "h", x: 0, y: 1.1, xanchor: "left", yanchor: "bottom", font: { size: 11 }, itemwidth: 20 },
-      annotations: it.map(function (p, i) { return { xref: "x", yref: "y", x: 7.3, y: pos[i], text: p.rechts, showarrow: false, xanchor: "left", font: { size: 11.5 } }; }),
-      margin: { l: 10, r: 215, t: 60, b: 40 }
+      yaxis: { tickvals: pos, ticktext: schmal ? pos.map(function () { return ""; }) : it.map(function (p) { return p.links; }), range: [-(it.length) - 0.7, schmal ? -0.1 : -0.3], showgrid: false, zeroline: false, fixedrange: true, tickfont: { size: 12 }, automargin: true },
+      legend: { orientation: "h", x: 0, y: schmal ? 1.04 : 1.1, xanchor: "left", yanchor: "bottom", font: { size: 11 }, itemwidth: 20 },
+      annotations: schmal
+        ? [].concat.apply([], it.map(function (p, i) { return [
+            { xref: "x", yref: "y", x: 0.7, y: pos[i] + 0.42, text: wrap(p.links, 22), showarrow: false, xanchor: "left", yanchor: "bottom", align: "left", font: { size: 10.5 } },
+            { xref: "x", yref: "y", x: 7.3, y: pos[i] + 0.42, text: wrap(p.rechts, 22), showarrow: false, xanchor: "right", yanchor: "bottom", align: "right", font: { size: 10.5 } }]; }))
+        : it.map(function (p, i) { return { xref: "x", yref: "y", x: 7.3, y: pos[i], text: p.rechts, showarrow: false, xanchor: "left", font: { size: 11.5 } }; }),
+      margin: schmal ? { l: 10, r: 10, t: 90, b: 40 } : { l: 10, r: 215, t: 60, b: 40 }
     }), cfg);
   })();
 
@@ -628,7 +633,7 @@ document.addEventListener("DOMContentLoaded", function () {
       margin: { l: 45, r: 20, t: schmal ? 110 : opt.oben, b: 40 }
     }), cfg);
   }
-  zeitChart("union26-zeit", zeit, { tol: 0.5, schritt: 0.07, spalten: 2, hoeheSchmal: 1150, umbruch: 60, ygap: 0.3, legendeY: 1.12, oben: 80, fmt: signiert,
+  zeitChart("union26-zeit", zeit, { tol: 0.5, schritt: 0.07, spalten: 2, hoeheSchmal: 1250, umbruch: schmal ? 34 : 60, ygap: 0.3, legendeY: 1.12, oben: 80, fmt: signiert,
     yachse: { range: [-5, 5], tickvals: [-4, -2, 0, 2, 4], ticktext: ["−4", "−2", "0", "+2", "+4"] } });
   zeitChart("union26-zeit-lage", lage, { tol: 5.5, schritt: 0.12, spalten: 4, hoeheSchmal: 2000, umbruch: 26, ygap: 0.38, legendeY: 1.1, oben: 90, fmt: prozent,
     yachse: { range: [0, 100], tickvals: [0, 25, 50, 75, 100], ticktext: ["0 %", "25 %", "50 %", "75 %", "100 %"], tickfont: { size: 10, color: ink2 } } });
@@ -677,7 +682,7 @@ document.addEventListener("DOMContentLoaded", function () {
         x: reihen.map(function (g) { return th.union[g]; }), y: reihen,
         marker: { symbol: "diamond-open", size: 12, color: ink, line: { color: ink, width: 2 } },
         customdata: reihen.map(function (g) { return de(th.union[g]); }), hovertemplate: "Wahrnehmung CDU/CSU: %{customdata}<extra></extra>" });
-      annos.push(strip(ax, th.thema, "1 = " + th.links + " · 7 = " + th.rechts));
+      annos.push(strip(ax, th.thema, schmal ? wrap("1 = " + th.links + " · 7 = " + th.rechts, 34) : "1 = " + th.links + " · 7 = " + th.rechts));
       lay[ax.xaxis] = { range: [0.8, 7.2], tickvals: [1, 2, 3, 4, 5, 6, 7], gridcolor: "#f0f0f0", zeroline: false, fixedrange: true, tickfont: { size: 10, color: ink2 } };
       lay[ax.yaxis] = { type: "category", categoryorder: "array", categoryarray: reihen, range: [-0.6, reihen.length - 0.4], fixedrange: true,
                         tickfont: { size: 12 }, automargin: true, ticklabelstandoff: 6 };
@@ -723,7 +728,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hovertemplate: "<b>%{y}</b><br>Anteil am Potenzial: %{customdata[0]:.1f} %<br><span style='font-size:11px'>n = %{customdata[1]}</span><extra></extra>" }
   ], Object.assign({}, basis, {
     barmode: "stack", bargap: 0.32,
-    xaxis: { range: [0, 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10, color: ink2 } },
+    xaxis: { range: [0, schmal ? 42 : 32], ticksuffix: " %", gridcolor: "#e6e6e6", fixedrange: true, tickfont: { size: 10, color: ink2 } },
     yaxis: { autorange: "reversed", fixedrange: true, tickfont: { size: 13 }, automargin: true, ticklabelstandoff: 8 },
     legend: { orientation: "h", x: 0.98, y: 0.06, xanchor: "right", yanchor: "bottom", bgcolor: "rgba(255,255,255,0.9)" },
     margin: { l: 125, r: 20, t: 15, b: 40 }
