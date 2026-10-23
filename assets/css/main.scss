@@ -624,4 +624,8 @@ html[data-theme="dark"] .ltw-article {
   .ltw-byline a:hover { border-bottom-color: #f2f2f2; }
   .ltw-photo-credit, .ltw-photo-credit a { color: #c8c8c8; }
   .ltw-sources { color: #d0d0d0; border-top-color: #666; }
+  .ltw-notes { color: #d0d0d0; }
+  .ltw-appendix-note { color: #c8c8c8; }
+  .ltw-appendix details { color: #222; }   /* aufgeklappte Boxen bleiben hell */
 }
+html[data-theme="dark"] .ltw-article + .footnotes { color: #d0d0d0; border-top-color: #666; }
