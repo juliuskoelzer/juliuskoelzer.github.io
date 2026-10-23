@@ -632,3 +632,4 @@ html[data-theme="dark"] .ltw-article + .footnotes { color: #d0d0d0; border-top-c
 
 /* Navigation im Dark Mode: Leiste dunkel, sonst sind Name und Burger (weiss) auf Weiss unsichtbar */
 html[data-theme="dark"] .greedy-nav { background: #2f2f2f; border-bottom-color: #555; }
+html[data-theme="dark"] .greedy-nav .nav-links { background: #2f2f2f; }
