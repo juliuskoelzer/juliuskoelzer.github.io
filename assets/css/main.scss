@@ -629,3 +629,6 @@ html[data-theme="dark"] .ltw-article {
   .ltw-appendix details { color: #222; }   /* aufgeklappte Boxen bleiben hell */
 }
 html[data-theme="dark"] .ltw-article + .footnotes { color: #d0d0d0; border-top-color: #666; }
+
+/* Navigation im Dark Mode: Leiste dunkel, sonst sind Name und Burger (weiss) auf Weiss unsichtbar */
+html[data-theme="dark"] .greedy-nav { background: #2f2f2f; border-bottom-color: #555; }
