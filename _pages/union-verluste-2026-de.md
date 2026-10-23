@@ -259,7 +259,7 @@ Die folgenden Abbildungen zeigen für alle weiteren Fragen, wie dieselben Unions
 </figure>
 
 <div class="ltw-sources" markdown="1">
-<sup>1</sup> Die Wechslergruppen umfassen nur rund 110 bis 200 Befragte; Unterschiede von wenigen Prozentpunkten oder Skalenpunkten sind daher nicht belastbar.
+<sup>1</sup> Die Wechslergruppen umfassen nur rund 110 bis 200 Befragte; Unterschiede von wenigen Prozentpunkten oder Skalenpunkten sollten daher nicht überinterpretiert werden.
 
 **Methodik.** Daten: GLES Panel, Welle 34 (23. März bis 7. April 2026), verknüpft mit der Stimme derselben Personen bei der Bundestagswahl 2025 (Wellen 30 und 31) und den Profilwellen (Soziodemografie, Gewichte). Basis sind alle Befragten der Welle 34, deren Stimme bei der Bundestagswahl 2025 bekannt ist (n = 10.111), darunter 2.326 Unionswähler. Gruppen: bleibt bei CDU/CSU n = 1.590, zu SPD/Grünen n = 148, zur AfD n = 195, unentschieden n = 199. Gewichtet mit den Profilgewichten der GLES-Stichproben, angepasst an das amtliche Ergebnis der Bundestagswahl 2025 einschließlich Nichtwählern (ohne ungültige Stimmen). Der Zeitverlauf nutzt zusätzlich die Wellen 32 (Mai 2025) und 33 (November 2025). Wahlabsicht ist nicht Wahlverhalten; die Fallzahlen der Wechslergruppen sind klein, Unterschiede von wenigen Prozentpunkten daher nicht belastbar. Die Profilgewichte gleichen Alterung und Panelausfälle nicht vollständig aus; Ältere sind überrepräsentiert.
 
