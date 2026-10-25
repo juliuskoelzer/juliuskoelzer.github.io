@@ -203,19 +203,21 @@ higher than in the median group, a difference that is not significant.</i></figc
 
 The finding that income is only weakly associated with AfD support is not unique to the 2025
 election but consistent with a substantial body of existing research. Studies using
-German survey and panel data have found that poverty or unemployment are not strongly associated
-with support for the AfD ([Lengfeld
+German survey and panel data have found that objective deprivation, such as poverty or
+unemployment, is not strongly associated with support for the AfD ([Lengfeld
 2017](https://link.springer.com/article/10.1007/s11577-017-0446-1); [Schröder
 2018](https://www.diw.de/de/diw_01.c.595136.de/publikationen/soeppapers/2018_0975/afd-unterstuetzer_sind_nicht_abgehaengt__sondern_auslaenderfeindlich.html)).
 Similarly, lower income groups identify only slightly more frequently with the party, while
-individuals who have experienced an actual decline in income are no more likely to support it
+individuals who have experienced growing material disadvantage in the form of an actual decline in
+income are no more likely to support it
 ([Hartmann, Kurz and Lengfeld 2022](https://doi.org/10.1093/esr/jcab024)). Indeed, shortly after
 the AfD was founded, its supporters had above average incomes, which subsequently converged towards
 the population average ([Bergmann, Diermeier and Niehues
 2017](https://www.iwkoeln.de/studien/knut-bergmann-matthias-diermeier-judith-niehues-eine-partei-der-sich-ausgeliefert-fuehlenden-durchschnittsverdiener.html)).
 
 Where economic circumstances do matter, research suggests that perceptions of one's social and
-economic position may be more important than objective material disadvantage. Relevant factors
+economic position may be more important than objective deprivation or material disadvantage as
+such. Relevant factors
 include a low perceived social status ([Gidron and Hall
 2017](https://doi.org/10.1111/1468-4446.12319)), economic insecurity, fears of downward mobility,
 status anxiety and industrial decline, particularly within the lower middle class ([Kurer
@@ -416,7 +418,8 @@ education and region are taken into account. Formal education is a far stronger 
 voting.
 
 This does not mean, however, that economic concerns are irrelevant to AfD support. Research
-suggests instead that they matter less through objective material deprivation, such as poverty, low
+suggests instead that they matter less through objective deprivation and material disadvantage, such
+as poverty, low
 income
 or unemployment, than through how people perceive their own economic and social position. In the
 WSI employee panel, for example, AfD support varies only slightly between income groups. Among
@@ -429,7 +432,7 @@ particularly among the lower middle class ([Gidron and Hall
 2017](https://doi.org/10.1111/1468-4446.12319); [Kurer
 2020](https://doi.org/10.1177/0010414020912283); [Engler and Weisstanner
 2021](https://doi.org/10.1080/13501763.2020.1733636)). Such perceptions are not necessarily limited
-to those who are economically disadvantaged. A recent study using SOEP data finds that people who
+to those who face material disadvantage. A recent study using SOEP data finds that people who
 underestimate their position in the income distribution tend to hold stronger populist attitudes,
 regardless of their actual income ([Albers, Bischof, Kersting and Kosse
 2026](https://doi.org/10.31235/osf.io/2s7mc_v1)). This also helps explain why concerns about
