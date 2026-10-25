@@ -49,7 +49,7 @@ by <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · Oc
 
 In public debate, support for the AfD is repeatedly associated with “being poor” and with low incomes. “We have long known that the AfD is particularly successful where people are poor and getting poorer,” reads a recent contribution in <a href="https://www.zeit.de/2026/24/afd-stoppen-strategien-kunst-literatur-wissenschaft#inan">DIE ZEIT</a>. A commentary in der Freitag, headlined <a href="https://www.freitag.de/autoren/sebastian-baehr/mehr-reiche-und-mehr-arme-naehrboden-fuer-die-afd">“Managergehälter steigen, Armut nimmt zu”</a> (executive pay rises, poverty grows), argues that with rising poverty “the breeding ground for the far-right AfD is growing as well”. After the 2025 federal election, in which the AfD became the strongest party among workers, it was also frequently described as the new party of the “left behind”. In a newspaper column, the head of the German Institute for Economic Research (DIW) even speaks of an <a href="https://www.diw.de/de/diw_01.c.1014926.de/nachrichten/sachsen-anhalt_wuerde_sich_mit_der_afd_selbst_am_meisten_schaden.html">“AfD paradox”</a>: it is precisely AfD voters and their regions, the column argues, that would pay a particularly high price for the party's policies. A look at survey data, however, suggests that income is a rather weak socio-demographic characteristic for explaining who votes AfD.
 
-The analysis uses the post-election cross-section of the German Longitudinal Election Study (GLES) for the 2025 federal election. Besides their vote, respondents were asked about the monthly net income of their household. The figures below are based on all respondents who report voting for a party with their second vote and who state their household income (n = 5,321).
+The analysis uses the post-election survey of the German Longitudinal Election Study (GLES) for the 2025 federal election, a large representative survey conducted by GESIS shortly after the election. Respondents were asked which party they voted for with their second vote – the vote that decides the strength of the parties in the Bundestag – and how much net income their household has per month in total, after taxes and social security contributions, in brackets from “under €500” to “€10,000 and more”. For the analysis, these brackets are grouped into eight income groups. Included are all respondents who report a party vote and their household income (n = 5,321); the results are weighted to match the population.
 
 ## 1. AfD support barely changes with income
 
@@ -60,7 +60,7 @@ Looking at the AfD's share of the second vote by income group, the picture is cl
 <p class="afdinc-titel">How many people voted AfD in each income group?</p>
 <div id="afdinc-bar" class="afdinc-chart" style="height: 440px;"></div>
 
-<figcaption>AfD share of the second vote at the 2025 federal election by monthly net household income; case numbers on hover. Respondents who report a party vote and their household income (n = 5,321). Weighted; n unweighted. Data: GLES Cross-Section 2025, post-election survey.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: Among respondents with a household net income below €1,500, 17.4 percent voted AfD; among those with €3,000 to €4,000, 15.7 percent did.</i></figcaption>
+<figcaption>Share of AfD voters by monthly household net income; case numbers on hover. Data: GLES 2025, weighted.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: Among respondents with a household net income below €1,500, 17.4 percent voted AfD; among those with €3,000 to €4,000, 15.7 percent did.</i></figcaption>
 
 </figure>
 
@@ -71,7 +71,7 @@ The same pattern appears when AfD voting is looked at separately for East and We
 <p class="afdinc-titel">The same pattern in East and West</p>
 <div id="afdinc-eastwest" class="afdinc-chart" style="height: 460px;"></div>
 
-<figcaption>AfD share of the second vote at the 2025 federal election by monthly net household income and region; Berlin counted as West Germany; case numbers on hover. Weighted; n unweighted. Data: GLES Cross-Section 2025, post-election survey. In East Germany only 67 respondents in the highest income group.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: In East Germany, 29 percent of respondents with less than €1,500 household net income voted AfD; in West Germany, 13 percent did.</i></figcaption>
+<figcaption>AfD share by monthly household net income and region (Berlin counted as West); case numbers on hover. Few respondents in the highest income group in the East (67). Data: GLES 2025, weighted.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: In East Germany, 29 percent of respondents with less than €1,500 household net income voted AfD; in West Germany, 13 percent did.</i></figcaption>
 
 </figure>
 
@@ -84,7 +84,7 @@ A simple breakdown by income says little about whether income itself is related 
 <p class="afdinc-titel">The income gap shrinks once age, education and region are taken into account</p>
 <div id="afdinc-pred" class="afdinc-chart" style="height: 460px;"></div>
 
-<figcaption>Predicted AfD share of the second vote from logistic regressions; left with income only, right additionally with age, sex, education, household size and East/West (Berlin = West). Both models estimated on the same sample (n = 5,248); predicted probabilities averaged over the distribution of the other characteristics; band: 95% confidence interval. Arrow: difference between the lowest (under €1,500) and the highest income group (€7,500 and more), in percentage points; dotted line: level of the lowest income group. Weighted. Data: GLES Cross-Section 2025, post-election survey. <i>Reading example: Without controls, AfD support in the highest income group is 11.5 percentage points lower than in the lowest; comparing respondents who are otherwise alike, the gap shrinks to 7.0 points.</i></figcaption>
+<figcaption>Predicted AfD share; left: income only, right: comparing respondents of the same age, sex, education, household size and region (East/West). Arrow: gap between the lowest and the highest income group in percentage points. Band: 95% confidence interval. Data: GLES 2025, weighted. <i>Reading example: Without controls, AfD support in the highest income group is 11.5 percentage points lower than in the lowest; comparing respondents who are otherwise alike, the gap shrinks to 7.0 points.</i></figcaption>
 
 </figure>
 
@@ -95,7 +95,7 @@ Put differently: comparing respondents with low incomes (here below €2,000 hou
 <p class="afdinc-titel">Do low earners vote AfD more often than other income groups?</p>
 <div id="afdinc-contrast" class="afdinc-chart" style="height: 400px;"></div>
 
-<figcaption>Difference in the predicted AfD share between respondents with a household net income below €2,000 and the respective comparison group, in percentage points; positive values = higher AfD support among low-income respondents. Logistic regressions without and with controls for age, sex, education, household size and East/West (n = 5,248). Median group = income class containing the median; mean group = class above the mean (about €3,960, computed from class midpoints). Lines: 95% confidence interval. Weighted. Data: GLES Cross-Section 2025, post-election survey. <i>Reading example: With controls, AfD support among low-income respondents is 6.5 percentage points higher than in the highest income group (€7,500 and more), but only 2.7 points higher than in the median group – a difference that is not significant.</i></figcaption>
+<figcaption>Difference in the predicted AfD share between respondents with less than €2,000 and each comparison group, in percentage points; positive values = low earners vote AfD more often. Without and with controls for age, sex, education, household size and region. Lines: 95% confidence interval – if a line crosses zero, the difference is not statistically significant. Data: GLES 2025, weighted. <i>Reading example: With controls, AfD support among low-income respondents is 6.5 percentage points higher than in the highest income group (€7,500 and more), but only 2.7 points higher than in the median group – a difference that is not significant.</i></figcaption>
 
 </figure>
 
@@ -110,7 +110,7 @@ Compared with other parties, too, the AfD does not do substantially better among
 <p class="afdinc-titel">How each income group voted</p>
 <div id="afdinc-parties" class="afdinc-chart" style="height: 500px;"></div>
 
-<figcaption>Second vote at the 2025 federal election by monthly net household income; each bar sums to 100%. Respondents who report a party vote and their household income (n = 5,321). Weighted; n unweighted. Data: GLES Cross-Section 2025, post-election survey.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: Among respondents with less than €1,500 household net income, 22 percent voted CDU/CSU; among those with €7,500 and more, 37 percent did.</i></figcaption>
+<figcaption>Second vote by monthly household net income; each bar sums to 100%. Data: GLES 2025, weighted.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: Among respondents with less than €1,500 household net income, 22 percent voted CDU/CSU; among those with €7,500 and more, 37 percent did.</i></figcaption>
 
 </figure>
 
@@ -121,7 +121,7 @@ Reversing the perspective and looking at the income distribution within each par
 <p class="afdinc-titel">How much each party's voters earn</p>
 <div id="afdinc-voters" class="afdinc-chart" style="height: 500px;"></div>
 
-<figcaption>Monthly net household income of respondents by second vote at the 2025 federal election; each bar sums to 100%, higher incomes darker; case numbers per party on hover. Weighted; n unweighted. Data: GLES Cross-Section 2025, post-election survey.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: 11 percent of AfD voters live in households with less than €1,500 net income; among CDU/CSU voters it is 7 percent, among Left voters 15 percent.</i></figcaption>
+<figcaption>Monthly household net income of each party's voters; each bar sums to 100%, darker = higher income; case numbers on hover. Data: GLES 2025, weighted.<sup><a href="#fn-cases">1</a></sup> <i>Reading example: 11 percent of AfD voters live in households with less than €1,500 net income; among CDU/CSU voters it is 7 percent, among Left voters 15 percent.</i></figcaption>
 
 </figure>
 
@@ -134,7 +134,7 @@ Compared with the AfD, it is above all the vote for the Left that varies more st
 <p class="afdinc-titel">Left support falls steadily with income, AfD support hardly at all</p>
 <div id="afdinc-left" class="afdinc-chart" style="height: 460px;"></div>
 
-<figcaption>Predicted share of the second vote from logistic regressions per party with controls for age, sex, education, household size and East/West (n = 5,248); predicted probabilities averaged over the distribution of the other characteristics; band: 95% confidence interval. Weighted. Data: GLES Cross-Section 2025, post-election survey. <i>Reading example: Comparing respondents who are otherwise alike, the predicted Left share is 15.8 percent below €1,500 and 8.9 percent at €4,000 to €5,000.</i></figcaption>
+<figcaption>Predicted AfD and Left share by monthly household net income, comparing respondents of the same age, sex, education, household size and region (East/West). Band: 95% confidence interval. Data: GLES 2025, weighted. <i>Reading example: Comparing respondents who are otherwise alike, the predicted Left share is 15.8 percent below €1,500 and 8.9 percent at €4,000 to €5,000.</i></figcaption>
 
 </figure>
 
@@ -145,7 +145,7 @@ Accordingly, respondents with low incomes are significantly more likely to vote 
 <p class="afdinc-titel">Which parties do low earners vote for more often?</p>
 <div id="afdinc-contrast-parties" class="afdinc-chart" style="height: 560px;"></div>
 
-<figcaption>Difference in the predicted vote share between respondents with a household net income below €2,000 and the respective comparison group, in percentage points; positive values = higher support among low-income respondents. Logistic regressions per party with controls for age, sex, education, household size and East/West (n = 5,248); FDP not shown because of small case numbers. Lines: 95% confidence interval. Weighted. Data: GLES Cross-Section 2025, post-election survey. <i>Reading example: Low-income respondents are 5.6 percentage points more likely to vote for the Left than respondents with €3,000 to €4,000; the confidence interval does not include zero.</i></figcaption>
+<figcaption>Difference in the predicted vote share between respondents with less than €2,000 and each comparison group, in percentage points, with the same controls as above; FDP not shown because of too few cases. Lines: 95% confidence interval. Data: GLES 2025, weighted. <i>Reading example: Low-income respondents are 5.6 percentage points more likely to vote for the Left than respondents with €3,000 to €4,000; the confidence interval does not include zero.</i></figcaption>
 
 </figure>
 
@@ -158,7 +158,7 @@ As already indicated, formal education plays a much larger role for AfD voting t
 <p class="afdinc-titel">AfD support differs far more by education than by income</p>
 <div id="afdinc-slopes" class="afdinc-chart" style="height: 480px;"></div>
 
-<figcaption>Predicted AfD share of the second vote from one logistic regression with school education and household net income as simultaneous predictors and controls for age, sex, household size and East/West (n = 5,248); predicted probabilities averaged over the distribution of the other characteristics; band: 95% confidence interval. Only 30 respondents without a school qualification, hence the very wide confidence interval. Weighted. Data: GLES Cross-Section 2025, post-election survey. <i>Reading example: Comparing respondents who are otherwise alike, predicted AfD support is 24 percent with a lower secondary qualification and 5 percent with the Abitur.</i></figcaption>
+<figcaption>Predicted AfD share by school education and by household income, both from the same model, comparing respondents of the same age, sex, education, household size and region (East/West). Only 30 respondents without a school qualification, hence the wide band. Band: 95% confidence interval. Data: GLES 2025, weighted. <i>Reading example: Comparing respondents who are otherwise alike, predicted AfD support is 24 percent with a lower secondary qualification and 5 percent with the Abitur.</i></figcaption>
 
 </figure>
 
@@ -171,9 +171,9 @@ None of this means, of course, that socio-economic factors and economic causes a
 At the same time, the most recent study on the question cautions against overstating even subjective deprivation. Based on SOEP data from 2014 to 2024, Martin Schröder and colleagues find that concern about immigration accounts for about three quarters of the explainable differences in AfD support, while income, education, life satisfaction, financial worries and fear of decline add little (<a href="https://doi.org/10.1371/journal.pone.0350403">Schröder, Rehm and Röcke 2026</a>; see also <a href="https://www.diw.de/de/diw_01.c.774792.de/s_11067.html">Lengfeld and Dilger 2018</a>). Whoever wants to understand AfD support should therefore look less at people's bank accounts than at their perceptions of status, fairness and – above all – immigration.
 
 <div class="ltw-sources" markdown="1">
-<sup id="fn-cases">1</sup> The highest income group (€7,500 and more) comprises 402 respondents, of whom 67 live in East Germany. Differences of a few percentage points between neighbouring income groups should not be over-interpreted.
+<sup id="fn-cases">1</sup> The highest income group (€7,500 and more) comprises only 402 respondents, 67 of them in East Germany. Small differences between neighbouring income groups should not be over-interpreted.
 
-**Method.** Data: GLES Cross-Section 2025, post-election survey (ZA10100, version 3.0.0), fieldwork after the federal election of 23 February 2025. Base: respondents who report a second vote for a party and their monthly household net income (n = 5,321); non-voters and respondents without a party vote are not included. Weighted with the regional and socio-structural weight (w_ipfges). The regression models are logistic regressions with income (eight classes) and controls for age, sex, school education (five levels), household size (one to five or more persons) and East/West (Berlin = West), all estimated on the same sample (n = 5,248). Predicted shares and differences are weighted averages of the predicted probabilities across all respondents. Income is self-reported in brackets.
+**Method.** Data: GLES post-election survey 2025 (ZA10100). Base: respondents who report a second vote for a party and their household income (n = 5,321); non-voters are not included. All results are weighted. The models are logistic regressions with income (eight groups) and controls for age, sex, school education, household size and East/West (Berlin = West), all estimated on the same respondents (n = 5,248). Predicted shares are averages over all respondents.
 
 **Data:** GLES (GESIS). **Figures:** Julius Kölzer.
 
