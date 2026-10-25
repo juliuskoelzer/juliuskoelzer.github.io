@@ -228,7 +228,7 @@ than to how they perceive their position in society and their prospects for the 
 
 So far, the focus has been on the AfD alone. Whether its income profile is unusual becomes clearer
 when compared with other parties. Here, too, the AfD does not stand out for unusually strong
-support among low earners. Its vote share hardly varies across lower and middle income groups and
+support among low earners. Its vote share remains relatively stable across lower and middle income groups and
 declines only at higher incomes. By contrast, support for the CDU/CSU and the Greens
 varies much more strongly with income. The CDU/CSU's vote share rises from around 22 percent in the
 lowest income group to 37 percent in the highest, while support for the Greens increases from
@@ -405,7 +405,7 @@ reflects who goes on to higher education in the first place
 ## Conclusion
 
 In sum, the findings reinforce what research on the AfD has shown for years: the AfD is not
-primarily a party of low earners. Its support is broadly similar across most of the income
+primarily a party of low earners. Its support remains relatively stable across most of the income
 distribution and declines noticeably only among households with higher incomes. Unlike for Die
 Linke, low income is not associated with substantially greater support for the AfD once age,
 education and region are taken into account. Formal education is a far stronger predictor of AfD
