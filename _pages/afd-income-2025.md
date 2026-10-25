@@ -150,9 +150,9 @@ income
 alone, the predicted AfD vote share is 18.2 percent among households earning less than €1,500 per
 month, compared with 6.7 percent among those earning €7,500 or more, a gap of 11.5 percentage
 points. Once the controls are included, this gap narrows to around 7 percentage points, with
-predicted AfD support falling from approximately 17.3 to 10.3 percent. **The relationship between
+predicted AfD support falling from approximately 17.3 to 10.3 percent. The relationship between
 income and AfD voting thus becomes even flatter, with a less pronounced decline in support as
-income rises.** The overall pattern nevertheless remains broadly unchanged: across lower and middle
+income rises. The overall pattern nevertheless remains broadly unchanged: across lower and middle
 income groups, predicted AfD support varies relatively little, while a clearer decline appears
 only among higher-income households.
 
