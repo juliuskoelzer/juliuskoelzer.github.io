@@ -1,17 +1,15 @@
 ---
 layout: page
-title: "Do low earners vote AfD? What income tells us about AfD support"
+title: "Right on the Money? What income tells us about AfD support"
 description: "AfD support is often linked to poverty and low incomes. Data from the GLES post-election survey of the 2025 federal election show that income explains AfD voting only weakly – education matters far more."
 header:
   image: afdeink26_social.jpg
   image_width: 1200
   image_height: 600
-  image_alt: "Do low earners vote AfD? What income tells us about AfD support"
+  image_alt: "Right on the Money? What income tells us about AfD support"
 permalink: /afd-income-2025/
 author_profile: true
 published: true
-sitemap: false
-noindex: true
 ---
 
 <div class="ltw-article ltw-en" markdown="1">
@@ -52,19 +50,19 @@ by <strong><a href="https://juliuskoelzer.de/">Julius Kölzer</a></strong> · Oc
 
 </p>
 
-In public debate, support for Germany's far-right AfD is often traced back to poverty and low
+In public debates, support for Germany's far-right AfD is often traced back to poverty and low
 incomes. “We have
 long known that the AfD is particularly successful where people are poor and getting poorer,” reads
 a recent contribution in
 <a href="https://www.zeit.de/2026/24/afd-stoppen-strategien-kunst-literatur-wissenschaft#inan">DIE
-ZEIT</a>. In the same vein, a commentary in der Freitag headlined
-<a href="https://www.freitag.de/autoren/sebastian-baehr/mehr-reiche-und-mehr-arme-naehrboden-fuer-die-afd">“Managergehälter
-steigen, Armut nimmt zu”</a> (executive pay rises, poverty grows) argues that with rising poverty
+ZEIT</a>. In the same vein, a commentary in
+<a href="https://www.freitag.de/autoren/sebastian-baehr/mehr-reiche-und-mehr-arme-naehrboden-fuer-die-afd">der Freitag</a>
+argues that with rising poverty
 “the breeding ground for the far-right AfD is growing as well”. In a newspaper column the head of
 the German Institute for Economic
 Research (DIW) even speaks of an
 <a href="https://www.diw.de/de/diw_01.c.1014926.de/nachrichten/sachsen-anhalt_wuerde_sich_mit_der_afd_selbst_am_meisten_schaden.html">“AfD
-paradox”</a>: AfD voters would support a party whose policies would hit them hardest. But do voters
+paradox”</a>: lower income voters would support a party whose policies would hit them hardest. But do voters
 with lower incomes really vote AfD
 more often than others? Survey data from the last federal election suggest that income is a rather
 weak characteristic for explaining who votes AfD.
@@ -92,7 +90,7 @@ relationship between household income and AfD voting is therefore neither partic
 across most of the income distribution nor linear. Rather than declining steadily as income rises,
 AfD support remains relatively constant across lower and middle income groups before dropping
 sharply among higher-income households. The roughly 11-percentage-point gap between the lowest and
-highest income groups is thus driven primarily by the markedly lower support among affluent
+highest income groups thus seems to be driven primarily by the markedly lower support among affluent
 households, rather than by exceptionally high support among the poorest.
 
 <figure class="ltw-plotly">
@@ -180,7 +178,7 @@ difference emerges only when comparing low income households with the highest in
 €7,500 or more per month. While this gap amounts to approximately 11 percentage points without
 controls, it narrows to around 7 percentage points once the controls are included. The remaining
 income gap therefore does not reflect particularly strong AfD support among low income households
-compared with those in the middle of the income distribution. Rather, it is largely explained by
+compared with those in the middle of the income distribution. Rather, it is again largely explained by
 the substantially lower support for the AfD among households with the highest incomes.
 
 <figure class="ltw-plotly">
@@ -283,7 +281,7 @@ almost steadily as income rises. Among respondents with a monthly net household 
 €1,500, Die Linke's predicted vote share stands at around 16 percent, only slightly below that of
 the AfD. But while AfD support remains comparatively stable across the following income groups,
 support for Die Linke falls steadily, reaching around 10 percent among households earning €3,000 to
-€4,000 and just 4 percent among those earning €7,500 or more. Die Linke thus exhibits a much
+€4,000 and just 4 percent among those earning €7,500 or more. Electoral support for Die Linke thus exhibits a much
 stronger income gradient than the AfD, with its support more clearly concentrated among lower
 income groups even after accounting for demographic and regional differences.
 
@@ -320,7 +318,7 @@ parties more closely: as shown above, a significant difference emerges only in c
 highest income group. All these comparisons account for age, sex, education, household size and
 region. Taken together, the results show that Die Linke stands out as the only party with
 consistently and significantly stronger support among low earners compared with the middle and
-upper income groups, while the AfD exhibits a much weaker relationship with income.
+upper income groups, while electoral support for the AfD exhibits a much weaker relationship with income.
 
 <figure class="ltw-plotly">
 
@@ -340,6 +338,17 @@ with €3,000 to €4,000; the confidence interval does not include zero.</i></f
 
 If income is only weakly associated with AfD voting, which characteristics matter more? Among the
 socioeconomic characteristics examined here, one stands out particularly clearly: formal education.
+It is measured by respondents' highest general school-leaving qualification, in five levels: no
+qualification, lower secondary (Hauptschule or Volksschule), intermediate secondary (Realschule or
+Mittlere Reife), advanced technical (Fachhochschulreife) and the Abitur. The equivalent
+qualifications of the former GDR's polytechnic and extended secondary schools are included in these
+categories, so respondents from East and West Germany can be compared directly. In Germany's tracked
+school system, this qualification is a good measure of formal education: almost all adults have one,
+it is acquired early in life, and it largely determines access to vocational training and higher
+education, with the Abitur being the usual prerequisite for university. Unlike income, it also
+hardly changes over the life course and is therefore not affected by temporary circumstances such as
+unemployment or retirement. It does not separately identify university graduates, but since almost
+all of them hold the Abitur or the Fachhochschulreife, they fall into the two highest categories.
 To compare the two directly, we estimate the relationship between education and income and AfD
 support within the same logistic regression model, controlling for age, sex, household size and
 region. The results reveal a striking difference. Among respondents with no formal school
@@ -417,7 +426,7 @@ regardless of their actual income ([Albers, Bischof, Kersting and Kosse
 2026](https://doi.org/10.31235/osf.io/2s7mc_v1)). This also helps explain why concerns about
 economic status may extend well beyond the poorest households.
 
-Yet even this emphasis on subjective economic insecurity has its limits. Recent research suggests
+Yet even this emphasis on subjective economic insecurity may have its limits. Recent research suggests
 that perceived deprivation alone cannot adequately explain support for the AfD. Using SOEP data
 from 2014 to 2024, Martin Schröder and colleagues find that concerns about immigration account for
 roughly three quarters of the differences in AfD support that their model can explain, while

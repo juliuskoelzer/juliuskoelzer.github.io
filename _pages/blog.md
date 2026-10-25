@@ -69,6 +69,12 @@ author_profile: true
 
 <div class="blog-container">
   <div class="blog-card">
+    <img src="/images/afdeink26_social.jpg" alt="Right on the Money? What income tells us about AfD support" class="blog-card-img">
+    <h3><a href="/afd-income-2025/">Right on the Money? What income tells us about AfD support</a></h3>
+    <p>Julius Kölzer. Blog post, October 2026 (in English).</p>
+  </div>
+
+  <div class="blog-card">
     <img src="/images/union26_social.jpg" alt="Wohin die Union ihre Wähler verliert" class="blog-card-img">
     <h3><a href="/union-verluste-2026-de/">Wohin die Union ihre Wähler verliert – und wen sie zurückholen kann</a></h3>
     <p>Julius Kölzer. Blog post, October 2026 (in German).</p>
