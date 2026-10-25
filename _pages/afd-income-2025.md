@@ -370,6 +370,25 @@ percent with the Abitur.</i></figcaption>
 
 </figure>
 
+This pattern fits a growing body of research that describes education as one of the central
+political divides in Western Europe. Over the past decades, voters with lower formal education have
+increasingly turned to the radical right, while the highly educated have moved towards green and
+left parties; income, by contrast, continues to structure votes mainly along the traditional left-right
+divide ([Gethin, Martínez-Toledano and Piketty 2022](https://doi.org/10.1093/qje/qjab036);
+[Abou-Chadi and Hix 2021](https://doi.org/10.1111/1468-4446.12834)). The educational gap in
+radical right voting has widened from one generation to the next
+([Schäfer and Steiner 2025](https://doi.org/10.1080/01402382.2025.2466122)), and education is now
+regarded as a cleavage comparable to the classic divides of class and religion
+([Stubager 2010](https://doi.org/10.1080/01402381003654544);
+[Hooghe and Marks 2025](https://doi.org/10.1080/01402382.2025.2452789)). Education is thought to
+matter above all through values: higher education goes along with more libertarian and less
+authoritarian attitudes ([Stubager 2008](https://doi.org/10.1111/j.1468-4446.2008.00196.x)), and
+even the field of study helps to predict support for parties such as the AfD
+([Hooghe, Marks and Kamphorst 2024](https://doi.org/10.1017/S0003055424000583)). Not all of this is
+necessarily an effect of schooling itself, however: panel data suggest that part of the link
+reflects who goes on to higher education in the first place
+([Lancee and Sarrasin 2015](https://doi.org/10.1093/esr/jcv008)).
+
 ## Conclusion
 
 Taken together, the findings reinforce what research on the AfD has shown for years: the AfD is not
@@ -428,6 +447,9 @@ respondents (n = 5,248). Predicted shares are averages over all respondents.
 
 **References**
 
+- Abou-Chadi, T. & Hix, S. (2021). Brahmin Left versus Merchant Right? Education, class,
+  multiparty competition, and redistribution in Western Europe. *British Journal of Sociology*,
+  72(1), 79–92.
 - Albers, T. N. H., Bischof, D., Kersting, F. & Kosse, F. (2026). When the well-off feel left
   behind: income misperception and populist attitudes. *SocArXiv*, doi:10.31235/osf.io/2s7mc_v1.
 - Bähr, S. (2025). Managergehälter steigen, Armut nimmt zu: Warum das ein perfekter Nährboden für
@@ -438,24 +460,40 @@ respondents (n = 5,248). Predicted shares are averages over all respondents.
   right support. *Journal of European Public Policy*, 28(2), 153–173.
 - Fratzscher, M. (2026). Sachsen-Anhalt würde sich mit der AfD selbst am meisten schaden. Column
   “Fratzschers Verteilungsfragen”, *ZEIT Online*, 24 July 2026.
+- Gethin, A., Martínez-Toledano, C. & Piketty, T. (2022). Brahmin Left versus Merchant Right:
+  changing political cleavages in 21 Western democracies, 1948–2020. *Quarterly Journal of
+  Economics*, 137(1), 1–48.
 - Gidron, N. & Hall, P. A. (2017). The politics of social status: economic and cultural roots of
   the populist right. *British Journal of Sociology*, 68(S1), S57–S84.
 - Hartmann, J., Kurz, K. & Lengfeld, H. (2022). Modernization losers' revenge? Income mobility and
   support for right- and left-wing populist parties in Germany. *European Sociological Review*,
   38(1), 138–152.
+- Hooghe, L. & Marks, G. (2025). How does the education cleavage stack up against the classic
+  cleavages of the past? *West European Politics*, 49(3), 636–668.
+- Hooghe, L., Marks, G. & Kamphorst, J. (2024). Field of education and political behavior:
+  predicting GAL/TAN voting. *American Political Science Review*, 119(2), 794–811.
 - Hövermann, A. (2025). Die Verdopplung des AfD-Elektorats: Erkenntnisse aus dem
   WSI-Erwerbspersonenpanel 2020–2025. *WSI Study* 42. Düsseldorf: Hans-Böckler-Stiftung.
 - İnan, Ö. (2026). Aufrüstung hilft nicht gegen Angst. *DIE ZEIT*, No. 24/2026.
 - Kurer, T. (2020). The declining middle: occupational change, social status, and the populist
   right. *Comparative Political Studies*, 53(10–11), 1798–1835.
+- Lancee, B. & Sarrasin, O. (2015). Educated preferences or selection effects? A longitudinal
+  analysis of the impact of educational attainment on attitudes towards immigrants. *European
+  Sociological Review*, 31(4), 490–501.
 - Lengfeld, H. (2017). Die „Alternative für Deutschland“: eine Partei für Modernisierungsverlierer?
   *Kölner Zeitschrift für Soziologie und Sozialpsychologie*, 69(2), 209–232.
 - Lengfeld, H. & Dilger, C. (2018). Kulturelle und ökonomische Bedrohung. Eine Analyse der Ursachen
 der Parteiidentifikation mit der „Alternative für Deutschland“ mit dem Sozio-oekonomischen Panel 2016. *Zeitschrift für Soziologie*, 47(3), 181–199.
+- Schäfer, A. & Steiner, N. D. (2025). How education, generation and gender jointly structure
+  green and radical right voting. *West European Politics*, 49(3), 669–696.
 - Schröder, M. (2018). AfD-Unterstützer sind nicht abgehängt, sondern ausländerfeindlich.
   *SOEPpapers* 975. Berlin: DIW.
 - Schröder, M., Rehm, M. & Röcke, A. (2026). Supporters of Germany's far-right AfD party are
   concerned about immigration rather than feeling deprived. *PLOS ONE*, 21(7), e0350403.
+- Stubager, R. (2008). Education effects on authoritarian–libertarian values: a question of
+  socialization. *British Journal of Sociology*, 59(2), 327–350.
+- Stubager, R. (2010). The development of the education cleavage: Denmark as a critical case. *West
+  European Politics*, 33(3), 505–533.
 </div>
 
 {% include afd_income25_charts.html %}
