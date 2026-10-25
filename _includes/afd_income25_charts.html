@@ -74,11 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ---------- 1) AfD share by income ---------- */
   Plotly.newPlot("afdinc-bar", [{
     type: "bar", x: E, y: D.afd_bar.share, marker: { color: farben.AfD }, width: 0.68,
-    text: D.afd_bar.share.map(function (v) { return f1(v) + "%"; }), textposition: "outside", cliponaxis: false, textfont: { size: 12, color: ink },
+    text: D.afd_bar.share.map(function (v) { return f1(v) + "%"; }), textposition: "outside", cliponaxis: false, textfont: { size: schmal ? 10 : 12, color: ink },
     customdata: D.afd_bar.share.map(function (v, i) { return [f1(v), tsd(D.afd_bar.n[i]), D.afd_bar.n_afd[i]]; }),
     hovertemplate: "<b>%{x}</b><br>AfD: %{customdata[0]}%<br><span style='font-size:11px'>n = %{customdata[1]}, of whom AfD %{customdata[2]}</span><extra></extra>"
   }], Object.assign({}, basis, {
     xaxis: xInc, yaxis: pAxis(25, 5),
+    /* same label size on all bars (Plotly otherwise shrinks labels that do not fit) */
+    uniformtext: { minsize: schmal ? 10 : 12, mode: "show" },
     margin: { l: 50, r: 15, t: 20, b: schmal ? 90 : 50 }
   }), cfg);
 
@@ -211,7 +213,8 @@ document.addEventListener("DOMContentLoaded", function () {
         hovertemplate: "<b>" + p + "</b> · %{customdata[3]}<br>%{customdata[0]} pp<br><span style='font-size:11px'>95% CI: %{customdata[1]} to %{customdata[2]}</span><extra></extra>" });
       shapes.push({ type: "line", xref: ax.x, yref: ax.y + " domain", x0: 0, x1: 0, y0: 0, y1: 1, line: { color: ink3, width: 1, dash: "dot" } });
       annos.push(strip(ax, p));
-      lay[ax.xaxis] = ppAxis(-30, 20, 10, { tickfont: { size: 9.5, color: ink2 } });
+      /* no tick labels at the panel edges, so neighbouring facets do not run into each other */
+      lay[ax.xaxis] = ppAxis(-30, 20, 10, { tickvals: [-20, -10, 0, 10], ticktext: ["−20", "−10", "0", "+10"], tickfont: { size: 9.5, color: ink2 } });
       lay[ax.yaxis] = { tickvals: rows, ticktext: L.map(function (l) { return wrap(l, 18); }), range: [-L.length + 0.4, 0.6], showgrid: false, zeroline: false, fixedrange: true,
                         showticklabels: k % sp === 0, tickfont: { size: 10.5 }, automargin: true };
     });
@@ -235,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
         text: t[2].est.map(function (v) { return f1(v, 0) + "%"; }), textposition: "top center", textfont: { size: 11, color: ink } });
       annos.push(strip(ax, t[0]));
       lay[ax.xaxis] = { fixedrange: true, tickangle: -40, tickfont: { size: 10.5 }, showgrid: false };
-      lay[ax.yaxis] = pAxis(60, 10, { showticklabels: schmal || k === 0 });
+      lay[ax.yaxis] = pAxis(70, 10, { showticklabels: schmal || k === 0 });
     });
     lay.xaxis.domain = schmal ? [0, 1] : [0, 0.42];
     lay.xaxis2.domain = schmal ? [0, 1] : [0.48, 1];
